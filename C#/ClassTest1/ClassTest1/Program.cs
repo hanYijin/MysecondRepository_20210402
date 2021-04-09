@@ -8,14 +8,15 @@ namespace ClassTest1
 {
     class Program
     {
+        const int MAIN_MENU_INSERT = 1;
+        const int MAIN_MENU_VIEW = 2;
+        const int MAIN_MENU_ADD = 3;
+        const int MAIN_MENU_UPDATA = 4;
+        const int MAIN_MENU_DELETE = 5;
+        const int MAIN_MENU_EXIT = 6;
+
         static void Main (string[] args)
         {
-            const int MAIN_MENU_INSERT = 1;
-            const int MAIN_MENU_VIEW = 2;
-            const int MAIN_MENU_ADD = 3;
-            const int MAIN_MENU_UPDATA = 4;
-            const int MAIN_MENU_DELETE = 5;
-            const int MAIN_MENU_EXIT = 6;
 
             Random r = new Random();//랜덤 클래스 생성
 
@@ -51,8 +52,8 @@ namespace ClassTest1
                             Console.WriteLine(e.Message);
                         }
                         break;
-                    case MAIN_MENU_ADD:
-                        studentAdd();
+                    case MAIN_MENU_ADD
+                        studentAdd(stu);
                         break;
                     case MAIN_MENU_UPDATA:
                         studentUpdata();
@@ -130,9 +131,9 @@ namespace ClassTest1
                 s[i].studentInfo();    
             }
         }
-        public static void studentAdd()
+        public static void studentAdd(List<Student> stu)
         {
-            
+            stu.Add(new Student(name, age, gender, tel, addr));
         }
         public static void studentUpdata()
         {
