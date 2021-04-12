@@ -1,0 +1,27 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Main extends JFrame {
+	JButton cust_but = new JButton("고객용");
+	JButton phar_but = new JButton("약국용");
+	
+	public Main(){
+		getContentPane().setLayout(null);
+		cust_but.setBounds(41, 50, 130, 53);
+		getContentPane().add(cust_but);
+		
+		phar_but.setBounds(247, 50, 130, 53);
+		getContentPane().add(phar_but);
+		
+		setSize(430,200);
+		setLocationRelativeTo(null);
+		setVisible(true);
+		
+		
+	}
+	public static void main(String[] args) {
+		new Main();
+		
+	} 
+
+}
