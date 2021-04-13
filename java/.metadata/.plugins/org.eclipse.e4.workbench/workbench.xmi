@@ -178,7 +178,7 @@
       <tags>categoryTag:Java Browsing</tags>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_2gXpcZszEeu2TurgyzzqlA" elementId="org.eclipse.ui.views.AllMarkersView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Markers" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/problems_view.png" tooltip="" closeable="true">
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.allSeverityField&quot; categoryGroup=&quot;org.eclipse.ui.ide.type&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.allMarkersGenerator&quot; partName=&quot;Markers&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Java Problems (1 item)&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.allSeverityField=&quot;300&quot; org.eclipse.ui.ide.locationField=&quot;90&quot; org.eclipse.ui.ide.markerType=&quot;90&quot; org.eclipse.ui.ide.pathField=&quot;120&quot; org.eclipse.ui.ide.resourceField=&quot;90&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.allSeverityField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.allSeverityField&quot; categoryGroup=&quot;org.eclipse.ui.ide.type&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.allMarkersGenerator&quot; partName=&quot;Markers&quot;>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.allSeverityField=&quot;300&quot; org.eclipse.ui.ide.locationField=&quot;90&quot; org.eclipse.ui.ide.markerType=&quot;90&quot; org.eclipse.ui.ide.pathField=&quot;120&quot; org.eclipse.ui.ide.resourceField=&quot;90&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.allSeverityField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <menus xmi:id="_2lVB8JszEeu2TurgyzzqlA" elementId="org.eclipse.ui.views.AllMarkersView">
@@ -253,7 +253,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_2WhJ4pszEeu2TurgyzzqlA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_83REp5s0EeuOMZYkp4pDHw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_2Gl63ZszEeu2TurgyzzqlA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_yRBqMJvuEeuh6tl2hD_VAQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_2Gl63ZszEeu2TurgyzzqlA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_2WhJ45szEeu2TurgyzzqlA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -283,7 +283,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_2WhJ55szEeu2TurgyzzqlA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_83REsZs0EeuOMZYkp4pDHw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_2Gl6hpszEeu2TurgyzzqlA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_yRBqOpvuEeuh6tl2hD_VAQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_2Gl6hpszEeu2TurgyzzqlA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_2WhJ6JszEeu2TurgyzzqlA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -459,6 +459,8 @@
     <bindings xmi:id="_2HVe0JszEeu2TurgyzzqlA" keySequence="ALT+ARROW_UP" command="_2GvCApszEeu2TurgyzzqlA"/>
     <bindings xmi:id="_2HVe1JszEeu2TurgyzzqlA" keySequence="CTRL+DEL" command="_2Gl43ZszEeu2TurgyzzqlA"/>
     <bindings xmi:id="_2HVe5ZszEeu2TurgyzzqlA" keySequence="ALT+CTRL+ARROW_DOWN" command="_2Gl5VpszEeu2TurgyzzqlA"/>
+    <bindings xmi:id="_xxWEkJvuEeuh6tl2hD_VAQ" keySequence="F12" command="_2Gl5p5szEeu2TurgyzzqlA"/>
+    <bindings xmi:id="_xxWEkpvuEeuh6tl2hD_VAQ" keySequence="SHIFT+F12" command="_2GvBdpszEeu2TurgyzzqlA"/>
   </bindingTables>
   <bindingTables xmi:id="_2HB8aZszEeu2TurgyzzqlA" elementId="org.eclipse.tm.terminal.EditContext" bindingContext="_2GvCIJszEeu2TurgyzzqlA">
     <bindings xmi:id="_2HB8apszEeu2TurgyzzqlA" keySequence="CTRL+SHIFT+C" command="_2Gl6i5szEeu2TurgyzzqlA"/>
@@ -694,8 +696,15 @@
   <bindingTables xmi:id="_2HB8hJszEeu2TurgyzzqlA" elementId="org.eclipse.jdt.ui.breadcrumbEditorScope" bindingContext="_2GvCKpszEeu2TurgyzzqlA">
     <bindings xmi:id="_2HB8hZszEeu2TurgyzzqlA" keySequence="ALT+SHIFT+B" command="_2GvCBpszEeu2TurgyzzqlA"/>
   </bindingTables>
-  <bindingTables xmi:id="_2HB8h5szEeu2TurgyzzqlA" elementId="org.eclipse.wb.core.java.editorScope" bindingContext="_2GvCJJszEeu2TurgyzzqlA"/>
-  <bindingTables xmi:id="_2HB8iZszEeu2TurgyzzqlA" elementId="org.eclipse.wb.core.xml.editorScope" bindingContext="_2GvCLpszEeu2TurgyzzqlA"/>
+  <bindingTables xmi:id="_2HB8h5szEeu2TurgyzzqlA" elementId="org.eclipse.wb.core.java.editorScope" bindingContext="_2GvCJJszEeu2TurgyzzqlA">
+    <bindings xmi:id="_xxM6oZvuEeuh6tl2hD_VAQ" keySequence="CTRL+SHIFT+A" command="_2Gl5YJszEeu2TurgyzzqlA"/>
+    <bindings xmi:id="_xxM6o5vuEeuh6tl2hD_VAQ" keySequence="ALT+CTRL+A" command="_2Gl5YJszEeu2TurgyzzqlA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_2HB8iZszEeu2TurgyzzqlA" elementId="org.eclipse.wb.core.xml.editorScope" bindingContext="_2GvCLpszEeu2TurgyzzqlA">
+    <bindings xmi:id="_xxM6opvuEeuh6tl2hD_VAQ" keySequence="CTRL+SHIFT+A" command="_2Gl5YJszEeu2TurgyzzqlA"/>
+    <bindings xmi:id="_xxM6pJvuEeuh6tl2hD_VAQ" keySequence="ALT+CTRL+A" command="_2Gl5YJszEeu2TurgyzzqlA"/>
+    <bindings xmi:id="_xxWEkZvuEeuh6tl2hD_VAQ" keySequence="F12" command="_2Gl5mJszEeu2TurgyzzqlA"/>
+  </bindingTables>
   <bindingTables xmi:id="_2HLtcJszEeu2TurgyzzqlA" elementId="org.eclipse.jst.jsf.facesconfig.editorContext" bindingContext="_2GvCWZszEeu2TurgyzzqlA">
     <bindings xmi:id="_2HLtcZszEeu2TurgyzzqlA" keySequence="CTRL+SHIFT+F5" command="_2Gl6X5szEeu2TurgyzzqlA"/>
     <bindings xmi:id="_2HLuH5szEeu2TurgyzzqlA" keySequence="CTRL+F5" command="_2Gl53pszEeu2TurgyzzqlA"/>

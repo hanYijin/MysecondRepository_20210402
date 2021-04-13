@@ -1761,3 +1761,1502 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 116; "raq
 	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
 	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
 	... 6 more
+!SESSION 2021-04-13 09:25:11.574 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_281
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.274
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.codegen.ecore.ui_2.11.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.276
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.codegen.ecore_2.11.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.278
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.codegen.ui_2.8.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.279
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.codegen_2.11.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.280
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.common.ui_2.10.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.281
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.common_2.11.0.v20150512-0501
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.282
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.converter_2.11.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.284
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.databinding.edit_1.4.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.286
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.databinding_1.4.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.287
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.ecore.editor_2.11.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.288
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.ecore.edit_2.9.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.289
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.ecore_2.11.0.v20150512-0501
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.290
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.edit.ui_2.11.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.292
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.edit_2.11.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.293
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.mapping.ecore.editor_2.10.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.294
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.mapping.ecore_2.9.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.296
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.mapping.ui_2.9.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.299
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf.mapping_2.9.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.301
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.emf_2.11.0.v20150601-0402
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.303
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.epp.logging.aeri.feature_1.0.0.v20150617-0732
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.311
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.jdt_3.11.0.v20150603-2000
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.322
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.jst.web_core.feature_3.7.0.v201506041749
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.324
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.jst.web_ui.feature_3.7.0.v201506041749
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.340
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.pde_3.11.0.v20150603-2000
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.352
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.wst.common_core.feature_3.7.0.v201505132009
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.358
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.wst.common_ui.feature_3.7.0.v201505132009
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.360
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.wst.jsdt.feature_1.6.200.v201505071819
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.362
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.wst.server_core.feature_3.3.500.v201505132000
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.363
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.wst.server_ui.feature_3.3.500.v201505261810
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.365
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.wst.web_core.feature_3.7.0.v201505132009
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.366
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.wst.web_ui.feature_3.7.0.v201505261810
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.368
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.wst.ws_ui.feature_3.7.0.v201505141512
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.370
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.wst.xml_core.feature_3.7.0.v201502261749
+
+!ENTRY org.eclipse.update.configurator 4 0 2021-04-13 09:25:13.371
+!MESSAGE Unable to find feature.xml in directory: C:\Users\KB\Desktop\eclipse\features\org.eclipse.wst.xml_ui.feature_3.7.0.v201505141512
+
+!ENTRY org.eclipse.jface 2 0 2021-04-13 09:25:41.109
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:41.109
+!MESSAGE A conflict occurred for CTRL+INSERT:
+Binding(CTRL+INSERT,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.copy,Copy,
+		Copy the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@670a4738,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(CTRL+INSERT,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.copy,Copy,
+		Copy the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@670a4738,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:41.109
+!MESSAGE A conflict occurred for CTRL+F10:
+Binding(CTRL+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.window.showViewMenu,Show View Menu,
+		Show the view menu,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@47ffdbba,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(CTRL+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.window.showViewMenu,Show View Menu,
+		Show the view menu,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@47ffdbba,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:41.109
+!MESSAGE A conflict occurred for CTRL+Y:
+Binding(CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.redo,Redo,
+		Redo the last operation,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@ba0018e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.redo,Redo,
+		Redo the last operation,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@ba0018e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:41.109
+!MESSAGE A conflict occurred for CTRL+SPACE:
+Binding(CTRL+SPACE,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.contentAssist.proposals,Content Assist,
+		Content Assist,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@45311a99,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(CTRL+SPACE,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.contentAssist.proposals,Content Assist,
+		Content Assist,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@45311a99,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:41.109
+!MESSAGE A conflict occurred for CTRL+Z:
+Binding(CTRL+Z,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.undo,Undo,
+		Undo the last operation,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7037a680,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(CTRL+Z,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.undo,Undo,
+		Undo the last operation,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7037a680,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:41.109
+!MESSAGE A conflict occurred for SHIFT+INSERT:
+Binding(SHIFT+INSERT,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.paste,Paste,
+		Paste from the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@492c8137,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+INSERT,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.paste,Paste,
+		Paste from the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@492c8137,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:41.109
+!MESSAGE A conflict occurred for ALT+PAGE_DOWN:
+Binding(ALT+PAGE_DOWN,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.nextSubTab,Next Sub-Tab,
+		Switch to the next sub-tab,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@420b55ed,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(ALT+PAGE_DOWN,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.nextSubTab,Next Sub-Tab,
+		Switch to the next sub-tab,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@420b55ed,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:41.109
+!MESSAGE A conflict occurred for ALT+PAGE_UP:
+Binding(ALT+PAGE_UP,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.previousSubTab,Previous Sub-Tab,
+		Switch to the previous sub-tab,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f237ae7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(ALT+PAGE_UP,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.previousSubTab,Previous Sub-Tab,
+		Switch to the previous sub-tab,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f237ae7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:41.109
+!MESSAGE A conflict occurred for CTRL+SHIFT+SPACE:
+Binding(CTRL+SHIFT+SPACE,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.contentAssist.contextInformation,Context Information,
+		Show Context Information,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@42edde25,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(CTRL+SHIFT+SPACE,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.contentAssist.contextInformation,Context Information,
+		Show Context Information,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@42edde25,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:41.109
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6fe5da76,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6fe5da76,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+
+!ENTRY org.eclipse.ui 4 0 2021-04-13 09:25:42.472
+!MESSAGE Source Provider 'org.eclipse.ui.internal.services.WorkbenchSourceProvider' should extend AbstractSourceProvider
+
+!ENTRY org.eclipse.ui 4 0 2021-04-13 09:25:42.488
+!MESSAGE Source Provider 'org.eclipse.ui.internal.services.ActionSetSourceProvider' should extend AbstractSourceProvider
+
+!ENTRY org.eclipse.ui 4 0 2021-04-13 09:25:42.488
+!MESSAGE Source Provider 'org.eclipse.ui.internal.menus.FocusControlSourceProvider' should extend AbstractSourceProvider
+
+!ENTRY org.eclipse.ui 4 0 2021-04-13 09:25:42.488
+!MESSAGE Source Provider 'org.eclipse.ui.internal.services.MenuSourceProvider' should extend AbstractSourceProvider
+
+!ENTRY org.eclipse.ui 4 0 2021-04-13 09:25:42.488
+!MESSAGE Source Provider 'org.eclipse.ui.internal.contexts.ActiveContextSourceProvider' should extend AbstractSourceProvider
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.663
+!MESSAGE Conflicting handlers for org.eclipse.ui.newWizard: {org.eclipse.ui.internal.handlers.WizardHandler$New@37a1beb3} vs {org.eclipse.ui.internal.handlers.WizardHandler$New}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.663
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.import: {org.eclipse.ui.internal.handlers.WizardHandler$Import} vs {org.eclipse.ui.internal.handlers.WizardHandler$Import@7852ab30}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.663
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.export: {org.eclipse.ui.internal.handlers.WizardHandler$Export@65259737} vs {org.eclipse.ui.internal.handlers.WizardHandler$Export}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.663
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.properties: {org.eclipse.ui.internal.handlers.PropertyDialogHandler@746f8520} vs {org.eclipse.ui.internal.handlers.PropertyDialogHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.663
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.exit: {org.eclipse.ui.internal.handlers.QuitHandler@38a52072} vs {org.eclipse.ui.internal.handlers.QuitHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.663
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.newWindow: {org.eclipse.ui.internal.handlers.OpenInNewWindowHandler} vs {org.eclipse.ui.internal.handlers.OpenInNewWindowHandler@532ea86b}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.663
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.switchToEditor: {org.eclipse.ui.internal.WorkbenchEditorsHandler} vs {org.eclipse.ui.internal.WorkbenchEditorsHandler@17fb5184}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.679
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.minimizePart: {org.eclipse.ui.internal.handlers.MinimizePartHandler} vs {org.eclipse.ui.internal.handlers.MinimizePartHandler@13809363}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.679
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.closePart: {org.eclipse.ui.internal.handlers.ClosePartHandler@45635ae1} vs {org.eclipse.ui.internal.handlers.ClosePartHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.679
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.preferences: {org.eclipse.ui.internal.handlers.ShowPreferencePageHandler} vs {org.eclipse.ui.internal.handlers.ShowPreferencePageHandler@66abc325}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.679
+!MESSAGE Conflicting handlers for org.eclipse.ui.views.showView: {org.eclipse.ui.handlers.ShowViewHandler} vs {org.eclipse.ui.handlers.ShowViewHandler@3c9971af}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.679
+!MESSAGE Conflicting handlers for org.eclipse.ui.help.displayHelp: {org.eclipse.ui.internal.handlers.DisplayHelpHandler@c7cf8c4} vs {org.eclipse.ui.internal.handlers.DisplayHelpHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.679
+!MESSAGE Conflicting handlers for org.eclipse.ui.perspectives.showPerspective: {org.eclipse.ui.handlers.ShowPerspectiveHandler} vs {org.eclipse.ui.handlers.ShowPerspectiveHandler@438a2d3}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.679
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.showIn: {org.eclipse.ui.internal.ShowInHandler} vs {org.eclipse.ui.internal.ShowInHandler@5c34b0f2}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.710
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.properties: {org.eclipse.ui.internal.handlers.PropertyDialogHandler@746f8520} vs {org.eclipse.ui.internal.handlers.PropertyDialogHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.726
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.properties: {org.eclipse.ui.internal.handlers.PropertyDialogHandler@746f8520} vs {org.eclipse.ui.internal.handlers.PropertyDialogHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.886
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.activateEditor: {org.eclipse.ui.internal.ActivateEditorHandler} vs {org.eclipse.ui.internal.ActivateEditorHandler@3e149513}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.886
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.showSystemMenu: {org.eclipse.ui.internal.ShowPartPaneMenuHandler} vs {org.eclipse.ui.internal.ShowPartPaneMenuHandler@208185c0}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.886
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.showViewMenu: {org.eclipse.ui.internal.ShowViewMenuHandler@9a37591} vs {org.eclipse.ui.internal.ShowViewMenuHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.886
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.close: {org.eclipse.ui.internal.CloseEditorHandler} vs {org.eclipse.ui.internal.CloseEditorHandler@53d2b827}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.886
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.closeAll: {org.eclipse.ui.internal.CloseAllHandler} vs {org.eclipse.ui.internal.CloseAllHandler@35c95869}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.886
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.closeOthers: {org.eclipse.ui.internal.CloseOthersHandler@402676e3} vs {org.eclipse.ui.internal.CloseOthersHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.886
+!MESSAGE Conflicting handlers for org.eclipse.ui.ToggleCoolbarAction: {org.eclipse.ui.internal.handlers.ToggleCoolbarHandler@3ee68eb2} vs {org.eclipse.ui.internal.handlers.ToggleCoolbarHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.886
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.nextEditor: {org.eclipse.ui.internal.CycleEditorHandler@43549c6c} vs {org.eclipse.ui.internal.CycleEditorHandler:true}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.886
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.previousEditor: {org.eclipse.ui.internal.CycleEditorHandler:false} vs {org.eclipse.ui.internal.CycleEditorHandler@857f1a7}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.901
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.nextView: {org.eclipse.ui.internal.CycleViewHandler@333efb51} vs {org.eclipse.ui.internal.CycleViewHandler:true}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.901
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.previousView: {org.eclipse.ui.internal.CycleViewHandler@375ff309} vs {org.eclipse.ui.internal.CycleViewHandler:false}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.901
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.nextPerspective: {org.eclipse.ui.internal.CyclePerspectiveHandler@271a140c} vs {org.eclipse.ui.internal.CyclePerspectiveHandler:true}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.901
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.previousPerspective: {org.eclipse.ui.internal.CyclePerspectiveHandler@24563809} vs {org.eclipse.ui.internal.CyclePerspectiveHandler:false}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.901
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.closeAllPerspectives: {org.eclipse.ui.internal.handlers.CloseAllPerspectivesHandler@4d7c9b42} vs {org.eclipse.ui.internal.handlers.CloseAllPerspectivesHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.901
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.customizePerspective: {org.eclipse.ui.internal.handlers.EditActionSetsHandler} vs {org.eclipse.ui.internal.handlers.EditActionSetsHandler@53d15034}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.901
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.closePerspective: {org.eclipse.ui.internal.handlers.ClosePerspectiveHandler@2d5e051e} vs {org.eclipse.ui.internal.handlers.ClosePerspectiveHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.901
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.openEditorDropDown: {org.eclipse.ui.internal.WorkbookEditorsHandler} vs {org.eclipse.ui.internal.WorkbookEditorsHandler@665f88e1}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.901
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.newEditor: {org.eclipse.ui.internal.handlers.NewEditorHandler@62159fd} vs {org.eclipse.ui.internal.handlers.NewEditorHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.901
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.maximizePart: {org.eclipse.ui.internal.handlers.MaximizePartHandler@2ae08750} vs {org.eclipse.ui.internal.handlers.MaximizePartHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.933
+!MESSAGE Plugin org.eclipse.rap.ui, extension org.eclipse.ui.themes: Unknown extension tag found: categoryPresentationBinding
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.933
+!MESSAGE Plugin org.eclipse.rap.ui, extension org.eclipse.ui.themes: Unknown extension tag found: categoryPresentationBinding
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.948
+!MESSAGE Could not create color factory.
+
+!ENTRY org.eclipse.equinox.registry 4 1 2021-04-13 09:25:42.948
+!MESSAGE Plug-in "org.eclipse.rap.ui" was unable to instantiate class "org.eclipse.ui.internal.themes.LightColorFactory".
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.checkColorFactory(ThemeRegistryReader.java:397)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.getColorValue(ThemeRegistryReader.java:182)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readColor(ThemeRegistryReader.java:138)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readElement(ThemeRegistryReader.java:236)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:145)
+	at org.eclipse.ui.internal.registry.RegistryReader.readExtension(RegistryReader.java:156)
+	at org.eclipse.ui.internal.registry.RegistryReader.readRegistry(RegistryReader.java:177)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readThemes(ThemeRegistryReader.java:443)
+	at org.eclipse.ui.internal.WorkbenchPlugin$14.compute(WorkbenchPlugin.java:1425)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:62)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:247)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:213)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:582)
+	at org.eclipse.ui.internal.WorkbenchPlugin.getThemeRegistry(WorkbenchPlugin.java:613)
+	at org.eclipse.ui.internal.Workbench$29.runWithException(Workbench.java:1800)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2949)
+	at org.eclipse.ui.internal.Workbench.access$8(Workbench.java:2854)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:651)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.ui.themes.ColorUtil.getSystemColor(ColorUtil.java:149)
+	at org.eclipse.ui.themes.ColorUtil.process(ColorUtil.java:46)
+	at org.eclipse.ui.themes.ColorUtil.getColorValue(ColorUtil.java:169)
+	at org.eclipse.ui.internal.themes.LightColorFactory.<clinit>(LightColorFactory.java:32)
+	... 48 more
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.948
+!MESSAGE Plugin org.eclipse.rap.ui, extension org.eclipse.ui.themes, id org.eclipse.ui.workbench.ACTIVE_TAB_TEXT_COLOR: Only one of value or defaultMapping may be set.
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.964
+!MESSAGE Could not create color factory.
+
+!ENTRY org.eclipse.equinox.registry 4 1 2021-04-13 09:25:42.964
+!MESSAGE Plug-in "org.eclipse.rap.ui" was unable to instantiate class "org.eclipse.ui.internal.themes.LightColorFactory".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.ui.internal.themes.LightColorFactory
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.checkColorFactory(ThemeRegistryReader.java:397)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.getColorValue(ThemeRegistryReader.java:182)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readColor(ThemeRegistryReader.java:138)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readElement(ThemeRegistryReader.java:236)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:145)
+	at org.eclipse.ui.internal.registry.RegistryReader.readExtension(RegistryReader.java:156)
+	at org.eclipse.ui.internal.registry.RegistryReader.readRegistry(RegistryReader.java:177)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readThemes(ThemeRegistryReader.java:443)
+	at org.eclipse.ui.internal.WorkbenchPlugin$14.compute(WorkbenchPlugin.java:1425)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:62)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:247)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:213)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:582)
+	at org.eclipse.ui.internal.WorkbenchPlugin.getThemeRegistry(WorkbenchPlugin.java:613)
+	at org.eclipse.ui.internal.Workbench$29.runWithException(Workbench.java:1800)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2949)
+	at org.eclipse.ui.internal.Workbench.access$8(Workbench.java:2854)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:651)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.964
+!MESSAGE Plugin org.eclipse.rap.ui, extension org.eclipse.ui.themes, id org.eclipse.ui.workbench.ACTIVE_TAB_BG_END: Only one of value or defaultMapping may be set.
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.964
+!MESSAGE Could not create color factory.
+
+!ENTRY org.eclipse.equinox.registry 4 1 2021-04-13 09:25:42.964
+!MESSAGE Plug-in "org.eclipse.rap.ui" was unable to instantiate class "org.eclipse.ui.internal.themes.LightColorFactory".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.ui.internal.themes.LightColorFactory
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.checkColorFactory(ThemeRegistryReader.java:397)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.getColorValue(ThemeRegistryReader.java:182)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readColor(ThemeRegistryReader.java:138)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readElement(ThemeRegistryReader.java:236)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:145)
+	at org.eclipse.ui.internal.registry.RegistryReader.readExtension(RegistryReader.java:156)
+	at org.eclipse.ui.internal.registry.RegistryReader.readRegistry(RegistryReader.java:177)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readThemes(ThemeRegistryReader.java:443)
+	at org.eclipse.ui.internal.WorkbenchPlugin$14.compute(WorkbenchPlugin.java:1425)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:62)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:247)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:213)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:582)
+	at org.eclipse.ui.internal.WorkbenchPlugin.getThemeRegistry(WorkbenchPlugin.java:613)
+	at org.eclipse.ui.internal.Workbench$29.runWithException(Workbench.java:1800)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2949)
+	at org.eclipse.ui.internal.Workbench.access$8(Workbench.java:2854)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:651)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.964
+!MESSAGE Plugin org.eclipse.rap.ui, extension org.eclipse.ui.themes, id org.eclipse.ui.workbench.ACTIVE_TAB_BG_START: Only one of value or defaultMapping may be set.
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.964
+!MESSAGE Could not create color factory.
+
+!ENTRY org.eclipse.equinox.registry 4 1 2021-04-13 09:25:42.964
+!MESSAGE Plug-in "org.eclipse.rap.ui" was unable to instantiate class "org.eclipse.ui.internal.themes.LightColorFactory".
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.ui.internal.themes.LightColorFactory
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.checkColorFactory(ThemeRegistryReader.java:397)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.getColorValue(ThemeRegistryReader.java:182)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readColor(ThemeRegistryReader.java:138)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readElement(ThemeRegistryReader.java:236)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:145)
+	at org.eclipse.ui.internal.registry.RegistryReader.readExtension(RegistryReader.java:156)
+	at org.eclipse.ui.internal.registry.RegistryReader.readRegistry(RegistryReader.java:177)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readThemes(ThemeRegistryReader.java:443)
+	at org.eclipse.ui.internal.WorkbenchPlugin$14.compute(WorkbenchPlugin.java:1425)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:62)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:247)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:213)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:582)
+	at org.eclipse.ui.internal.WorkbenchPlugin.getThemeRegistry(WorkbenchPlugin.java:613)
+	at org.eclipse.ui.internal.Workbench$29.runWithException(Workbench.java:1800)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2949)
+	at org.eclipse.ui.internal.Workbench.access$8(Workbench.java:2854)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:651)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.964
+!MESSAGE Plugin org.eclipse.rap.ui, extension org.eclipse.ui.themes, id org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_START: Only one of value or defaultMapping may be set.
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.964
+!MESSAGE Could not create color factory.
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-04-13 09:25:42.964
+!MESSAGE org.eclipse.ui.internal.themes.RGBContrastFactory cannot be cast to org.eclipse.ui.themes.IColorFactory
+!STACK 0
+java.lang.ClassCastException: org.eclipse.ui.internal.themes.RGBContrastFactory cannot be cast to org.eclipse.ui.themes.IColorFactory
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.checkColorFactory(ThemeRegistryReader.java:396)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.getColorValue(ThemeRegistryReader.java:182)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readColor(ThemeRegistryReader.java:138)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readElement(ThemeRegistryReader.java:236)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:145)
+	at org.eclipse.ui.internal.registry.RegistryReader.readExtension(RegistryReader.java:156)
+	at org.eclipse.ui.internal.registry.RegistryReader.readRegistry(RegistryReader.java:177)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readThemes(ThemeRegistryReader.java:443)
+	at org.eclipse.ui.internal.WorkbenchPlugin$14.compute(WorkbenchPlugin.java:1425)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:62)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:247)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:213)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:582)
+	at org.eclipse.ui.internal.WorkbenchPlugin.getThemeRegistry(WorkbenchPlugin.java:613)
+	at org.eclipse.ui.internal.Workbench$29.runWithException(Workbench.java:1800)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2949)
+	at org.eclipse.ui.internal.Workbench.access$8(Workbench.java:2854)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:651)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.964
+!MESSAGE Plugin org.eclipse.rap.ui, extension org.eclipse.ui.themes, id org.eclipse.ui.workbench.INACTIVE_TAB_BG_START: Only one of value or defaultMapping may be set.
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.964
+!MESSAGE Could not create color factory.
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-04-13 09:25:42.964
+!MESSAGE org.eclipse.ui.themes.RGBBlendColorFactory cannot be cast to org.eclipse.ui.themes.IColorFactory
+!STACK 0
+java.lang.ClassCastException: org.eclipse.ui.themes.RGBBlendColorFactory cannot be cast to org.eclipse.ui.themes.IColorFactory
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.checkColorFactory(ThemeRegistryReader.java:396)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.getColorValue(ThemeRegistryReader.java:182)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readColor(ThemeRegistryReader.java:138)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readElement(ThemeRegistryReader.java:246)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:145)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElementChildren(RegistryReader.java:134)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readElement(ThemeRegistryReader.java:285)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:145)
+	at org.eclipse.ui.internal.registry.RegistryReader.readExtension(RegistryReader.java:156)
+	at org.eclipse.ui.internal.registry.RegistryReader.readRegistry(RegistryReader.java:177)
+	at org.eclipse.ui.internal.themes.ThemeRegistryReader.readThemes(ThemeRegistryReader.java:443)
+	at org.eclipse.ui.internal.WorkbenchPlugin$14.compute(WorkbenchPlugin.java:1425)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:62)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:247)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:213)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:582)
+	at org.eclipse.ui.internal.WorkbenchPlugin.getThemeRegistry(WorkbenchPlugin.java:613)
+	at org.eclipse.ui.internal.Workbench$29.runWithException(Workbench.java:1800)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2949)
+	at org.eclipse.ui.internal.Workbench.access$8(Workbench.java:2854)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:651)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:42.964
+!MESSAGE Plugin org.eclipse.rap.ui, extension org.eclipse.ui.themes, id org.eclipse.ui.workbench.ACTIVE_TAB_BG_END: Only one of value or defaultMapping may be set.
+
+!ENTRY org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+,:
+Binding(CTRL+,,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.previous,Previous,
+		Navigate to the previous item,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7e36d508,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+,,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.previous,Previous,
+		Navigate to the previous item,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7e36d508,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for ALT+F7:
+Binding(ALT+F7,
+	ParameterizedCommand(Command(org.eclipse.ui.part.nextPage,Next Page,
+		Switch to the next page,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d4531fa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+F7,
+	ParameterizedCommand(Command(org.eclipse.ui.part.nextPage,Next Page,
+		Switch to the next page,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d4531fa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+SHIFT+S:
+Binding(CTRL+SHIFT+S,
+	ParameterizedCommand(Command(org.eclipse.ui.file.saveAll,Save All,
+		Save all current contents,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@68cb8e52,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+S,
+	ParameterizedCommand(Command(org.eclipse.ui.file.saveAll,Save All,
+		Save all current contents,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@68cb8e52,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+SHIFT+NUMPAD_DIVIDE:
+Binding(CTRL+SHIFT+NUMPAD_DIVIDE,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.collapseAll,Collapse All,
+		Collapse the current tree,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c2f310c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+NUMPAD_DIVIDE,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.collapseAll,Collapse All,
+		Collapse the current tree,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c2f310c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for F12:
+Binding(F12,
+	ParameterizedCommand(Command(org.eclipse.ui.window.activateEditor,Activate Editor,
+		Activate the editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@74f92d14,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(F12,
+	ParameterizedCommand(Command(org.eclipse.ui.window.activateEditor,Activate Editor,
+		Activate the editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@74f92d14,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@40071890,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@40071890,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+F8:
+Binding(CTRL+F8,
+	ParameterizedCommand(Command(org.eclipse.ui.window.nextPerspective,Next Perspective,
+		Switch to the next perspective,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@748aa7dc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F8,
+	ParameterizedCommand(Command(org.eclipse.ui.window.nextPerspective,Next Perspective,
+		Switch to the next perspective,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@748aa7dc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for ALT+CR:
+Binding(ALT+CR,
+	ParameterizedCommand(Command(org.eclipse.ui.file.properties,Properties,
+		Display the properties of the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@31e84f10,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CR,
+	ParameterizedCommand(Command(org.eclipse.ui.file.properties,Properties,
+		Display the properties of the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@31e84f10,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for ALT+SHIFT+F7:
+Binding(ALT+SHIFT+F7,
+	ParameterizedCommand(Command(org.eclipse.ui.part.previousPage,Previous Page,
+		Switch to the previous page,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c4455b4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+F7,
+	ParameterizedCommand(Command(org.eclipse.ui.part.previousPage,Previous Page,
+		Switch to the previous page,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c4455b4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+W:
+Binding(CTRL+W,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@40071890,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+W,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@40071890,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+M:
+Binding(CTRL+M,
+	ParameterizedCommand(Command(org.eclipse.ui.window.maximizePart,Maximize Active View or Editor,
+		Toggles maximize/restore state of active view or editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@747f0f34,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+M,
+	ParameterizedCommand(Command(org.eclipse.ui.window.maximizePart,Maximize Active View or Editor,
+		Toggles maximize/restore state of active view or editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@747f0f34,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+SHIFT+F6:
+Binding(CTRL+SHIFT+F6,
+	ParameterizedCommand(Command(org.eclipse.ui.window.previousEditor,Previous Editor,
+		Switch to the previous editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@556ae220,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+F6,
+	ParameterizedCommand(Command(org.eclipse.ui.window.previousEditor,Previous Editor,
+		Switch to the previous editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@556ae220,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+F6:
+Binding(CTRL+F6,
+	ParameterizedCommand(Command(org.eclipse.ui.window.nextEditor,Next Editor,
+		Switch to the next editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2689b752,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F6,
+	ParameterizedCommand(Command(org.eclipse.ui.window.nextEditor,Next Editor,
+		Switch to the next editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2689b752,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+P:
+Binding(CTRL+P,
+	ParameterizedCommand(Command(org.eclipse.ui.file.print,Print,
+		Print,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@84eafc2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+P,
+	ParameterizedCommand(Command(org.eclipse.ui.file.print,Print,
+		Print,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@84eafc2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+SHIFT+F4:
+Binding(CTRL+SHIFT+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.closeAll,Close All,
+		Close all editors,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4440750,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.closeAll,Close All,
+		Close all editors,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4440750,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for F2:
+Binding(F2,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@63d9e1a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(F2,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@63d9e1a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+SHIFT+NUMPAD_MULTIPLY:
+Binding(CTRL+SHIFT+NUMPAD_MULTIPLY,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.expandAll,Expand All,
+		Expand the current tree,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6d658aa8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+NUMPAD_MULTIPLY,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.expandAll,Expand All,
+		Expand the current tree,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6d658aa8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+F7:
+Binding(CTRL+F7,
+	ParameterizedCommand(Command(org.eclipse.ui.window.nextView,Next View,
+		Switch to the next view,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10280879,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F7,
+	ParameterizedCommand(Command(org.eclipse.ui.window.nextView,Next View,
+		Switch to the next view,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10280879,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for ALT+-:
+Binding(ALT+-,
+	ParameterizedCommand(Command(org.eclipse.ui.window.showSystemMenu,Show System Menu,
+		Show the system menu,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3472f3ab,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+-,
+	ParameterizedCommand(Command(org.eclipse.ui.window.showSystemMenu,Show System Menu,
+		Show the system menu,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3472f3ab,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+SHIFT+F8:
+Binding(CTRL+SHIFT+F8,
+	ParameterizedCommand(Command(org.eclipse.ui.window.previousPerspective,Previous Perspective,
+		Switch to the previous perspective,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e557671,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+F8,
+	ParameterizedCommand(Command(org.eclipse.ui.window.previousPerspective,Previous Perspective,
+		Switch to the previous perspective,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e557671,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+N:
+Binding(CTRL+N,
+	ParameterizedCommand(Command(org.eclipse.ui.newWizard,New,
+		Open the New item wizard,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1f2497d9,
+		[Parameter(newWizardId,New Wizard,null,true)],,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+N,
+	ParameterizedCommand(Command(org.eclipse.ui.newWizard,New,
+		Open the New item wizard,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1f2497d9,
+		[Parameter(newWizardId,New Wizard,null,true)],,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+S:
+Binding(CTRL+S,
+	ParameterizedCommand(Command(org.eclipse.ui.file.save,Save,
+		Save the current contents,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4f1f2f84,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+S,
+	ParameterizedCommand(Command(org.eclipse.ui.file.save,Save,
+		Save the current contents,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4f1f2f84,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+.:
+Binding(CTRL+.,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.next,Next,
+		Navigate to the next item,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c537267,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+.,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.next,Next,
+		Navigate to the next item,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c537267,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+SHIFT+W:
+Binding(CTRL+SHIFT+W,
+	ParameterizedCommand(Command(org.eclipse.ui.file.closeAll,Close All,
+		Close all editors,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4440750,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+W,
+	ParameterizedCommand(Command(org.eclipse.ui.file.closeAll,Close All,
+		Close all editors,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4440750,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+SHIFT+F7:
+Binding(CTRL+SHIFT+F7,
+	ParameterizedCommand(Command(org.eclipse.ui.window.previousView,Previous View,
+		Switch to the previous view,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@19c06762,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+F7,
+	ParameterizedCommand(Command(org.eclipse.ui.window.previousView,Previous View,
+		Switch to the previous view,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@19c06762,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for ALT+ARROW_RIGHT:
+Binding(ALT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.forwardHistory,Forward History,
+		Move forward in the editor navigation history,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@22e1a1dc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.forwardHistory,Forward History,
+		Move forward in the editor navigation history,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@22e1a1dc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+E:
+Binding(CTRL+E,
+	ParameterizedCommand(Command(org.eclipse.ui.window.openEditorDropDown,Quick Switch Editor,
+		Open the editor drop down list,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14b4d90b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+E,
+	ParameterizedCommand(Command(org.eclipse.ui.window.openEditorDropDown,Quick Switch Editor,
+		Open the editor drop down list,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14b4d90b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+SHIFT+E:
+Binding(CTRL+SHIFT+E,
+	ParameterizedCommand(Command(org.eclipse.ui.window.switchToEditor,Switch to Editor,
+		Switch to an editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@638341b0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+E,
+	ParameterizedCommand(Command(org.eclipse.ui.window.switchToEditor,Switch to Editor,
+		Switch to an editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@638341b0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for CTRL+F:
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findReplace,Find and Replace,
+		Find and replace text,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7962c1d5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findReplace,Find and Replace,
+		Find and replace text,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7962c1d5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-04-13 09:25:43.572
+!MESSAGE A conflict occurred for ALT+ARROW_LEFT:
+Binding(ALT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.backwardHistory,Backward History,
+		Move backward in the editor navigation history,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@646c872a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.backwardHistory,Backward History,
+		Move backward in the editor navigation history,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@646c872a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:43.744
+!MESSAGE Conflicting handlers for org.eclipse.ui.newWizard: {org.eclipse.ui.internal.handlers.WizardHandler$New@37a1beb3} vs {org.eclipse.ui.internal.handlers.WizardHandler$New}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:43.759
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.import: {org.eclipse.ui.internal.handlers.WizardHandler$Import} vs {org.eclipse.ui.internal.handlers.WizardHandler$Import@7852ab30}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:43.759
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.export: {org.eclipse.ui.internal.handlers.WizardHandler$Export@65259737} vs {org.eclipse.ui.internal.handlers.WizardHandler$Export}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:43.759
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.newWindow: {org.eclipse.ui.internal.handlers.OpenInNewWindowHandler} vs {org.eclipse.ui.internal.handlers.OpenInNewWindowHandler@532ea86b}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:43.759
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.close: {org.eclipse.ui.internal.CloseEditorHandler} vs {org.eclipse.ui.internal.CloseEditorHandler@53d2b827}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:43.759
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.closeAll: {org.eclipse.ui.internal.CloseAllHandler} vs {org.eclipse.ui.internal.CloseAllHandler@35c95869}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:43.759
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.closeOthers: {org.eclipse.ui.internal.CloseOthersHandler@402676e3} vs {org.eclipse.ui.internal.CloseOthersHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.228
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.showViewMenu: {org.eclipse.ui.internal.ShowViewMenuHandler@9a37591} vs {org.eclipse.ui.internal.ShowViewMenuHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.228
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.showSystemMenu: {org.eclipse.ui.internal.ShowPartPaneMenuHandler} vs {org.eclipse.ui.internal.ShowPartPaneMenuHandler@208185c0}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.228
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.nextEditor: {org.eclipse.ui.internal.CycleEditorHandler@43549c6c} vs {org.eclipse.ui.internal.CycleEditorHandler:true}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.228
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.previousEditor: {org.eclipse.ui.internal.CycleEditorHandler:false} vs {org.eclipse.ui.internal.CycleEditorHandler@857f1a7}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.228
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.nextView: {org.eclipse.ui.internal.CycleViewHandler@333efb51} vs {org.eclipse.ui.internal.CycleViewHandler:true}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.228
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.previousView: {org.eclipse.ui.internal.CycleViewHandler@375ff309} vs {org.eclipse.ui.internal.CycleViewHandler:false}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.228
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.nextPerspective: {org.eclipse.ui.internal.CyclePerspectiveHandler@271a140c} vs {org.eclipse.ui.internal.CyclePerspectiveHandler:true}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.244
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.previousPerspective: {org.eclipse.ui.internal.CyclePerspectiveHandler@24563809} vs {org.eclipse.ui.internal.CyclePerspectiveHandler:false}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.244
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.activateEditor: {org.eclipse.ui.internal.ActivateEditorHandler} vs {org.eclipse.ui.internal.ActivateEditorHandler@3e149513}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.244
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.maximizePart: {org.eclipse.ui.internal.handlers.MaximizePartHandler@2ae08750} vs {org.eclipse.ui.internal.handlers.MaximizePartHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.244
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.minimizePart: {org.eclipse.ui.internal.handlers.MinimizePartHandler} vs {org.eclipse.ui.internal.handlers.MinimizePartHandler@13809363}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.244
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.switchToEditor: {org.eclipse.ui.internal.WorkbenchEditorsHandler} vs {org.eclipse.ui.internal.WorkbenchEditorsHandler@17fb5184}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.244
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.openEditorDropDown: {org.eclipse.ui.internal.WorkbookEditorsHandler} vs {org.eclipse.ui.internal.WorkbookEditorsHandler@665f88e1}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.244
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.customizePerspective: {org.eclipse.ui.internal.handlers.EditActionSetsHandler} vs {org.eclipse.ui.internal.handlers.EditActionSetsHandler@53d15034}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.244
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.closePerspective: {org.eclipse.ui.internal.handlers.ClosePerspectiveHandler@2d5e051e} vs {org.eclipse.ui.internal.handlers.ClosePerspectiveHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.244
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.closeAllPerspectives: {org.eclipse.ui.internal.handlers.CloseAllPerspectivesHandler@4d7c9b42} vs {org.eclipse.ui.internal.handlers.CloseAllPerspectivesHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:44.244
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.exit: {org.eclipse.ui.internal.handlers.QuitHandler@38a52072} vs {org.eclipse.ui.internal.handlers.QuitHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:48.588
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.maximizePart: {org.eclipse.ui.internal.handlers.MaximizePartHandler@2ae08750} vs {org.eclipse.ui.internal.handlers.MaximizePartHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:48.588
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.showSystemMenu: {org.eclipse.ui.internal.ShowPartPaneMenuHandler} vs {org.eclipse.ui.internal.ShowPartPaneMenuHandler@208185c0}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:48.588
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.nextView: {org.eclipse.ui.internal.CycleViewHandler@333efb51} vs {org.eclipse.ui.internal.CycleViewHandler:true}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:48.588
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.previousView: {org.eclipse.ui.internal.CycleViewHandler@375ff309} vs {org.eclipse.ui.internal.CycleViewHandler:false}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:48.588
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.closeAll: {org.eclipse.ui.internal.CloseAllHandler} vs {org.eclipse.ui.internal.CloseAllHandler@35c95869}
+
+!ENTRY org.eclipse.equinox.app 4 2 2021-04-13 09:25:48.869
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.app".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Shell.close(Shell.java:537)
+	at org.eclipse.ui.splash.AbstractSplashHandler.dispose(AbstractSplashHandler.java:63)
+	at org.eclipse.ui.splash.BasicSplashHandler.dispose(BasicSplashHandler.java:183)
+	at org.eclipse.ui.internal.Workbench$6$1.applicationRunning(Workbench.java:814)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle$1.run(EclipseAppHandle.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.applicationRunning(EclipseAppHandle.java:258)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1074)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:50.667
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.import: {org.eclipse.ui.internal.handlers.WizardHandler$Import} vs {org.eclipse.ui.internal.handlers.WizardHandler$Import@7852ab30}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:50.672
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.export: {org.eclipse.ui.internal.handlers.WizardHandler$Export@65259737} vs {org.eclipse.ui.internal.handlers.WizardHandler$Export}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:50.710
+!MESSAGE Conflicting handlers for org.eclipse.ui.newWizard: {org.eclipse.ui.internal.handlers.WizardHandler$New@37a1beb3} vs {org.eclipse.ui.internal.handlers.WizardHandler$New}
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-04-13 09:25:50.936
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\KB'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:52.385
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.openEditorDropDown: {org.eclipse.ui.internal.WorkbookEditorsHandler} vs {org.eclipse.ui.internal.WorkbookEditorsHandler@665f88e1}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:52.385
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.newEditor: {org.eclipse.ui.internal.handlers.NewEditorHandler@62159fd} vs {org.eclipse.ui.internal.handlers.NewEditorHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:52.385
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.closeAll: {org.eclipse.ui.internal.CloseAllHandler} vs {org.eclipse.ui.internal.CloseAllHandler@35c95869}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:52.386
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.previousEditor: {org.eclipse.ui.internal.CycleEditorHandler:false} vs {org.eclipse.ui.internal.CycleEditorHandler@857f1a7}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:52.386
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.nextEditor: {org.eclipse.ui.internal.CycleEditorHandler@43549c6c} vs {org.eclipse.ui.internal.CycleEditorHandler:true}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:52.387
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.close: {org.eclipse.ui.internal.CloseEditorHandler} vs {org.eclipse.ui.internal.CloseEditorHandler@53d2b827}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:52.387
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.maximizePart: {org.eclipse.ui.internal.handlers.MaximizePartHandler@2ae08750} vs {org.eclipse.ui.internal.handlers.MaximizePartHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:52.387
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.showSystemMenu: {org.eclipse.ui.internal.ShowPartPaneMenuHandler} vs {org.eclipse.ui.internal.ShowPartPaneMenuHandler@208185c0}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:52.388
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.nextView: {org.eclipse.ui.internal.CycleViewHandler@333efb51} vs {org.eclipse.ui.internal.CycleViewHandler:true}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:52.389
+!MESSAGE Conflicting handlers for org.eclipse.ui.window.previousView: {org.eclipse.ui.internal.CycleViewHandler@375ff309} vs {org.eclipse.ui.internal.CycleViewHandler:false}
+
+!ENTRY org.eclipse.ui 4 4 2021-04-13 09:25:54.412
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.properties: {org.eclipse.ui.internal.handlers.PropertyDialogHandler@746f8520} vs {org.eclipse.ui.internal.handlers.PropertyDialogHandler}
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2021-04-13 09:25:54.725
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
