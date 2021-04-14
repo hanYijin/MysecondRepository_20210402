@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\CommMenu.cs" />
     <Compile Include="Controll\CarControll.cs" />
     <Compile Include="Controll\CustControll.cs" />
     <Compile Include="Controll\SellControll.cs" />
+    <Compile Include="Controll\UnionControll.cs" />
     <Compile Include="Main\Program.cs" />
     <Compile Include="Model\Car.cs" />
     <Compile Include="Model\Customer.cs" />
@@ -57,8 +59,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Common\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

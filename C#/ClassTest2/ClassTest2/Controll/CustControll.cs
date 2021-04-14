@@ -10,8 +10,11 @@ namespace ClassTest2.Controll
 {
     class CustControll
     {
+        const int OLD_MODEL=0;
+        const int NEW_MODEL=1;
         List<Customer> list = new List<Customer>();
         RandData rand;
+        public CustControll() { }
         public CustControll(RandData rand)
         {
             this.rand = rand;
@@ -62,5 +65,26 @@ namespace ClassTest2.Controll
         {
             list.Add(cust);
         }
-    }
+        public void delCustItem(string name)
+        {
+            for(int i=0; i<list.Count; i++)
+            {
+                if(list[i].Name.Equals(name))
+                {
+                    list.RemoveAt(i);
+                    i--;
+                }
+            }
+        }
+        public void updataCustItem(string[] name)
+        {
+            for(int i=0; i<list.Count;i++)
+            {
+                if(list[i].Name.Equals(name[OLD_MODEL]))
+                {
+                    list[i].Name=name[NEW_MODEL];
+                }
+            }
+        }
+     }
 }

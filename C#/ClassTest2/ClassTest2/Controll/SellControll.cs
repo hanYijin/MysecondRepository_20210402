@@ -10,6 +10,8 @@ namespace ClassTest2.Controll
 {
     class SellControll
     {
+        const int OLD_MODEL=0;
+        const int NEW_MODEL=1;
         List<Seller> list = new List<Seller>();
         RandData rand = new RandData();
         public SellControll(RandData rand)
@@ -62,6 +64,27 @@ namespace ClassTest2.Controll
         public void addSellerItem(Seller sell)
         {
             list.Add(sell);
+        }
+        public void delsellItem(string name)
+        {
+            for(int i=0; i<list.Count;i++)
+            {
+                if(list[i].Name.Equals(name))
+                {
+                    list.RemoveAt(i);
+                    i--;
+                }
+            }
+        }
+        public void updataSellItem(string[] name)
+        {
+            for(int i=0;i<list.Count;i++)
+            {
+                if(list[i].Name.Equals(name[OLD_MODEL]))
+                {
+                    list[i].Name=name[NEW_MODEL];
+                }
+            }
         }
     }
 }
