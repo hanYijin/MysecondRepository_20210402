@@ -63,17 +63,17 @@ namespace ClassTest2.Util
         {
             return company[r.Next(4)];
         }
-        public void RandPrint()
-        {
-            Console.WriteLine("이름: {0}", getName());
-            Console.WriteLine("나이: {0}", getAge());
-            Console.WriteLine("성별: {0}", getGender());
-            Console.WriteLine("주소: {0}", getaddress());
-            Console.WriteLine(": {0}", getGender());
+        //public void RandPrint()
+        //{
+        //    Console.WriteLine("이름: {0}", getName());
+        //    Console.WriteLine("나이: {0}", getAge());
+        //    Console.WriteLine("성별: {0}", getGender());
+        //    Console.WriteLine("주소: {0}", getaddress());
+        //    Console.WriteLine(": {0}", getGender());
 
 
 
-        }
+        //}
     }
     
 }

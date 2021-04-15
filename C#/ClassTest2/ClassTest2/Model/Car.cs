@@ -28,7 +28,7 @@ namespace ClassTest2.Model
             company = "현대";
             price = "2천만원";
         }*/
-
+     
         public Car(string model, string color, string company, string price)//매배변수를 갖는 생성자 오버로딩 한것이다
         {
             this.model = model;

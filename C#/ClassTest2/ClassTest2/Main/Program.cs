@@ -24,12 +24,14 @@ namespace ClassTest2
                 switch (open.mainManu())
                 {
                     case Menu.MENU_MAIN_RAND:
-                        Console.WriteLine("랜덤 차량 데이터 생성합니다. ");                    
-                        uHandler.CarHandle.insrtRandData(open.getRandSize());
-                        Console.WriteLine("랜덤 고객 데이터 생성합니다.");
-                        uHandler.CustHandle.insrtRandCust(open.getRandSize());
-                        Console.WriteLine("랜덤 직원 데이터 생성합니다.");
-                        uHandler.SellHandle.insertRandSeller(open.getRandSize());
+                        //Console.WriteLine("랜덤 차량 데이터 생성합니다. ");                    
+                        //uHandler.CarHandle.insrtRandData(open.getRandSize());
+                        //Console.WriteLine("랜덤 고객 데이터 생성합니다.");
+                        //uHandler.CustHandle.insrtRandCust(open.getRandSize());
+                        //Console.WriteLine("랜덤 직원 데이터 생성합니다.");
+                        //uHandler.SellHandle.insertRandSeller(open.getRandSize());
+
+                        uHandler.insrtRandData(open.getRandSize());
                         break;
 
                     case Menu.MENU_MAIN_DEL_ALL:
@@ -40,12 +42,14 @@ namespace ClassTest2
                         break;
 
                     case Menu.MENU_MAIN_VIEW:
-                        Console.WriteLine("차량 데이터 출력합니다.");
-                        uHandler.CarHandle.carView();
-                        Console.WriteLine("고객 데이터 출력합니다.");
-                        uHandler.CustHandle.custView();
-                        Console.WriteLine("직원 데이터 출력합니다.");
-                        uHandler.SellHandle.selView();
+                        //Console.WriteLine("차량 데이터 출력합니다.");
+                        //uHandler.CarHandle.carView();
+                        //Console.WriteLine("고객 데이터 출력합니다.");
+                        //uHandler.CustHandle.custView();
+                        //Console.WriteLine("직원 데이터 출력합니다.");
+                        //uHandler.SellHandle.selView();
+
+                        uHandler.dealViewAll();
                         break;
 
                     case Menu.MENU_MAIN_ADD:
