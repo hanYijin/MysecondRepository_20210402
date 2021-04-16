@@ -13,7 +13,7 @@ namespace CustCar0415.Controll
         CarControll carHandle;
         CustControll custHandle;
         SellControll sellHandle;
-        static List<Deal<Car, Customer, Seller>> listun = new List<Deal<Car, Customer, Seller>>(); //제네릭 타입 선정
+        List<Deal<Car, Customer, Seller>> listun = new List<Deal<Car, Customer, Seller>>(); //제네릭 타입 선정
         RandData rand;
 
         public UnionControll(RandData rand)
@@ -34,6 +34,7 @@ namespace CustCar0415.Controll
         internal CarControll CarHandle { get => carHandle; set => carHandle = value; }
         internal CustControll CustHandle { get => custHandle; set => custHandle = value; }
         internal SellControll SellHandle { get => sellHandle; set => sellHandle = value; }
+
         //internal은 default C#에서 명시 않면 private , java는 default
 
         public void addItem(Deal<Car, Customer, Seller> deal) 
@@ -91,6 +92,10 @@ namespace CustCar0415.Controll
             }
             listun.Clear();
         }
-    
+        public UnionControll getUnion()
+        {
+            
+        }
+
     }
 }

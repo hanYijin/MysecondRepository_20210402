@@ -49,7 +49,7 @@ namespace CustCar0415
         {
 
             uHandler.dealViewAll();
-            new DealView().ShowDialog(); //Show()
+            new DealView(uHandler.listun).ShowDialog(); //Show()
         }
 
         private void dataAddBtn_Click(object sender, EventArgs e)
