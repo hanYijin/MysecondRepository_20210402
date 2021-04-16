@@ -14,7 +14,7 @@ namespace ClassTest2.Controll
         const int NEW_MODEL=1;
         List<Customer> list = new List<Customer>();
         RandData rand;
-        public CustControll() { }
+        
         public CustControll(RandData rand)
         {
             this.rand = rand;

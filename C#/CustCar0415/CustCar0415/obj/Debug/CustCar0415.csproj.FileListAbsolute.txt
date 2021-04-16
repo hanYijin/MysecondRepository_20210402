@@ -13,3 +13,4 @@ D:\MysecondRepository_20210402\C#\CustCar0415\CustCar0415\obj\Debug\CustCar0415.
 D:\MysecondRepository_20210402\C#\CustCar0415\CustCar0415\obj\Debug\CustCar0415.exe
 D:\MysecondRepository_20210402\C#\CustCar0415\CustCar0415\obj\Debug\CustCar0415.pdb
 D:\MysecondRepository_20210402\C#\CustCar0415\CustCar0415\obj\Debug\CustCar0415.csprojAssemblyReference.cache
+D:\MysecondRepository_20210402\C#\CustCar0415\CustCar0415\obj\Debug\CustCar0415.UI.DealView.resources

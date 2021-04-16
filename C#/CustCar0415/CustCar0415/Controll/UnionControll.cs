@@ -13,7 +13,7 @@ namespace CustCar0415.Controll
         CarControll carHandle;
         CustControll custHandle;
         SellControll sellHandle;
-        List<Deal<Car, Customer, Seller>> listun = new List<Deal<Car, Customer, Seller>>(); //제네릭 타입 선정
+        static List<Deal<Car, Customer, Seller>> listun = new List<Deal<Car, Customer, Seller>>(); //제네릭 타입 선정
         RandData rand;
 
         public UnionControll(RandData rand)
@@ -55,7 +55,7 @@ namespace CustCar0415.Controll
         {
             if (listun.Count == 0)
             {
-                Console.WriteLine("데이터가 존재하지 않습니다.");
+                Console.WriteLine("거래 데이터가 존재하지 않습니다.");
                 return;
             }
             for (int i = 0; i < listun.Count; i++)
@@ -70,7 +70,7 @@ namespace CustCar0415.Controll
         {
             if (listun.Count == 0)
             {
-                Console.WriteLine("데이터가 존재하지 않습니다.");
+                Console.WriteLine("거래 데이터가 존재하지 않습니다.");
                 return;
             }
             for (int i = 0; i < listun.Count; i++)
@@ -81,6 +81,15 @@ namespace CustCar0415.Controll
                 Console.WriteLine();
 
             }
+        }
+        public void removeAll()
+        {
+            if (listun.Count == 0) 
+            {
+                Console.WriteLine("거래 데이터가 존재하지 않습니다.");
+                return;
+            }
+            listun.Clear();
         }
     
     }
