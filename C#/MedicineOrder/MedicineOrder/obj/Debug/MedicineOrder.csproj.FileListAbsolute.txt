@@ -1,0 +1,4 @@
+C:\Users\gksdl\source\repos\MedicineOrder\MedicineOrder\obj\Debug\MedicineOrder.csprojAssemblyReference.cache
+C:\Users\gksdl\source\repos\MedicineOrder\MedicineOrder\obj\Debug\MedicineOrder.Properties.Resources.resources
+C:\Users\gksdl\source\repos\MedicineOrder\MedicineOrder\obj\Debug\MedicineOrder.csproj.GenerateResource.cache
+C:\Users\gksdl\source\repos\MedicineOrder\MedicineOrder\obj\Debug\MedicineOrder.csproj.CoreCompileInputs.cache
