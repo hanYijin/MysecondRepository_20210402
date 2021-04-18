@@ -10,6 +10,7 @@ namespace MedicineOrder.Controll
     class CustControll
     {
         List<Customer> list = new List<Customer>();
+        
         public void custAdd(Customer cust)
         {
             list.Add(cust);

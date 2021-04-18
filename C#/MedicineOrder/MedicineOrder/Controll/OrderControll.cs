@@ -1,4 +1,5 @@
 ﻿using MedicineOrder.Model;
+using MedicineOrder.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,12 @@ namespace MedicineOrder.Controll
         MediControll medicon;
         StoreControll storecon;
         List<Buying<Customer, Medicine, Store>> orderlist = new List<Buying<Customer, Medicine, Store>>();
-
+        MedicineData medicineData;
+        public OrderControll(MedicineData data) 
+        {
+            this.medicineData = data;
+        }
+        public OrderControll() { }
         public OrderControll(CustControll custcon, MediControll medicon, StoreControll storecon)
         {
             this.custcon = custcon;

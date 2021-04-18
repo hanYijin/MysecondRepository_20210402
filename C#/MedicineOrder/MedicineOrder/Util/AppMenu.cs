@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MedicineOrder.Util
 {
-    class Menu
+    class AppMenu
     {
         public const int MAIN_ADD_DATA = 1;
         public const int MAIN_VEIW_DATA = 2;

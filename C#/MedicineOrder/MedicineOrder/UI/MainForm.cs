@@ -1,4 +1,6 @@
 ﻿using MaterialSkin.Controls;
+using MedicineOrder.Controll;
+using MedicineOrder.UI;
 using MedicineOrder.Util;
 using System;
 using System.Collections.Generic;
@@ -19,6 +21,19 @@ namespace MedicineOrder
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new AddForm().ShowDialog();
+        }
+
+        private void viewBtn_Click(object sender, EventArgs e)
+        {
+            
+            MediControll mediControll = new MediControll();
+            mediControll.mediView();
+            
         }
     }
 }

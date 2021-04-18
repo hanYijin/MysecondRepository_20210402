@@ -11,4 +11,10 @@ D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\obj\Debug\Medicine
 D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\obj\Debug\MedicineOrder.csproj.CoreCompileInputs.cache
 D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\obj\Debug\MedicineOrder.exe
 D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\obj\Debug\MedicineOrder.pdb
-D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\obj\Debug\MedicineOrder.Form1.resources
+D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\bin\Debug\CxFlatUI.dll
+D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\bin\Debug\MaterialSkin.dll
+D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\bin\Debug\SunnyUI.Common.dll
+D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\bin\Debug\SunnyUI.dll
+D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\obj\Debug\MedicineOrder.UI.AddForm.resources
+D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\obj\Debug\MedicineOrder.MainForm.resources
+D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\obj\Debug\MedicineOrder.csproj.CopyComplete
