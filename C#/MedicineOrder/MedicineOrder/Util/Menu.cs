@@ -183,15 +183,16 @@ namespace MedicineOrder.Util
             Console.WriteLine("--------------------------------------------");
             Console.Write("검색할 고객 ID 입력: ");
             id[0] = Console.ReadLine();
-            Console.Write("변경할 고객 ID 입력: ");
+            Console.Write("변경할 고객  증상 입력: ");
             id[1] = Console.ReadLine();
+            
             return id;
         }
         public string[] updateMediMenu()
         {
             string[] pid = new string[5];
             Console.WriteLine("--------------------------------------------");
-            Console.WriteLine(">>>>>>>> 약품 데이터 수정 <<<<<<<<<");
+            Console.WriteLine(">>>>>>>>>> 약품 데이터 수정 <<<<<<<<<");
             Console.WriteLine("--------------------------------------------");
             Console.Write("검색할 제품 코드 입력: ");
             pid[0] = Console.ReadLine();
@@ -205,7 +206,43 @@ namespace MedicineOrder.Util
             pid[4] = Console.ReadLine();
             return pid;
         }
-
+        public string[] updateStoMenu()
+        {
+            string[] sto = new string[5];
+            Console.WriteLine("--------------------------------------------");
+            Console.WriteLine(">>>>>>>>>> 약국 데이터 수정 <<<<<<<<<");
+            Console.WriteLine("--------------------------------------------");
+            Console.Write("검색할 약국 상호명 입력: ");
+            sto[0] = Console.ReadLine();
+            Console.Write("변경된 약국 상호명 입력: ");
+            sto[1] = Console.ReadLine();
+            Console.Write("변경된  매니저 입력: ");
+            sto[2] = Console.ReadLine();
+            Console.Write("변경된 약국 주소 입력: ");
+            sto[3] = Console.ReadLine();
+            Console.Write("변경된 전화번호 입력: ");
+            sto[4] = Console.ReadLine();
+            return sto;
+        }
+        public int subMenu()
+        {
+            int sub = 0;
+            try
+            {
+                Console.WriteLine("--------------------------------------------");
+                Console.WriteLine(">>>>>>>> 하위 메뉴를 선택하세요 <<<<<<<<<");
+                Console.WriteLine("--------------------------------------------");
+                Console.WriteLine("1. 고객 정보");
+                Console.WriteLine("2. 약품 정보");
+                Console.WriteLine("3. 약국 정보");
+                Console.WriteLine("4. 종료 ");
+                sub = Convert.ToInt32(Console.ReadLine());
+            }catch(FormatException e)
+            {
+                Console.WriteLine("숫자로 입력해주세요", e.Message);
+            }
+            return sub;
+        }
     }
 
 }

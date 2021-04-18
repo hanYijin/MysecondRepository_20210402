@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MedicineOrder.Model
 {
-    class Baying<Cu,Me,St>
+    class Buying<Cu,Me,St>
     {
         private Cu cust;
         private Me medi;
@@ -14,7 +14,7 @@ namespace MedicineOrder.Model
         private string date;
         
 
-        public Baying(Cu cust, Me medi, St store, string date)
+        public Buying(Cu cust, Me medi, St store, string date)
         {
             this.cust = cust;
             this.medi = medi;
@@ -45,7 +45,7 @@ namespace MedicineOrder.Model
             return data;
         }
 
-        public void bayingInfo()
+        public void buyingInfo()
         {
             Customer customer = this.Customer as Customer;
             Medicine medicine = this.Medicine as Medicine;

@@ -14,6 +14,7 @@ namespace MedicineOrder.Model
         private string taking;
         private string price;
 
+        public Medicine() { }
         public Medicine(string pId, string mediName, string effect, string taking, string price)
         {
             this.pId = pId;
@@ -31,7 +32,7 @@ namespace MedicineOrder.Model
 
         public override string ToString()
         {
-            string data = ">>>>>>>>>>>>> 약품 정보 <<<<<<<<<<";
+            string data = ">>>>>>>>>>>>> 약품 정보 <<<<<<<<<<"+"\n";
             data += "제품 코드: " + pId + "\n";
             data += "약품명: " + mediName + "\n";
             data += "효과(증상): " + effect + "\n";

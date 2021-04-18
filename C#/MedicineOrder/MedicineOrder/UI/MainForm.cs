@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MaterialSkin.Controls;
+using MedicineOrder.Util;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +12,11 @@ using System.Windows.Forms;
 
 namespace MedicineOrder
 {
-    public partial class Form1 : Form
+    public partial class MainForm : MaterialForm
     {
-        public Form1()
+        MedicineData data = new MedicineData();
+            
+        public MainForm()
         {
             InitializeComponent();
         }
