@@ -36,6 +36,8 @@ namespace MedicineOrder
             this.delBtn = new System.Windows.Forms.Button();
             this.delAllBtn = new System.Windows.Forms.Button();
             this.updateBtn = new System.Windows.Forms.Button();
+            this.mainExitBtn = new Sunny.UI.UISymbolButton();
+            this.appInfo = new Sunny.UI.UISymbolButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,9 +45,10 @@ namespace MedicineOrder
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(111, 144);
+            this.pictureBox1.Location = new System.Drawing.Point(97, 115);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(355, 374);
+            this.pictureBox1.Size = new System.Drawing.Size(311, 299);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -55,9 +58,10 @@ namespace MedicineOrder
             this.viewBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.viewBtn.BackColor = System.Drawing.Color.LightSlateGray;
             this.viewBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.viewBtn.Location = new System.Drawing.Point(612, 223);
+            this.viewBtn.Location = new System.Drawing.Point(536, 178);
+            this.viewBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.viewBtn.Name = "viewBtn";
-            this.viewBtn.Size = new System.Drawing.Size(255, 83);
+            this.viewBtn.Size = new System.Drawing.Size(223, 66);
             this.viewBtn.TabIndex = 1;
             this.viewBtn.Text = "데이터 보기";
             this.viewBtn.UseVisualStyleBackColor = false;
@@ -68,9 +72,10 @@ namespace MedicineOrder
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.LightSlateGray;
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(612, 115);
+            this.button1.Location = new System.Drawing.Point(536, 92);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(255, 83);
+            this.button1.Size = new System.Drawing.Size(223, 66);
             this.button1.TabIndex = 2;
             this.button1.Text = "데이터 추가";
             this.button1.UseVisualStyleBackColor = false;
@@ -81,9 +86,10 @@ namespace MedicineOrder
             this.delBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.delBtn.BackColor = System.Drawing.Color.LightSlateGray;
             this.delBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.delBtn.Location = new System.Drawing.Point(612, 329);
+            this.delBtn.Location = new System.Drawing.Point(536, 263);
+            this.delBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.delBtn.Name = "delBtn";
-            this.delBtn.Size = new System.Drawing.Size(255, 83);
+            this.delBtn.Size = new System.Drawing.Size(223, 66);
             this.delBtn.TabIndex = 5;
             this.delBtn.Text = "데이터 삭제";
             this.delBtn.UseVisualStyleBackColor = false;
@@ -93,9 +99,10 @@ namespace MedicineOrder
             this.delAllBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.delAllBtn.BackColor = System.Drawing.Color.LightSlateGray;
             this.delAllBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.delAllBtn.Location = new System.Drawing.Point(612, 539);
+            this.delAllBtn.Location = new System.Drawing.Point(536, 431);
+            this.delAllBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.delAllBtn.Name = "delAllBtn";
-            this.delAllBtn.Size = new System.Drawing.Size(255, 83);
+            this.delAllBtn.Size = new System.Drawing.Size(223, 66);
             this.delAllBtn.TabIndex = 6;
             this.delAllBtn.Text = "데이터 초기화";
             this.delAllBtn.UseVisualStyleBackColor = false;
@@ -105,24 +112,66 @@ namespace MedicineOrder
             this.updateBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.updateBtn.BackColor = System.Drawing.Color.LightSlateGray;
             this.updateBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.updateBtn.Location = new System.Drawing.Point(612, 435);
+            this.updateBtn.Location = new System.Drawing.Point(536, 348);
+            this.updateBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(255, 83);
+            this.updateBtn.Size = new System.Drawing.Size(223, 66);
             this.updateBtn.TabIndex = 7;
             this.updateBtn.Text = "데이터 수정";
             this.updateBtn.UseVisualStyleBackColor = false;
             // 
+            // mainExitBtn
+            // 
+            this.mainExitBtn.BackColor = System.Drawing.Color.Transparent;
+            this.mainExitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainExitBtn.FillColor = System.Drawing.Color.LightCoral;
+            this.mainExitBtn.FillDisableColor = System.Drawing.Color.Transparent;
+            this.mainExitBtn.FillHoverColor = System.Drawing.Color.Maroon;
+            this.mainExitBtn.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.mainExitBtn.IsCircle = true;
+            this.mainExitBtn.Location = new System.Drawing.Point(884, 24);
+            this.mainExitBtn.MinimumSize = new System.Drawing.Size(1, 1);
+            this.mainExitBtn.Name = "mainExitBtn";
+            this.mainExitBtn.Size = new System.Drawing.Size(62, 57);
+            this.mainExitBtn.Style = Sunny.UI.UIStyle.Custom;
+            this.mainExitBtn.Symbol = 61457;
+            this.mainExitBtn.SymbolSize = 40;
+            this.mainExitBtn.TabIndex = 8;
+            this.mainExitBtn.Click += new System.EventHandler(this.mainExitBtn_Click);
+            // 
+            // appInfo
+            // 
+            this.appInfo.BackColor = System.Drawing.Color.Transparent;
+            this.appInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.appInfo.FillColor = System.Drawing.Color.LightSeaGreen;
+            this.appInfo.FillDisableColor = System.Drawing.Color.Transparent;
+            this.appInfo.FillHoverColor = System.Drawing.Color.DarkSlateGray;
+            this.appInfo.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.appInfo.IsCircle = true;
+            this.appInfo.Location = new System.Drawing.Point(816, 24);
+            this.appInfo.MinimumSize = new System.Drawing.Size(1, 1);
+            this.appInfo.Name = "appInfo";
+            this.appInfo.Size = new System.Drawing.Size(62, 57);
+            this.appInfo.Style = Sunny.UI.UIStyle.Custom;
+            this.appInfo.Symbol = 61736;
+            this.appInfo.SymbolSize = 40;
+            this.appInfo.TabIndex = 9;
+            this.appInfo.Click += new System.EventHandler(this.appInfo_Click);
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 707);
+            this.ClientSize = new System.Drawing.Size(946, 566);
+            this.Controls.Add(this.appInfo);
+            this.Controls.Add(this.mainExitBtn);
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.delAllBtn);
             this.Controls.Add(this.delBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.viewBtn);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "나혼자약산다 v1.0";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -138,6 +187,8 @@ namespace MedicineOrder
         private System.Windows.Forms.Button delBtn;
         private System.Windows.Forms.Button delAllBtn;
         private System.Windows.Forms.Button updateBtn;
+        private Sunny.UI.UISymbolButton mainExitBtn;
+        private Sunny.UI.UISymbolButton appInfo;
     }
 }
 

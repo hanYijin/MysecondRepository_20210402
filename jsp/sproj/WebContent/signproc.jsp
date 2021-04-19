@@ -8,16 +8,18 @@
 	String p_pw = (String)request.getParameter("pw");
 	String p_name = (String)request.getParameter("name");
 	String p_phone = (String)request.getParameter("phone");
-	
-	out.println("<br>");
-	out.println("p_id = "+ p_id);
-	out.println("<br>");
-	out.println("p_pw = "+ p_pw);
-	out.println("<br>");
-	out.println("p_name = "+ p_name);
-	out.println("<br>");
-	out.println("p_phone = "+ p_phone);
-	out.println("<br>");
+
+	String sucValue=null;
+
+// 	out.println("<br>");
+// 	out.println("p_id = "+ p_id);
+// 	out.println("<br>");
+// 	out.println("p_pw = "+ p_pw);
+// 	out.println("<br>");
+// 	out.println("p_name = "+ p_name);
+// 	out.println("<br>");
+// 	out.println("p_phone = "+ p_phone);
+// 	out.println("<br>");
 	
 	Connection conn = null;
 	PreparedStatement pstmt = null;
@@ -45,7 +47,8 @@
 		int ret = pstmt.executeUpdate();
 		if(ret > 0 ){
 			System.out.println("정상적으로 insert 되었습니다.");
-			out.println("<a href='Index.jsp'>로그인 페이지 이동</a>");
+			sucValue="<a class='btn btn-primary' href='Index.jsp'>로그인 페이지 이동</a>";
+			
 		}
 	}
 	catch(Exception e){
@@ -62,10 +65,24 @@
 	
 %>
 
-
-
-
-
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="jumbotron">
+		<h1>My Study</h1>
+		<p>공부하자!</p>
+		<%out.print(sucValue); %>
+	</div>
+</body>
+</html>
 
 
 

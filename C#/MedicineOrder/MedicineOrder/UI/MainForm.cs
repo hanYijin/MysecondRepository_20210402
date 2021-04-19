@@ -35,5 +35,15 @@ namespace MedicineOrder
             mediControll.mediView();
             
         }
+
+        private void mainExitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void appInfo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("상비약품 주문 앱 나혼자약산다 v1.0\n" + "2021년 04월 19일 by 한이진");
+        }
     }
 }
