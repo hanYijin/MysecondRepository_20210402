@@ -13,25 +13,25 @@
 <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class='jumbotron'>
+	<div class="jumbotron">
 		<h1>My Study</h1>
-		<h2>공부하려면 회원가입!</h2>
-		<form action ='Signproc.jsp' method='get'>
+		<p>공부하려면 회원가입!</p>
+		<form action="Signproc.jsp" method="get">
 		<div class="form-group">
-			<label for='id'>아이디</label>
-			<input type="text" name='id' class='form-control'/>
+			<label for="id">아이디</label>
+			<input type="text" name="id" class="form-control"/>
 		</div>
 		<div class="form-group">
-			<label for='pw'>비밀번호</label>
-			<input type="text" name='pw' class='form-control'/>
+			<label for="pw">비밀번호</label>
+			<input type="text" name="pw" class="form-control"/>
 		</div>
 		<div class="form-group">
-			<label for='name'>이름</label>
-			<input type="text" name='name' class='form-control'/>
+			<label for="name">이름</label>
+			<input type="text" name="name" class="form-control"/>
 		</div>
 		<div class="form-group">
-			<label for='phone'>전화번호</label>
-			<input type="text" name='phone' class='form-control'/>
+			<label for="phone">전화번호</label>
+			<input type="text" name="phone" class="form-control"/>
 		</div>
 		<input type="submit" value="회원가입" class="btn btn-primary"/>
 		</form>

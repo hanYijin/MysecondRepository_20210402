@@ -14,7 +14,7 @@
 	PreparedStatement pstmt=null;
 	
 	try{
-		Class.forName("oracle.jdbc.dirver.OracleDriver");
+		Class.forName("oracle.jdbc.driver.OracleDriver");
 		
 		conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "AI", "1234");
 		pstmt=conn.prepareStatement("INSERT INTO SPRO_MEMBER VALUES (SPROMEMBER.NEXTVAL,?,?,?,?)");

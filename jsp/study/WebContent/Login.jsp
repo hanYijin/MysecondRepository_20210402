@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
 <%@page import="study.com.org.DBManager"%>
+<%@page import="study.com.org.Member" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,10 +23,17 @@
 	String pw= request.getParameter("pw");
 	
 	DBManager dbm = new DBManager();
-	int ret = dbm.CkLogin(id,pw);
-	if(ret==0){
+	Member ret = dbm.CkLogin(id,pw);
+	if(ret !=null){
 		out.println("로그인 성공");
+		session.setAttribute("id",id);
+		session.setAttribute("pw",pw);
+		session.setAttribute("name",ret.getName());
+		session.setAttribute("phone",ret.getPhone());
+		out.println("세션에 저장 완료!");
+		out.println("<a href='Open.jsp' class='btn btn-primary'>메이페이지</a>");
+		
 	}else{
 		out.println("로그인 실패");
 	}
-	
+%>

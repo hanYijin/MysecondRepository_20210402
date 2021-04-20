@@ -29,7 +29,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
+<link rel="stylesheet" href="/sproj/css/mycss.css"/>
+<script type="text/javascript">
+	$('document').ready(function(){
+		$('#seatsel').on('click',function(){ 
+			location.href='seatsel.jsp';
+		} ) //익명함수
+	})
+</script>
 <body>
 	<div class="jumbotron">
 		<h1>My Study</h1>
@@ -43,10 +50,12 @@
 			<input type="password" class="form-control" id="pw">
 		</div>
 		<div class="row">
-			<input type="button" value="ID찾기" id="idsearch" class="btn btn-primary ml-2 mr-2"/> 
-			<input type="button" value="로그인" id="login" class="btn btn-primary mr-2"/>
-			<input type="button" value="회원가입" id="signin" class="btn btn-primary mr-2"/>
-			<input type="button" value="퇴실" id="outroom" class="btn btn-primary mr-2"/>
+			<input type="button" value="ID찾기" id="idsearch" class="btn btn-primary ml-2 mr-2"> 
+			<input type="button" value="로그인" id="login" class="btn btn-primary mr-2">
+			<input type="button" value="회원가입" id="signin" class="btn btn-primary mr-2">
+			<input type="button" value="좌석선택" id="seatsel" class="btn btn-primary mr-2">
+			<input type="button" value="시간충전" id="timecharge" class="btn btn-primary mr-2">
+			<input type="button" value="퇴실" id="outroom" class="btn btn-primary mr-2">
 		</div>
 	</div>
 
