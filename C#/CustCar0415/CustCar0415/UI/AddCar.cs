@@ -42,7 +42,7 @@ namespace CustCar0415.UI
             infoModel.ForeColor = Color.Red;
             switch (model)
             {
-                case "마세라티":
+                case "콰트로포르테":
                     pictureBox1.Image = Properties.Resources.ma_f;
                     pictureBox2.Image = Properties.Resources.ma_b;
                     pictureBox3.Image = Properties.Resources.ma_s;
