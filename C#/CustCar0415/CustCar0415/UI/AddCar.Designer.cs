@@ -55,7 +55,7 @@ namespace CustCar0415.UI
             this.comboModel.FillColor = System.Drawing.Color.White;
             this.comboModel.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.comboModel.Items.AddRange(new object[] {
-            "그랜져",
+            "J_500",
             "제네시스",
             "K8",
             "K7",

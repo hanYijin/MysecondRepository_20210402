@@ -48,7 +48,7 @@ namespace CustCar0415.UI
                     pictureBox3.Image = Properties.Resources.ma_s;
                     pictureBox4.Image = Properties.Resources.ma_i;
                     break;
-                case "제규어":
+                case "J_500":
                     pictureBox1.Image = Properties.Resources.je_f;
                     pictureBox2.Image = Properties.Resources.je_b;
                     pictureBox3.Image = Properties.Resources.ma_s;
