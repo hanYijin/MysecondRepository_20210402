@@ -1,4 +1,5 @@
-﻿using CustCar0415.Model;
+﻿using CustCar0415.Common;
+using CustCar0415.Model;
 using CustCar0415.Util;
 using System;
 using System.Collections.Generic;
@@ -8,90 +9,76 @@ using System.Threading.Tasks;
 
 namespace CustCar0415.Controll
 {
-    class CarControll
+    class CarControll : BaseControll // 상속 extends
     {
-        //클래스 변수
-        const int OLD_MODEL=0;
-        const int NEW_MODEL=1;
-        List<Car> list = new List<Car>();//using ClassTest2.Model;
-        RandData rand;
+        List<Car> listCar; //using ClassTest2.Model;
+
+        internal List<Car> ListCar { get => listCar; set => listCar = value; }
+
         public CarControll(RandData rand)//싱글톤: 하나의 객체를 생성하여 사용
         {
+            listItem = new List<object>();
+            listCar = listItem.Cast<Car>().ToList();
             this.rand = rand;
         }
-
-        public void insrtRandData(int count)
+        // 상속받고 메소드 오버라이딩
+        public override void insRandData(int count) //java @Override 어노테이션
         {
-            for(int i=0; i<count;i++)
+            for (int i = 0; i < count; i++)
             {
-                list.Add(new Car(rand.getModel(),rand.getColor(),rand.getCompany(),rand.getPrice()));
+                listCar.Add(new Car(rand.getModel(), rand.getColor(), rand.getCompany(), rand.getPrice()));
             }
         }
-        public void carView()
+        public override void itemView()
         {
-            if(list.Count==0)
+            if (listCar.Count == 0)
             {
                 Console.WriteLine("데이터가 존재하지 않습니다.");
                 return;
             }
-            for(int i =0; i<list.Count; i++)
+            for (int i = 0; i < listCar.Count; i++)
             {
                 Console.WriteLine("번호: " + (i + 1));
-                Console.WriteLine(list[i].ToString());
+                Console.WriteLine(listCar[i].ToString());
             }
-        }
-        public void carView2()
-        {
-            if(list.Count==0)
-            {
-                Console.WriteLine("데이터가 존재하지 않습니다.");
-                return;
-            }
-            for (int i = 0; i < list.Count; i++)
-            {
-                Console.WriteLine("번호: " + (i + 1));
-                list[i].printInfoCar();
-            }
-        }
-        public void removeAll()
-        {
-            if (list.Count == 0)
-            {
-                Console.WriteLine("데이터가 존재하지 않습니다.");
-                return;
-            }
-            list.Clear();//리스트를 비운다
-        }
-        public void addCarItem(Car car)//입력받아서 추가, menu.addcarMenu()에서 반환된 값추가
-            //addCarItem(menu.addCarMenu())
-        {
-            list.Add(car);
         }
 
-        public void delCarItem(string model)//차량 모델명을 매개변수로 받아 삭제
+        public override void removeAll()
         {
-            for(int i=0; i<list.Count; i++)
+            if (listCar.Count == 0)
             {
-                if (list[i].Model.Equals(model))
+                Console.WriteLine("데이터가 존재하지 않습니다.");
+                return;
+            }
+            listCar.Clear();//리스트를 비운다
+        }
+
+        public override void addItem(Object item)
+        {
+            listCar.Add(item as Car);// 형변환
+        }
+
+        public override void delItem(string item)
+        {
+            for (int i = 0; i < listCar.Count; i++)
+            {
+                if (listCar[i].Model.Equals(item))
                 {
-                    list.RemoveAt(i);//List의 RemoveAt(index); 해당 인덱스의 객체 삭제, 삭제된 후 재배열 
+                    listCar.RemoveAt(i);//List의 RemoveAt(index); 해당 인덱스의 객체 삭제, 삭제된 후 재배열 
                     i--;// 삭제되면서 배열이 앞으로 당겨진다 그러므로 다시 이전의 인덱스를 검사하도록 인덱스의 값을 -1한다 
                 }
             }
-               
         }
-       
-        public void updateCarItem(string[] model)//기존모델명, 수정 모델명
+
+        public override void updateItem(string[] item)
         {
-            for(int i=0;i<list.Count;i++)
+            for (int i = 0; i < listCar.Count; i++)
             {
-                if(list[i].Model.Equals(model[OLD_MODEL]))//기존모델명과 같으면
+                if (listCar[i].Model.Equals(item[CommMenu.OLD_MODEL]))//기존모델명과 같으면
                 {
-                    list[i].Model=model[NEW_MODEL];//
+                    listCar[i].Model = item[CommMenu.NEW_MODEL];//
                 }
             }
         }
-       
-
     }
 }

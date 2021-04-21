@@ -18,3 +18,4 @@ D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\bin\Debug\SunnyUI.
 D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\obj\Debug\MedicineOrder.UI.AddForm.resources
 D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\obj\Debug\MedicineOrder.MainForm.resources
 D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\obj\Debug\MedicineOrder.csproj.CopyComplete
+D:\MysecondRepository_20210402\C#\MedicineOrder\MedicineOrder\obj\Debug\MedicineOrder.UI.ViewData.resources

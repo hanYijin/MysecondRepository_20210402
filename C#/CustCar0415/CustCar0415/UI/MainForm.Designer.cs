@@ -62,9 +62,10 @@ namespace CustCar0415
             // 
             // randAddBtn
             // 
+            this.randAddBtn.BackColor = System.Drawing.Color.Turquoise;
             this.randAddBtn.Depth = 0;
             this.randAddBtn.Font = new System.Drawing.Font("휴먼둥근헤드라인", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.randAddBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.randAddBtn.ForeColor = System.Drawing.Color.Maroon;
             this.randAddBtn.Location = new System.Drawing.Point(0, 63);
             this.randAddBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.randAddBtn.Name = "randAddBtn";
@@ -72,14 +73,15 @@ namespace CustCar0415
             this.randAddBtn.Size = new System.Drawing.Size(128, 52);
             this.randAddBtn.TabIndex = 1;
             this.randAddBtn.Text = "랜덤데이터 추가";
-            this.randAddBtn.UseVisualStyleBackColor = true;
+            this.randAddBtn.UseVisualStyleBackColor = false;
             this.randAddBtn.Click += new System.EventHandler(this.randAddBtn_Click);
             // 
             // dataUpdateBtn
             // 
+            this.dataUpdateBtn.BackColor = System.Drawing.Color.Turquoise;
             this.dataUpdateBtn.Depth = 0;
             this.dataUpdateBtn.Font = new System.Drawing.Font("휴먼둥근헤드라인", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.dataUpdateBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.dataUpdateBtn.ForeColor = System.Drawing.Color.Maroon;
             this.dataUpdateBtn.Location = new System.Drawing.Point(499, 63);
             this.dataUpdateBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.dataUpdateBtn.Name = "dataUpdateBtn";
@@ -87,14 +89,15 @@ namespace CustCar0415
             this.dataUpdateBtn.Size = new System.Drawing.Size(128, 52);
             this.dataUpdateBtn.TabIndex = 2;
             this.dataUpdateBtn.Text = "데이터 수정";
-            this.dataUpdateBtn.UseVisualStyleBackColor = true;
+            this.dataUpdateBtn.UseVisualStyleBackColor = false;
             this.dataUpdateBtn.Click += new System.EventHandler(this.dataUpdateBtn_Click);
             // 
             // dataALLBtn
             // 
+            this.dataALLBtn.BackColor = System.Drawing.Color.Turquoise;
             this.dataALLBtn.Depth = 0;
             this.dataALLBtn.Font = new System.Drawing.Font("휴먼둥근헤드라인", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.dataALLBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.dataALLBtn.ForeColor = System.Drawing.Color.Maroon;
             this.dataALLBtn.Location = new System.Drawing.Point(250, 63);
             this.dataALLBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.dataALLBtn.Name = "dataALLBtn";
@@ -102,14 +105,15 @@ namespace CustCar0415
             this.dataALLBtn.Size = new System.Drawing.Size(128, 52);
             this.dataALLBtn.TabIndex = 3;
             this.dataALLBtn.Text = "데이터 보기";
-            this.dataALLBtn.UseVisualStyleBackColor = true;
+            this.dataALLBtn.UseVisualStyleBackColor = false;
             this.dataALLBtn.Click += new System.EventHandler(this.dataALLBtn_Click);
             // 
             // dataAddBtn
             // 
+            this.dataAddBtn.BackColor = System.Drawing.Color.Turquoise;
             this.dataAddBtn.Depth = 0;
             this.dataAddBtn.Font = new System.Drawing.Font("휴먼둥근헤드라인", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.dataAddBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.dataAddBtn.ForeColor = System.Drawing.Color.Maroon;
             this.dataAddBtn.Location = new System.Drawing.Point(374, 63);
             this.dataAddBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.dataAddBtn.Name = "dataAddBtn";
@@ -117,15 +121,15 @@ namespace CustCar0415
             this.dataAddBtn.Size = new System.Drawing.Size(128, 52);
             this.dataAddBtn.TabIndex = 4;
             this.dataAddBtn.Text = "데이터 추가";
-            this.dataAddBtn.UseVisualStyleBackColor = true;
+            this.dataAddBtn.UseVisualStyleBackColor = false;
             this.dataAddBtn.Click += new System.EventHandler(this.dataAddBtn_Click);
             // 
             // randDelBtn
             // 
-            this.randDelBtn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.randDelBtn.BackColor = System.Drawing.Color.Turquoise;
             this.randDelBtn.Depth = 0;
             this.randDelBtn.Font = new System.Drawing.Font("휴먼둥근헤드라인", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.randDelBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.randDelBtn.ForeColor = System.Drawing.Color.Maroon;
             this.randDelBtn.Location = new System.Drawing.Point(125, 63);
             this.randDelBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.randDelBtn.Name = "randDelBtn";
@@ -158,8 +162,9 @@ namespace CustCar0415
             // 
             // dataDelBtn
             // 
+            this.dataDelBtn.BackColor = System.Drawing.Color.Turquoise;
             this.dataDelBtn.Depth = 0;
-            this.dataDelBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.dataDelBtn.ForeColor = System.Drawing.Color.Maroon;
             this.dataDelBtn.Location = new System.Drawing.Point(624, 63);
             this.dataDelBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.dataDelBtn.Name = "dataDelBtn";
@@ -167,7 +172,7 @@ namespace CustCar0415
             this.dataDelBtn.Size = new System.Drawing.Size(128, 52);
             this.dataDelBtn.TabIndex = 7;
             this.dataDelBtn.Text = "데이터 삭제";
-            this.dataDelBtn.UseVisualStyleBackColor = true;
+            this.dataDelBtn.UseVisualStyleBackColor = false;
             this.dataDelBtn.Click += new System.EventHandler(this.dataDelBtn_Click);
             // 
             // help
@@ -205,15 +210,16 @@ namespace CustCar0415
             // 
             this.mainTitle.BackColor = System.Drawing.Color.Transparent;
             this.mainTitle.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.mainTitle.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.mainTitle.Location = new System.Drawing.Point(12, 28);
+            this.mainTitle.ForeColor = System.Drawing.Color.AliceBlue;
+            this.mainTitle.Location = new System.Drawing.Point(12, 12);
             this.mainTitle.MinimumSize = new System.Drawing.Size(1, 1);
             this.mainTitle.Name = "mainTitle";
             this.mainTitle.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
             this.mainTitle.Size = new System.Drawing.Size(189, 29);
             this.mainTitle.Style = Sunny.UI.UIStyle.Custom;
+            this.mainTitle.StyleCustomMode = true;
             this.mainTitle.Symbol = 57601;
-            this.mainTitle.SymbolColor = System.Drawing.Color.RoyalBlue;
+            this.mainTitle.SymbolColor = System.Drawing.Color.DarkOrange;
             this.mainTitle.TabIndex = 10;
             this.mainTitle.Text = "고객차랑관리앱 v1.1";
             // 
@@ -242,6 +248,7 @@ namespace CustCar0415
             // MainWin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.Turquoise;
             this.ClientSize = new System.Drawing.Size(887, 598);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -256,6 +263,7 @@ namespace CustCar0415
             this.Controls.Add(this.dataUpdateBtn);
             this.Controls.Add(this.randAddBtn);
             this.Controls.Add(this.carPic);
+            this.ForeColor = System.Drawing.Color.Maroon;
             this.Name = "MainWin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.MainWin_Load);

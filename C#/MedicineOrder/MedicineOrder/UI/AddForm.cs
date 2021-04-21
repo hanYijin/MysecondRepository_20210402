@@ -24,17 +24,18 @@ namespace MedicineOrder.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            orderControll.Custcon.custAdd(menu.addCustMenu());
+            orderControll.Custcon.addItem(menu.addCustMenu());
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            orderControll.Medicon.mediAdd(menu.addMediMenu());
+            orderControll.Medicon.addItem(menu.addMediMenu());
         }
 
         private void stoAddBtn_Click(object sender, EventArgs e)
         {
-            orderControll.Storecon.storeAdd(menu.addStoreMenu());
+            orderControll.Storecon.addItem(menu.addStoreMenu());
         }
+        
     }
 }

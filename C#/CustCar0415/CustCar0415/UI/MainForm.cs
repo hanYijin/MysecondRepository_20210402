@@ -1,6 +1,7 @@
 ﻿using CustCar0415.Controll;
 using CustCar0415.UI;
 using CustCar0415.Util;
+using MaterialSkin;
 using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
@@ -18,10 +19,13 @@ namespace CustCar0415
     public partial class MainWin : MaterialForm //자식 : 부모 => 상속관계
     {
         MyMenu menu = new MyMenu();
-        UnionControll uHandler = new UnionControll(new RandData());
+        UnionControll uHandler = new UnionControll(new RandData()); //싱글톤
         public MainWin()
         {
             InitializeComponent();//form 초기화
+            var msMgr = MaterialSkinManager.Instance;
+            msMgr.Theme = MaterialSkinManager.Themes.LIGHT;
+            msMgr.ColorScheme = new ColorScheme(Primary.LightBlue500, Primary.LightBlue500, Primary.LightBlue500, Accent.LightBlue200, TextShade.WHITE);
 
         }//삭제 ctrl+z
         private void mainExit_Click(object sender, EventArgs e)//이벤드 핸들러
@@ -37,7 +41,7 @@ namespace CustCar0415
         private void randAddBtn_Click(object sender, EventArgs e)
         {
             string size = myInputBox("랜덤하게 생성할 데이터 개수를 입력하세요.", "랜덤 데이터 추가", "0");
-            uHandler.insrtRandData(Convert.ToInt32(size));
+            uHandler.insRandData(Convert.ToInt32(size));
         }
         
         private void randDelBtn_Click(object sender, EventArgs e)
@@ -47,15 +51,12 @@ namespace CustCar0415
 
         private void dataALLBtn_Click(object sender, EventArgs e)
         {
-
-            uHandler.dealViewAll();
-            new DealView(uHandler.listun).ShowDialog(); //Show()
+            uHandler.itemViewAll();
+            new DealView(uHandler).ShowDialog(); //Show()
+           
         }
 
-        private void dataAddBtn_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void dataUpdateBtn_Click(object sender, EventArgs e)
         {
@@ -78,12 +79,6 @@ namespace CustCar0415
             PrivateFontCollection pFont = new PrivateFontCollection();
             pFont.AddFontFile("THE_Nyuseusokbo.ttf");
             Font font = new Font(pFont.Families[0], 16f);
-            //randAddBtn.Font = font;
-            //randDelBtn.Font = font;
-            //dataAddBtn.Font = font;
-            //dataALLBtn.Font = font;
-            //dataUpdateBtn.Font = font;
-            //dataDelBtn.Font = font;
 
             foreach(var n in btnArr)
             {
@@ -94,7 +89,12 @@ namespace CustCar0415
 
         private void MainWin_Load(object sender, EventArgs e)
         {
-            initFont(); //생성자를 통하면 빠르게 실행 또는 Main
+            //initFont(); //생성자를 통하면 빠르게 실행 또는 Main
+        }
+
+        private void dataAddBtn_Click(object sender, EventArgs e)
+        {
+            new AddCar().ShowDialog();
         }
     }
 }

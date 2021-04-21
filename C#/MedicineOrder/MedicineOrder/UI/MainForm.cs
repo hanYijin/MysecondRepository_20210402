@@ -23,17 +23,17 @@ namespace MedicineOrder
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void addDataBtn_Click(object sender, EventArgs e)
         {
             new AddForm().ShowDialog();
         }
 
         private void viewBtn_Click(object sender, EventArgs e)
         {
-            
-            MediControll mediControll = new MediControll();
-            mediControll.mediView();
-            
+
+            new ViewData().ShowDialog();
+
+
         }
 
         private void mainExitBtn_Click(object sender, EventArgs e)

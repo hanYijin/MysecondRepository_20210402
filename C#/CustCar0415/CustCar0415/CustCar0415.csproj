@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\BaseControll.cs" />
     <Compile Include="Common\CommMenu.cs" />
     <Compile Include="Controll\CarControll.cs" />
     <Compile Include="Controll\CustControll.cs" />
@@ -74,6 +75,17 @@
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\Deal.cs" />
     <Compile Include="Model\Seller.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddCar.Designer.cs">
+      <DependentUpon>AddCar.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\DealView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,13 +104,12 @@
     <Compile Include="Util\RandData.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="UI\AddCar.resx">
+      <DependentUpon>AddCar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\DealView.resx">
       <DependentUpon>DealView.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,8 +145,21 @@
     <Content Include="ReadMePng\类库上右键.png" />
     <Content Include="Resource\1.jpg" />
     <Content Include="Resource\105000423.1.jpg" />
+    <None Include="Resource\2020011501998_4.jpg" />
     <Content Include="Resource\226E24485188547D1F.jpg" />
     <Content Include="Resource\60204_121598_410.jpg" />
+    <None Include="Resource\다운로드 %281%29.jpg" />
+    <None Include="Resource\다운로드 %282%29.jpg" />
+    <None Include="Resource\다운로드.jpg" />
+    <None Include="Resource\image_readtop_2017_856960_15144084663150670.jpg" />
+    <None Include="Resource\637304068537302886VY.jpg" />
+    <None Include="Resource\637305102909904985LF.jpg" />
+    <None Include="Resource\637308509486473792JN.jpg" />
+    <None Include="Resource\637308518844917356BJ.jpg" />
+    <None Include="Resource\genesis-kr-gallery-g80-exterior-gallery-05-desktop-1920x960-ko.jpg" />
+    <None Include="Resource\genesis-kr-gallery-g80-exterior-gallery-06-desktop-1920x960-ko.jpg" />
+    <None Include="Resource\genesis-kr-gallery-g80-exterior-gallery-07-desktop-1920x960-ko.jpg" />
+    <None Include="Resource\genesis-kr-gallery-g80-interior-gallery-15-desktop-1920x960-ko.jpg" />
     <Content Include="Resource\마세라티.jpg" />
   </ItemGroup>
   <ItemGroup />

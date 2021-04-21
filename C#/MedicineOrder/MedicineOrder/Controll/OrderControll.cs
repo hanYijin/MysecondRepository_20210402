@@ -1,4 +1,5 @@
-﻿using MedicineOrder.Model;
+﻿using MedicineOrder.Common;
+using MedicineOrder.Model;
 using MedicineOrder.Util;
 using System;
 using System.Collections.Generic;
@@ -8,18 +9,17 @@ using System.Threading.Tasks;
 
 namespace MedicineOrder.Controll
 {
-    class OrderControll
+    class OrderControll : BaseControll
     {
         CustControll custcon;
         MediControll medicon;
         StoreControll storecon;
-        List<Buying<Customer, Medicine, Store>> orderlist = new List<Buying<Customer, Medicine, Store>>();
-        MedicineData medicineData;
-        public OrderControll(MedicineData data) 
+        List<Buying<Customer, Medicine, Store>> orderlist;
+        public OrderControll()
         {
-            this.medicineData = data;
+            listItme = new List<object>();
+            orderlist = listItme.Cast<Buying<Customer, Medicine, Store>>().ToList();
         }
-        public OrderControll() { }
         public OrderControll(CustControll custcon, MediControll medicon, StoreControll storecon)
         {
             this.custcon = custcon;
@@ -30,12 +30,7 @@ namespace MedicineOrder.Controll
         internal CustControll Custcon { get => custcon; set => custcon = value; }
         internal MediControll Medicon { get => medicon; set => medicon = value; }
         internal StoreControll Storecon { get => storecon; set => storecon = value; }
-
-        public void orderAdd(Buying<Customer,Medicine,Store>order)
-        {
-            orderlist.Add(order);
-            Console.WriteLine("거래 내역 데이터가 추가되었습니다.");
-        }
+        internal List<Buying<Customer, Medicine, Store>> Orderlist { get => orderlist; set => orderlist = value; }
         public void orderView()
         {
             if(orderlist.Count==0)
@@ -49,7 +44,13 @@ namespace MedicineOrder.Controll
                 Console.WriteLine("----------------------------------------------------");
             }
         }
-        public void orderSimpleView()
+        public override void addItem(object item)
+        {
+            orderlist.Add(item as Buying<Customer,Medicine,Store>);
+            Console.WriteLine("거래 내역 데이터가 추가되었습니다.");
+        }
+
+        public override void viewItem()
         {
             if (orderlist.Count == 0)
             {
@@ -62,7 +63,18 @@ namespace MedicineOrder.Controll
                 Console.WriteLine("----------------------------------------------------");
             }
         }
-        public void orderDellAll()
+
+        public override void dealItem(string item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void updataItem(string[] item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void delAll()
         {
             if (orderlist.Count == 0)
             {

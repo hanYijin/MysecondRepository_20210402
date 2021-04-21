@@ -32,7 +32,7 @@ namespace MedicineOrder
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.viewBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.addDataBtn = new System.Windows.Forms.Button();
             this.delBtn = new System.Windows.Forms.Button();
             this.delAllBtn = new System.Windows.Forms.Button();
             this.updateBtn = new System.Windows.Forms.Button();
@@ -67,19 +67,19 @@ namespace MedicineOrder
             this.viewBtn.UseVisualStyleBackColor = false;
             this.viewBtn.Click += new System.EventHandler(this.viewBtn_Click);
             // 
-            // button1
+            // addDataBtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.LightSlateGray;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(536, 92);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(223, 66);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "데이터 추가";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.addDataBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.addDataBtn.BackColor = System.Drawing.Color.LightSlateGray;
+            this.addDataBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.addDataBtn.Location = new System.Drawing.Point(536, 92);
+            this.addDataBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addDataBtn.Name = "addDataBtn";
+            this.addDataBtn.Size = new System.Drawing.Size(223, 66);
+            this.addDataBtn.TabIndex = 2;
+            this.addDataBtn.Text = "데이터 추가";
+            this.addDataBtn.UseVisualStyleBackColor = false;
+            this.addDataBtn.Click += new System.EventHandler(this.addDataBtn_Click);
             // 
             // delBtn
             // 
@@ -129,7 +129,7 @@ namespace MedicineOrder
             this.mainExitBtn.FillHoverColor = System.Drawing.Color.Maroon;
             this.mainExitBtn.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.mainExitBtn.IsCircle = true;
-            this.mainExitBtn.Location = new System.Drawing.Point(884, 24);
+            this.mainExitBtn.Location = new System.Drawing.Point(872, 34);
             this.mainExitBtn.MinimumSize = new System.Drawing.Size(1, 1);
             this.mainExitBtn.Name = "mainExitBtn";
             this.mainExitBtn.Size = new System.Drawing.Size(62, 57);
@@ -148,7 +148,7 @@ namespace MedicineOrder
             this.appInfo.FillHoverColor = System.Drawing.Color.DarkSlateGray;
             this.appInfo.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.appInfo.IsCircle = true;
-            this.appInfo.Location = new System.Drawing.Point(816, 24);
+            this.appInfo.Location = new System.Drawing.Point(798, 34);
             this.appInfo.MinimumSize = new System.Drawing.Size(1, 1);
             this.appInfo.Name = "appInfo";
             this.appInfo.Size = new System.Drawing.Size(62, 57);
@@ -168,7 +168,7 @@ namespace MedicineOrder
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.delAllBtn);
             this.Controls.Add(this.delBtn);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.addDataBtn);
             this.Controls.Add(this.viewBtn);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -183,7 +183,7 @@ namespace MedicineOrder
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button viewBtn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button addDataBtn;
         private System.Windows.Forms.Button delBtn;
         private System.Windows.Forms.Button delAllBtn;
         private System.Windows.Forms.Button updateBtn;

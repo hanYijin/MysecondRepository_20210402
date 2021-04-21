@@ -42,6 +42,9 @@ namespace CustCar0415.UI
             this.dealSmRP = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.dealSm = new Sunny.UI.UIDataGridView();
             this.dealSmExit = new Sunny.UI.UISymbolButton();
+            this.uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
+            this.dealviewLabel2 = new Sunny.UI.UISymbolLabel();
+            this.viewLabel3 = new Sunny.UI.UISymbolLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dealSm)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +60,7 @@ namespace CustCar0415.UI
             this.dealSmRP});
             this.dealSmListView.FullRowSelect = true;
             this.dealSmListView.HideSelection = false;
-            this.dealSmListView.Location = new System.Drawing.Point(42, 134);
+            this.dealSmListView.Location = new System.Drawing.Point(42, 106);
             this.dealSmListView.Name = "dealSmListView";
             this.dealSmListView.Size = new System.Drawing.Size(794, 215);
             this.dealSmListView.TabIndex = 0;
@@ -71,37 +74,31 @@ namespace CustCar0415.UI
             // dealSmModel
             // 
             this.dealSmModel.Text = "Model";
-            this.dealSmModel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dealSmModel.Width = 111;
             // 
             // dealSmPrice
             // 
             this.dealSmPrice.Text = "price";
-            this.dealSmPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dealSmPrice.Width = 98;
             // 
             // dealSmName
             // 
             this.dealSmName.Text = "CustomerName";
-            this.dealSmName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dealSmName.Width = 113;
             // 
             // dealSmSeller
             // 
             this.dealSmSeller.Text = "Seller";
-            this.dealSmSeller.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dealSmSeller.Width = 99;
             // 
             // dealSmDate
             // 
             this.dealSmDate.Text = "Date";
-            this.dealSmDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dealSmDate.Width = 170;
             // 
             // dealSmRP
             // 
             this.dealSmRP.Text = "RealPrice";
-            this.dealSmRP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dealSmRP.Width = 137;
             // 
             // dealSm
@@ -144,26 +141,79 @@ namespace CustCar0415.UI
             this.dealSmExit.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.dealSmExit.ForeHoverColor = System.Drawing.Color.Brown;
             this.dealSmExit.IsCircle = true;
-            this.dealSmExit.Location = new System.Drawing.Point(819, 70);
+            this.dealSmExit.Location = new System.Drawing.Point(819, 45);
             this.dealSmExit.MinimumSize = new System.Drawing.Size(1, 1);
             this.dealSmExit.Name = "dealSmExit";
             this.dealSmExit.Size = new System.Drawing.Size(56, 49);
             this.dealSmExit.Style = Sunny.UI.UIStyle.Custom;
             this.dealSmExit.Symbol = 61536;
+            this.dealSmExit.SymbolSize = 35;
             this.dealSmExit.TabIndex = 2;
             this.dealSmExit.Click += new System.EventHandler(this.dealSmExit_Click);
+            // 
+            // uiSymbolLabel1
+            // 
+            this.uiSymbolLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.uiSymbolLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.uiSymbolLabel1.Location = new System.Drawing.Point(270, 28);
+            this.uiSymbolLabel1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolLabel1.Name = "uiSymbolLabel1";
+            this.uiSymbolLabel1.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel1.Size = new System.Drawing.Size(324, 31);
+            this.uiSymbolLabel1.Style = Sunny.UI.UIStyle.Custom;
+            this.uiSymbolLabel1.Symbol = 61442;
+            this.uiSymbolLabel1.SymbolColor = System.Drawing.Color.Maroon;
+            this.uiSymbolLabel1.TabIndex = 3;
+            this.uiSymbolLabel1.Text = "차량 고객 관리 정보";
+            // 
+            // dealviewLabel2
+            // 
+            this.dealviewLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.dealviewLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.dealviewLabel2.ForeColor = System.Drawing.Color.Teal;
+            this.dealviewLabel2.Location = new System.Drawing.Point(42, 78);
+            this.dealviewLabel2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.dealviewLabel2.Name = "dealviewLabel2";
+            this.dealviewLabel2.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.dealviewLabel2.Size = new System.Drawing.Size(150, 22);
+            this.dealviewLabel2.Style = Sunny.UI.UIStyle.Custom;
+            this.dealviewLabel2.Symbol = 57483;
+            this.dealviewLabel2.SymbolColor = System.Drawing.Color.Gray;
+            this.dealviewLabel2.TabIndex = 4;
+            this.dealviewLabel2.Text = "고객거래 정보";
+            // 
+            // viewLabel3
+            // 
+            this.viewLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.viewLabel3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.viewLabel3.ForeColor = System.Drawing.Color.Indigo;
+            this.viewLabel3.Location = new System.Drawing.Point(42, 327);
+            this.viewLabel3.MinimumSize = new System.Drawing.Size(1, 1);
+            this.viewLabel3.Name = "viewLabel3";
+            this.viewLabel3.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.viewLabel3.Size = new System.Drawing.Size(150, 22);
+            this.viewLabel3.Style = Sunny.UI.UIStyle.Custom;
+            this.viewLabel3.Symbol = 61454;
+            this.viewLabel3.SymbolColor = System.Drawing.Color.DimGray;
+            this.viewLabel3.TabIndex = 5;
+            this.viewLabel3.Text = "거래 상세 정보";
             // 
             // DealView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(887, 598);
+            this.ControlBox = false;
+            this.Controls.Add(this.viewLabel3);
+            this.Controls.Add(this.dealviewLabel2);
+            this.Controls.Add(this.uiSymbolLabel1);
             this.Controls.Add(this.dealSmExit);
             this.Controls.Add(this.dealSm);
             this.Controls.Add(this.dealSmListView);
             this.Name = "DealView";
+            this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "데이터 보기";
             this.Load += new System.EventHandler(this.DealView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dealSm)).EndInit();
             this.ResumeLayout(false);
@@ -182,5 +232,8 @@ namespace CustCar0415.UI
         private System.Windows.Forms.ColumnHeader dealSmSeller;
         private System.Windows.Forms.ColumnHeader dealSmDate;
         private System.Windows.Forms.ColumnHeader dealSmRP;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel1;
+        private Sunny.UI.UISymbolLabel dealviewLabel2;
+        private Sunny.UI.UISymbolLabel viewLabel3;
     }
 }

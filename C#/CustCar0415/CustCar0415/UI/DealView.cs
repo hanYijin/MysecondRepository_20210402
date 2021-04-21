@@ -1,4 +1,5 @@
-﻿using CustCar0415.Controll;
+﻿using CustCar0415.Common;
+using CustCar0415.Controll;
 using CustCar0415.Model;
 using MaterialSkin.Controls;
 using System;
@@ -13,13 +14,17 @@ using System.Windows.Forms;
 
 namespace CustCar0415.UI
 {
-    public partial class DealView : MaterialForm
+    partial class DealView : MaterialForm
     {
-        List<Deal<Car, Customer, Seller>> deals = new List<Deal<Car, Customer, Seller>>();
-        public DealView(List<Deal<Car, Customer, Seller>> deals)
+        UnionControll uhandler;
+        public DealView()
+        {
+            InitializeComponent();   
+        }
+        public DealView(UnionControll uhandler)
         {
             InitializeComponent();
-            this.deals = deals;
+            this.uhandler = uhandler;
             
         }
         private void DealView_Load(object sender, EventArgs e)
@@ -28,15 +33,16 @@ namespace CustCar0415.UI
         }
         private void initDealListView()
         {
+            List<Deal<Car, Customer, Seller>> list = uhandler.Listun;
             
-            string[] data = { "1", "그랜저", "4천만원", "홍길동", "전우치", "2021년4월16일", "3천8백만원" };
-            dealSmListView.Items.Add(new ListViewItem(data));
-            for(int i=0; i<50;i++)
+            for(int i=0; i<list.Count;i++)
             {
                 dealSmListView.Items.Add(new ListViewItem(
                     new string[]
                     {
-                        (i+2).ToString(),"그랜저","4천만원","홍길동","전우치","2021년04월16일","3천8백만원"
+                        (i+1).ToString(),list[i].Car.Model,
+                        list[i].Car.Price,list[i].Customer.Name,
+                        list[i].Seller.Name,list[i].Date,list[i].Price
                     }));
             }
             setRowColor(Color.White, Color.LightGray);
@@ -44,6 +50,7 @@ namespace CustCar0415.UI
             dealSmListView.Items[index].Selected = true;//열 선택
             dealSmListView.Items[index].Focused = true;// 선택 열 포커스 맞춰줌 
             dealSmListView.EnsureVisible(index);
+            CommMenu.ColorListViewHeader(ref dealSmListView, Color.AliceBlue, Color.AntiqueWhite);
         }
         
         private void dealSmExit_Click(object sender, EventArgs e)
@@ -65,6 +72,7 @@ namespace CustCar0415.UI
                     
             }
         }
-
+        
+        
     }
 }

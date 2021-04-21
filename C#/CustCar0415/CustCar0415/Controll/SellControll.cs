@@ -1,4 +1,5 @@
-﻿using CustCar0415.Model;
+﻿using CustCar0415.Common;
+using CustCar0415.Model;
 using CustCar0415.Util;
 using System;
 using System.Collections.Generic;
@@ -8,81 +9,75 @@ using System.Threading.Tasks;
 
 namespace CustCar0415.Controll
 {
-    class SellControll
+    class SellControll : BaseControll
     {
-        const int OLD_MODEL=0;
-        const int NEW_MODEL=1;
-        List<Seller> list = new List<Seller>();
-        RandData rand = new RandData();
+        List<Seller> listSell;
+
+        internal List<Seller> ListSell { get => listSell; set => listSell = value; }
+
         public SellControll(RandData rand)
         {
+            listItem = new List<object>();
+            listSell = listItem.Cast<Seller>().ToList();
             this.rand = rand;
         }
-
-        public void insertRandSeller(int count)
+        public override void insRandData(int count)
         {
+
             for (int i = 0; i < count; i++)
             {
-                list.Add(new Seller(rand.getName(), rand.getTel(),rand.getLevel(),rand.getOffice()));
+                listSell.Add(new Seller(rand.getName(), rand.getTel(), rand.getLevel(), rand.getOffice()));
             }
         }
-        public void selView()
+
+        public override void itemView()
         {
-            if (list.Count == 0)
+            if (listSell.Count == 0)
             {
                 Console.WriteLine("데이터가 존재하지 않습니다.");
                 return;
             }
-            for (int i=0; i<list.Count;i++)
+            for (int i = 0; i < listSell.Count; i++)
             {
                 Console.WriteLine("직원 번호: " + (i + 1));
-                Console.WriteLine(list[i].ToString());
+                Console.WriteLine(listSell[i].ToString());
             }
         }
-        public void selView2()
+
+        public override void removeAll()
         {
-            if (list.Count == 0)
+            if (listSell.Count == 0)
             {
                 Console.WriteLine("데이터가 존재하지 않습니다.");
                 return;
             }
-            for (int i=0; i<list.Count;i++)
-            {
-                Console.WriteLine("직원 번호: " + (i + 1));
-                list[i].SellerInfo();
-            }
+            listSell.Clear();
         }
-        public void removeAll() 
+
+        public override void addItem(object item)
         {
-            if (list.Count == 0)
-            {
-                Console.WriteLine("데이터가 존재하지 않습니다.");
-                return;
-            }
-            list.Clear();
+            listSell.Add(item as Seller);
         }
-        public void addSellerItem(Seller sell)
+
+        public override void delItem(string item)
         {
-            list.Add(sell);
-        }
-        public void delsellItem(string name)
-        {
-            for(int i=0; i<list.Count;i++)
+            for (int i = 0; i < listSell.Count; i++)
             {
-                if(list[i].Name.Equals(name))
+                if (listSell[i].Name.Equals(item))
                 {
-                    list.RemoveAt(i);
+                    listSell.RemoveAt(i);
                     i--;
                 }
             }
         }
-        public void updataSellItem(string[] name)
+
+        public override void updateItem(string[] item)
         {
-            for(int i=0;i<list.Count;i++)
+            for (int i = 0; i < listSell.Count; i++)
             {
-                if(list[i].Name.Equals(name[OLD_MODEL]))
+                if (listSell[i].Name.Equals(item[CommMenu.OLD_MODEL]))
                 {
-                    list[i].Name=name[NEW_MODEL];
+                    listSell[i].Name = item[CommMenu.NEW_MODEL];
                 }
             }
         }

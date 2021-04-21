@@ -1,4 +1,5 @@
-﻿using CustCar0415.Model;
+﻿using CustCar0415.Common;
+using CustCar0415.Model;
 using CustCar0415.Util;
 using System;
 using System.Collections.Generic;
@@ -8,83 +9,88 @@ using System.Threading.Tasks;
 
 namespace CustCar0415.Controll
 {
-    class CustControll
+    class CustControll : BaseControll
     {
-        const int OLD_MODEL=0;
-        const int NEW_MODEL=1;
-        List<Customer> list = new List<Customer>();
-        RandData rand;
-        public CustControll() { }
+        
+        List<Customer> listCust;
+
+        internal List<Customer> ListCust { get => listCust; set => listCust = value; }
+
         public CustControll(RandData rand)
         {
+            listItem = new List<object>();
+            listCust = listItem.Cast<Customer>().ToList();
             this.rand = rand;
         }
-        public void insrtRandCust(int count)
+        public void updataCustItem(string[] name)
         {
-            for(int i=0; i<count;i++)
+            for(int i=0; i< listCust.Count;i++)
             {
-                list.Add(new Customer(rand.getName(), rand.getAge(), rand.getTel(), rand.getaddress(), rand.getGender()));
-            }
-        }
-        public void custView()
-        {
-            if (list.Count == 0)
-            {
-                Console.WriteLine("데이터가 존재하지 않습니다.");
-                return;
-            }
-            for (int i=0; i<list.Count;i++)
-            {
-                Console.WriteLine("고객번호: " + (i + 1));
-                Console.WriteLine(list[i].ToString());
-            }
-        }
-        public void custView2()
-        {
-            if (list.Count == 0)
-            {
-                Console.WriteLine("데이터가 존재하지 않습니다.");
-                return;
-            }
-            for (int i=0; i<list.Count;i++)
-            {
-                Console.WriteLine("고객번호: " + (i + 1));
-                list[i].CustomerInfo();
-            }
-        }
-        public void removeAll()
-        {
-            if(list.Count==0)
-            {
-                Console.WriteLine("데이터가 존재하지 않습니다.");
-                return;
-            }
-            list.Clear();
-        }
-        public void addCustItem(Customer cust)
-        {
-            list.Add(cust);
-        }
-        public void delCustItem(string name)
-        {
-            for(int i=0; i<list.Count; i++)
-            {
-                if(list[i].Name.Equals(name))
+                if(listCust[i].Name.Equals(name[CommMenu.OLD_MODEL]))
                 {
-                    list.RemoveAt(i);
+                    listCust[i].Name=name[CommMenu.NEW_MODEL];
+                }
+            }
+        }
+
+        public override void insRandData(int count)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                listCust.Add(new Customer(rand.getName(), rand.getAge(), rand.getTel(), rand.getaddress(), rand.getGender()));
+            }
+        }
+
+        public override void itemView()
+        {
+            if (listCust.Count == 0)
+            {
+                Console.WriteLine("데이터가 존재하지 않습니다.");
+                return;
+            }
+            for (int i = 0; i < listCust.Count; i++)
+            {
+                Console.WriteLine("고객번호: " + (i + 1));
+                Console.WriteLine(listCust[i].ToString());
+            }
+        }
+
+        public override void removeAll()
+        {
+            if (listCust.Count == 0)
+            {
+                Console.WriteLine("데이터가 존재하지 않습니다.");
+                return;
+            }
+            listCust.Clear();
+        }
+
+        public override void addItem(object item)
+        {
+            listCust.Add(item as Customer);
+        }
+
+        public override void delItem(string item)
+        {
+            for (int i = 0; i < listCust.Count; i++)
+            {
+                if (listCust[i].Name.Equals(item))
+                {
+                    listCust.RemoveAt(i);//RemoveAt(i--);
                     i--;
                 }
             }
         }
-        public void updataCustItem(string[] name)
+
+        public override void updateItem(string[] item)
         {
-            for(int i=0; i<list.Count;i++)
+            for (int i = 0; i < listCust.Count; i++)
             {
-                if(list[i].Name.Equals(name[OLD_MODEL]))
+                if (listCust[i].Name.Equals(item[CommMenu.OLD_MODEL]))
                 {
-                    list[i].Name=name[NEW_MODEL];
+                    listCust[i].Name = item[CommMenu.NEW_MODEL];
                 }
             }
         }
-     }
+    }
 }

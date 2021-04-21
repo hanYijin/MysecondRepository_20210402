@@ -1,4 +1,5 @@
-﻿using MedicineOrder.Model;
+﻿using MedicineOrder.Common;
+using MedicineOrder.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,60 +8,70 @@ using System.Threading.Tasks;
 
 namespace MedicineOrder.Controll
 {
-    class StoreControll
+    class StoreControll : BaseControll
     {
-        List<Store> list = new List<Store>();
-        public void storeAdd(Store sto)
+        List<Store> listSto;
+
+        internal List<Store> ListSto { get => listSto; set => listSto = value; }
+        public StoreControll()
         {
-            list.Add(sto);
+            listItme = new List<object>();
+            listSto = listItme.Cast<Store>().ToList();
+        }
+        public override void addItem(object item)
+        {
+            listSto.Add(item as Store);
             Console.WriteLine("약국 데이터를 추가하였습니다.");
         }
-        public void storeView()
+
+        public override void viewItem()
         {
-            if (list.Count == 0)
+
+            if (listSto.Count == 0)
             {
                 Console.WriteLine("데이터가 존재하지 않습니다.");
                 return;
             }
-            for(int i = 0; i < list.Count; i++)
+            for (int i = 0; i < listSto.Count; i++)
             {
                 Console.WriteLine((i + 1) + "번");
-                Console.WriteLine(list[i].ToString());
+                Console.WriteLine(listSto[i].ToString());
             }
+        }
 
-        }
-        public void storeDel(string sto)
+        public override void dealItem(string item)
         {
-            for(int i=0;i<list.Count;i++)
+            for (int i = 0; i < listSto.Count; i++)
             {
-                if (list[i].StoName.Equals(sto))
+                if (listSto[i].StoName.Equals(item))
                 {
-                    list.RemoveAt(i);
-                    i--;
+                    listSto.RemoveAt(i--);
                 }
             }
         }
-        public void storeUpdate(string[] sto)
+
+        public override void updataItem(string[] item)
         {
-            for(int i=0; i < list.Count; i++)
+            for (int i = 0; i < listSto.Count; i++)
             {
-                if (list[i].StoName.Equals(sto[0]))
+                if (listSto[i].StoName.Equals(item[0]))
                 {
-                    list[i].StoName = sto[1];
-                    list[i].Manager = sto[2];
-                    list[i].Address = sto[3];
-                    list[i].Phone = sto[4];
+                    listSto[i].StoName = item[1];
+                    listSto[i].Manager = item[2];
+                    listSto[i].Address = item[3];
+                    listSto[i].Phone = item[4];
                 }
             }
         }
-        public void stoDellAll()
+
+        public override void delAll()
         {
-            if (list.Count == 0)
+            if (listSto.Count == 0)
             {
                 Console.WriteLine("데이터가 존재하지 않습니다.");
                 return;
             }
-            list.Clear();
+            listSto.Clear();
             Console.WriteLine("모든 약국 정보를 삭제했습니다.");
         }
     }

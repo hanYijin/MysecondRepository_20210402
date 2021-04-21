@@ -1,4 +1,5 @@
-﻿using MedicineOrder.Model;
+﻿using MedicineOrder.Common;
+using MedicineOrder.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,57 +8,68 @@ using System.Threading.Tasks;
 
 namespace MedicineOrder.Controll
 {
-    class CustControll
+    class CustControll : BaseControll
     {
-        List<Customer> list = new List<Customer>();
-        
-        public void custAdd(Customer cust)
+        List<Customer> listcust;
+
+        internal List<Customer> Listcust { get => listcust; set => listcust = value; }
+        public CustControll()
         {
-            list.Add(cust);
+            listItme = new List<Object>();
+            listcust = listItme.Cast<Customer>().ToList();
+        }
+        public override void addItem(Object item)
+        {
+
+            listcust.Add(item as Customer);
             Console.WriteLine("고객 정보 추가 완료!");
-        } 
-        public void custView()
+        }
+
+        public override void viewItem()
         {
-            if (list.Count == 0)
+            if (listcust.Count == 0)
             {
                 Console.WriteLine("고객 데이터가 존재하지 않습니다.");
                 return;
             }
-            for(int i=0; i<list.Count;i++)
+            for (int i = 0; i < listcust.Count; i++)
             {
                 Console.WriteLine((i + 1) + "번 고객");
-                Console.WriteLine(list[i].ToString());
+                Console.WriteLine(listcust[i].ToString());
             }
         }
-        public void custDel(string id)
+
+        public override void dealItem(string item)
         {
-            for (int i =0; i<list.Count;i++)
+            for (int i = 0; i < listcust.Count; i++)
             {
-                if(list[i].CustId.Equals(id))
+                if (listcust[i].CustId.Equals(item))
                 {
-                    list.RemoveAt(i);
+                    listcust.RemoveAt(i);
                     i--;
                 }
             }
         }
-        public void custUpdate(string[] data)// 고객 증상 수정
+
+        public override void updataItem(string[] item)
         {
-            for(int i = 0; i < list.Count; i++)
+            for (int i = 0; i < listcust.Count; i++)
             {
-                if (list[i].CustId.Equals(data[0]))
+                if (listcust[i].CustId.Equals(item[0]))
                 {
-                    list[i].CustSymptom = data[1];
+                    listcust[i].CustSymptom = item[1];
                 }
             }
         }
-        public void custDellAll()
+
+        public override void delAll()
         {
-            if (list.Count == 0)
+            if (listcust.Count == 0)
             {
                 Console.WriteLine("데이터가 존재하지 않습니다.");
                 return;
             }
-            list.Clear();
+            listcust.Clear();
             Console.WriteLine("모든 고객 정보를 삭제했습니다.");
         }
     }
