@@ -16,8 +16,8 @@ namespace MedicineOrder
 {
     public partial class MainForm : MaterialForm
     {
-        MedicineData data = new MedicineData();
-            
+        OrderControll order = new OrderControll();
+           
         public MainForm()
         {
             InitializeComponent();
@@ -30,8 +30,8 @@ namespace MedicineOrder
 
         private void viewBtn_Click(object sender, EventArgs e)
         {
-
-            new ViewData().ShowDialog();
+            order.Medicon.viewItem();
+            new ViewData(order).ShowDialog();
 
 
         }

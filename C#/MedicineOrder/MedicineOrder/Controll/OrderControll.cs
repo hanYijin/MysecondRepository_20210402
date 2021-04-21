@@ -15,10 +15,14 @@ namespace MedicineOrder.Controll
         MediControll medicon;
         StoreControll storecon;
         List<Buying<Customer, Medicine, Store>> orderlist;
+        
         public OrderControll()
         {
             listItme = new List<object>();
             orderlist = listItme.Cast<Buying<Customer, Medicine, Store>>().ToList();
+            custcon = new CustControll();
+            medicon = new MediControll();
+            storecon = new StoreControll();
         }
         public OrderControll(CustControll custcon, MediControll medicon, StoreControll storecon)
         {

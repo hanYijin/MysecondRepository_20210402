@@ -30,12 +30,12 @@ namespace MedicineOrder.UI
         private void InitializeComponent()
         {
             this.listView1 = new System.Windows.Forms.ListView();
-            this.dataViewLable2 = new Sunny.UI.UISymbolLabel();
             this.colPname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colMediName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colEffect = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colTaking = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataViewLable2 = new Sunny.UI.UISymbolLabel();
             this.dataViewClose = new Sunny.UI.UISymbolButton();
             this.SuspendLayout();
             // 
@@ -48,28 +48,13 @@ namespace MedicineOrder.UI
             this.colTaking,
             this.colPrice});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(39, 104);
+            this.listView1.Location = new System.Drawing.Point(45, 130);
+            this.listView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(868, 216);
+            this.listView1.Size = new System.Drawing.Size(991, 269);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // dataViewLable2
-            // 
-            this.dataViewLable2.BackColor = System.Drawing.Color.Transparent;
-            this.dataViewLable2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.dataViewLable2.ForeColor = System.Drawing.Color.DarkRed;
-            this.dataViewLable2.Location = new System.Drawing.Point(39, 70);
-            this.dataViewLable2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.dataViewLable2.Name = "dataViewLable2";
-            this.dataViewLable2.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.dataViewLable2.Size = new System.Drawing.Size(136, 28);
-            this.dataViewLable2.Style = Sunny.UI.UIStyle.Custom;
-            this.dataViewLable2.Symbol = 105;
-            this.dataViewLable2.SymbolColor = System.Drawing.Color.CadetBlue;
-            this.dataViewLable2.TabIndex = 1;
-            this.dataViewLable2.Text = "약품 정보 목록";
             // 
             // colPname
             // 
@@ -100,31 +85,51 @@ namespace MedicineOrder.UI
             this.colPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colPrice.Width = 150;
             // 
+            // dataViewLable2
+            // 
+            this.dataViewLable2.BackColor = System.Drawing.Color.Transparent;
+            this.dataViewLable2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.dataViewLable2.ForeColor = System.Drawing.Color.DarkRed;
+            this.dataViewLable2.Location = new System.Drawing.Point(45, 88);
+            this.dataViewLable2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataViewLable2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.dataViewLable2.Name = "dataViewLable2";
+            this.dataViewLable2.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.dataViewLable2.Size = new System.Drawing.Size(155, 35);
+            this.dataViewLable2.Style = Sunny.UI.UIStyle.Custom;
+            this.dataViewLable2.Symbol = 105;
+            this.dataViewLable2.SymbolColor = System.Drawing.Color.CadetBlue;
+            this.dataViewLable2.TabIndex = 1;
+            this.dataViewLable2.Text = "약품 정보 목록";
+            // 
             // dataViewClose
             // 
             this.dataViewClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dataViewClose.FillColor = System.Drawing.Color.DarkRed;
             this.dataViewClose.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.dataViewClose.Location = new System.Drawing.Point(904, 30);
+            this.dataViewClose.Location = new System.Drawing.Point(1033, 38);
+            this.dataViewClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataViewClose.MinimumSize = new System.Drawing.Size(1, 1);
             this.dataViewClose.Name = "dataViewClose";
             this.dataViewClose.RectColor = System.Drawing.Color.Gray;
-            this.dataViewClose.Size = new System.Drawing.Size(30, 28);
+            this.dataViewClose.Size = new System.Drawing.Size(34, 35);
             this.dataViewClose.Style = Sunny.UI.UIStyle.Custom;
             this.dataViewClose.Symbol = 61453;
             this.dataViewClose.TabIndex = 2;
             this.dataViewClose.Click += new System.EventHandler(this.dataViewClose_Click);
             // 
-            // DataView
+            // ViewData
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 566);
+            this.ClientSize = new System.Drawing.Size(1081, 708);
             this.Controls.Add(this.dataViewClose);
             this.Controls.Add(this.dataViewLable2);
             this.Controls.Add(this.listView1);
-            this.Name = "DataView";
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "ViewData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Load += new System.EventHandler(this.ViewData_Load);
             this.ResumeLayout(false);
 
         }

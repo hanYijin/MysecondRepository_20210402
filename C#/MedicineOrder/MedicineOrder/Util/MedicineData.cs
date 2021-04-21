@@ -9,18 +9,13 @@ namespace MedicineOrder.Util
 {
     class MedicineData
     {
-        List<Medicine> headache = new List<Medicine>();
-        List<Medicine> cold = new List<Medicine>();
-        List<Medicine> stomachache = new List<Medicine>();
-        List<Medicine> muscleache = new List<Medicine>();
-        List<Medicine> skin = new List<Medicine>();
-        //private string headache;
-        //private string cold;
-        //private string stomachache;
-        //private string muscleache;
-        //private string skin;
+        List<Medicine> headache=new List<Medicine>();
+        List<Medicine> cold= new List<Medicine>();
+        List<Medicine> stomachache=new List<Medicine>();
+        List<Medicine> muscleache=new List<Medicine>();
+        List<Medicine> skin=new List<Medicine>();
 
-
+ 
 
         public MedicineData()
         {

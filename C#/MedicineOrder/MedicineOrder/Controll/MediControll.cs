@@ -12,9 +12,7 @@ namespace MedicineOrder.Controll
     class MediControll : BaseControll
     {
         List<Medicine> listMedi;
-       
-        MedicineData mediData;
-
+ 
         internal List<Medicine> ListMedi { get => listMedi; set => listMedi = value; }
 
         public MediControll()
