@@ -37,7 +37,7 @@ namespace CustCar0415.UI
         {
             InitializeComponent();
             ucAddCar = new UcAddCar(uHandler,this); //this 자신 클래스, base 상위 클래스
-            ucAddCust = new UcAddCust(uHandler);
+            ucAddCust = new UcAddCust(uHandler,this);
             ucAddSell = new UcAddSell(uHandler);
             centerLayout.Controls.Add(ucAddCar);
             centerLayout.Dock = DockStyle.Fill;
