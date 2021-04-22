@@ -169,7 +169,7 @@ namespace CustCar0415.UI
             this.infoColor.Name = "infoColor";
             this.infoColor.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
             this.infoColor.Size = new System.Drawing.Size(179, 42);
-            this.infoColor.Symbol = 61947;
+            this.infoColor.Symbol = 61948;
             this.infoColor.TabIndex = 10;
             this.infoColor.Text = "색상";
             this.infoColor.Click += new System.EventHandler(this.infoColor_Click);
@@ -288,6 +288,7 @@ namespace CustCar0415.UI
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(887, 598);
+            this.ControlBox = false;
             this.Controls.Add(this.addCarExit);
             this.Controls.Add(this.addCarOK);
             this.Controls.Add(this.addCarCancel);
@@ -305,7 +306,6 @@ namespace CustCar0415.UI
             this.Controls.Add(this.comboModel);
             this.Name = "AddCar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "차량 정보 추가";
             this.Load += new System.EventHandler(this.AddCar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

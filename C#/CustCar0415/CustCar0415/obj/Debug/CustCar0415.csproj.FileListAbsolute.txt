@@ -15,3 +15,8 @@ D:\MysecondRepository_20210402\C#\CustCar0415\CustCar0415\obj\Debug\CustCar0415.
 D:\MysecondRepository_20210402\C#\CustCar0415\CustCar0415\obj\Debug\CustCar0415.csprojAssemblyReference.cache
 D:\MysecondRepository_20210402\C#\CustCar0415\CustCar0415\obj\Debug\CustCar0415.UI.DealView.resources
 D:\MysecondRepository_20210402\C#\CustCar0415\CustCar0415\obj\Debug\CustCar0415.UI.AddCar.resources
+D:\MysecondRepository_20210402\C#\CustCar0415\CustCar0415\obj\Debug\CustCar0415.UI.AddCust.resources
+D:\MysecondRepository_20210402\C#\CustCar0415\CustCar0415\obj\Debug\CustCar0415.UI.AddData.resources
+D:\MysecondRepository_20210402\C#\CustCar0415\CustCar0415\obj\Debug\CustCar0415.UI.UcAddCar.resources
+D:\MysecondRepository_20210402\C#\CustCar0415\CustCar0415\obj\Debug\CustCar0415.UI.UcAddCust.resources
+D:\MysecondRepository_20210402\C#\CustCar0415\CustCar0415\obj\Debug\CustCar0415.UI.UcAddSell.resources

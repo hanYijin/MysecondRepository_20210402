@@ -94,7 +94,7 @@ namespace CustCar0415
 
         private void dataAddBtn_Click(object sender, EventArgs e)
         {
-            new AddCar().ShowDialog();
+            new AddData(uHandler).ShowDialog();
         }
     }
 }
