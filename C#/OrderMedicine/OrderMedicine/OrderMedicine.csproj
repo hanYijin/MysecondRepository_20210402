@@ -90,6 +90,12 @@
     <Compile Include="UI\StoMain.Designer.cs">
       <DependentUpon>StoMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\UcAddCust.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UcAddCust.Designer.cs">
+      <DependentUpon>UcAddCust.cs</DependentUpon>
+    </Compile>
     <Compile Include="Util\AppMenu.cs" />
     <Compile Include="Util\MedicineData.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\StoMain.resx">
       <DependentUpon>StoMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UcAddCust.resx">
+      <DependentUpon>UcAddCust.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
