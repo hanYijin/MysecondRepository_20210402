@@ -96,6 +96,12 @@
     <Compile Include="UI\UcAddCust.Designer.cs">
       <DependentUpon>UcAddCust.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\UcCustOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UcCustOrder.Designer.cs">
+      <DependentUpon>UcCustOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Util\AppMenu.cs" />
     <Compile Include="Util\MedicineData.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -106,6 +112,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UI\CustMain.resx">
       <DependentUpon>CustMain.cs</DependentUpon>
@@ -118,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\UcAddCust.resx">
       <DependentUpon>UcAddCust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UcCustOrder.resx">
+      <DependentUpon>UcCustOrder.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -143,6 +153,20 @@
     <Content Include="ReadMePng\Options.png" />
     <Content Include="ReadMePng\类库上右键.png" />
     <Content Include="Resource\나혼자 약사유.png" />
+    <None Include="Resource\훼스탈플러스정.jpg" />
+    <None Include="Resource\훼스탈골드정.jpg" />
+    <None Include="Resource\후시딘히드로연고.jpg" />
+    <None Include="Resource\판피린티정.jpg" />
+    <None Include="Resource\판콜에이내복액.jpg" />
+    <None Include="Resource\타이레놀정160mg.jpg" />
+    <None Include="Resource\타이레놀정 500mg.jpg" />
+    <None Include="Resource\제일쿨파프.jpg" />
+    <None Include="Resource\어린이타이레놀현탁액.jpg" />
+    <None Include="Resource\어린이용타이레놀정 80mg.jpg" />
+    <None Include="Resource\신신파스아렉스.jpg" />
+    <None Include="Resource\복합마데카솔연고.jpg" />
+    <None Include="Resource\베아제정.jpg" />
+    <None Include="Resource\닥터베아제정.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

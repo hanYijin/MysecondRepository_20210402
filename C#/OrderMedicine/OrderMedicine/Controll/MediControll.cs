@@ -11,9 +11,11 @@ namespace OrderMedicine.Controll
 {
     class MediControll : BaseControll
     {
-        
+        List<Medicine> listMedi;
 
-        public MediControll(M)
+        internal List<Medicine> ListMedi { get => listMedi; set => listMedi = value; }
+
+        public MediControll()
         {
             listItme = new List<object>();
             listMedi = listItme.Cast<Medicine>().ToList(); 

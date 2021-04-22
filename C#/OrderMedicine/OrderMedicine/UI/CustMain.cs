@@ -11,23 +11,30 @@ using System.Windows.Forms;
 
 namespace OrderMedicine.UI
 {
-    public partial class CustMain : MaterialForm
+     partial class CustMain : MaterialForm
     {
-        const int UC_ADD_CUST = "UcAddCust";
+        const string UC_ADD_CUST = "UcAddCust";
+        const string UC_ADD_CUSTORDER = "UcCustOrder";
+
+        UcAddCust ucAddCust;
+        UcCustOrder ucCustOrder;
         public CustMain()
         {
             InitializeComponent();
-            centerLayout.
+            ucAddCust = new UcAddCust();
+            ucCustOrder = new UcCustOrder();
+            centerLayout.Controls.Add(ucAddCust);
+            centerLayout.Dock = DockStyle.Fill;
         }
 
         private void custAddDataBtn_Click(object sender, EventArgs e)
         {
-
+            controllView(ucAddCust, UC_ADD_CUST);
         }
 
         private void orderAddData_Click(object sender, EventArgs e)
         {
-
+            controllView(ucCustOrder, UC_ADD_CUSTORDER);
         }
 
         private void orderDataView_Click(object sender, EventArgs e)

@@ -43,9 +43,10 @@ namespace OrderMedicine
             // 
             this.mainPic.BackColor = System.Drawing.Color.Transparent;
             this.mainPic.Image = ((System.Drawing.Image)(resources.GetObject("mainPic.Image")));
-            this.mainPic.Location = new System.Drawing.Point(354, 92);
+            this.mainPic.Location = new System.Drawing.Point(405, 115);
+            this.mainPic.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mainPic.Name = "mainPic";
-            this.mainPic.Size = new System.Drawing.Size(191, 188);
+            this.mainPic.Size = new System.Drawing.Size(218, 235);
             this.mainPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.mainPic.TabIndex = 0;
             this.mainPic.TabStop = false;
@@ -57,11 +58,12 @@ namespace OrderMedicine
             this.custBtn.FillColor = System.Drawing.Color.RosyBrown;
             this.custBtn.FillHoverColor = System.Drawing.Color.Maroon;
             this.custBtn.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.custBtn.Location = new System.Drawing.Point(96, 283);
+            this.custBtn.Location = new System.Drawing.Point(110, 354);
+            this.custBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.custBtn.MinimumSize = new System.Drawing.Size(1, 1);
             this.custBtn.Name = "custBtn";
             this.custBtn.RectColor = System.Drawing.Color.Transparent;
-            this.custBtn.Size = new System.Drawing.Size(227, 175);
+            this.custBtn.Size = new System.Drawing.Size(259, 219);
             this.custBtn.Style = Sunny.UI.UIStyle.Custom;
             this.custBtn.Symbol = 62142;
             this.custBtn.SymbolSize = 50;
@@ -74,10 +76,11 @@ namespace OrderMedicine
             this.stoBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.stoBtn.FillColor = System.Drawing.Color.SteelBlue;
             this.stoBtn.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stoBtn.Location = new System.Drawing.Point(556, 283);
+            this.stoBtn.Location = new System.Drawing.Point(635, 354);
+            this.stoBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.stoBtn.MinimumSize = new System.Drawing.Size(1, 1);
             this.stoBtn.Name = "stoBtn";
-            this.stoBtn.Size = new System.Drawing.Size(227, 175);
+            this.stoBtn.Size = new System.Drawing.Size(259, 219);
             this.stoBtn.Style = Sunny.UI.UIStyle.Custom;
             this.stoBtn.Symbol = 62004;
             this.stoBtn.SymbolSize = 50;
@@ -92,11 +95,12 @@ namespace OrderMedicine
             this.mainExit.FillColor = System.Drawing.Color.DarkRed;
             this.mainExit.FillDisableColor = System.Drawing.Color.Transparent;
             this.mainExit.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.mainExit.Location = new System.Drawing.Point(867, 26);
+            this.mainExit.Location = new System.Drawing.Point(991, 32);
+            this.mainExit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mainExit.MinimumSize = new System.Drawing.Size(1, 1);
             this.mainExit.Name = "mainExit";
             this.mainExit.RectColor = System.Drawing.Color.Transparent;
-            this.mainExit.Size = new System.Drawing.Size(31, 31);
+            this.mainExit.Size = new System.Drawing.Size(35, 39);
             this.mainExit.Style = Sunny.UI.UIStyle.Custom;
             this.mainExit.Symbol = 61453;
             this.mainExit.SymbolSize = 30;
@@ -110,11 +114,12 @@ namespace OrderMedicine
             this.uiSymbolButton1.FillColor = System.Drawing.Color.Orange;
             this.uiSymbolButton1.FillDisableColor = System.Drawing.Color.Transparent;
             this.uiSymbolButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolButton1.Location = new System.Drawing.Point(830, 26);
+            this.uiSymbolButton1.Location = new System.Drawing.Point(949, 32);
+            this.uiSymbolButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolButton1.Name = "uiSymbolButton1";
             this.uiSymbolButton1.RectColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton1.Size = new System.Drawing.Size(31, 31);
+            this.uiSymbolButton1.Size = new System.Drawing.Size(35, 39);
             this.uiSymbolButton1.Style = Sunny.UI.UIStyle.Custom;
             this.uiSymbolButton1.Symbol = 61736;
             this.uiSymbolButton1.SymbolSize = 30;
@@ -126,11 +131,12 @@ namespace OrderMedicine
             this.mainLabel.BackColor = System.Drawing.Color.Transparent;
             this.mainLabel.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.mainLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.mainLabel.Location = new System.Drawing.Point(335, 31);
+            this.mainLabel.Location = new System.Drawing.Point(383, 32);
+            this.mainLabel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mainLabel.MinimumSize = new System.Drawing.Size(1, 1);
             this.mainLabel.Name = "mainLabel";
             this.mainLabel.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.mainLabel.Size = new System.Drawing.Size(210, 26);
+            this.mainLabel.Size = new System.Drawing.Size(240, 32);
             this.mainLabel.Style = Sunny.UI.UIStyle.Custom;
             this.mainLabel.Symbol = 61690;
             this.mainLabel.SymbolColor = System.Drawing.Color.Firebrick;
@@ -139,15 +145,16 @@ namespace OrderMedicine
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 595);
+            this.ClientSize = new System.Drawing.Size(1040, 744);
             this.Controls.Add(this.mainLabel);
             this.Controls.Add(this.uiSymbolButton1);
             this.Controls.Add(this.mainExit);
             this.Controls.Add(this.stoBtn);
             this.Controls.Add(this.custBtn);
             this.Controls.Add(this.mainPic);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainForm";
             ((System.ComponentModel.ISupportInitialize)(this.mainPic)).EndInit();
             this.ResumeLayout(false);

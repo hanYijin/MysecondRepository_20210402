@@ -15,3 +15,5 @@ D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMed
 D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMedicine.pdb
 D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMedicine.UI.StoMain.resources
 D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMedicine.UI.CustMain.resources
+D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMedicine.UI.UcAddCust.resources
+D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMedicine.UI.UcCustOrder.resources
