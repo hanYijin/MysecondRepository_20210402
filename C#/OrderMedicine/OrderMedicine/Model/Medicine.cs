@@ -15,6 +15,7 @@ namespace OrderMedicine.Model
         private string price;
 
         public Medicine() { }
+       
         public Medicine(string pId, string mediName, string effect, string taking, string price)
         {
             this.pId = pId;
