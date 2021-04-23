@@ -14,7 +14,7 @@ namespace OrderMedicine.Model
         private string taking;
         private string price;
 
-        public Medicine() { }
+        //public Medicine() { }
        
         public Medicine(string pId, string mediName, string effect, string taking, string price)
         {

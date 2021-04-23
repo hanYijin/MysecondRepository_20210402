@@ -121,6 +121,9 @@
   <data name="나혼자_약사유" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\나혼자 약사유.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="누리약국" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\누리약국.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="닥터베아제정" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\닥터베아제정.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,6 +142,9 @@
   <data name="어린이타이레놀현탁액" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\어린이타이레놀현탁액.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="우리_종합_약국" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\우리 종합 약국.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="제일쿨파프" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\제일쿨파프.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -153,6 +159,9 @@
   </data>
   <data name="판피린티정" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\판피린티정.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="한사랑약국" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\한사랑약국.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="후시딘히드로연고" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\후시딘히드로연고.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

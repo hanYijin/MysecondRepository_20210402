@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6B26304E-F673-4017-8667-252554A76192}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>OrderMedicine</RootNamespace>
     <AssemblyName>OrderMedicine</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -31,6 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CxFlatUI, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
@@ -76,6 +79,12 @@
     <Compile Include="UI\CustMain.Designer.cs">
       <DependentUpon>CustMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\CustOrderView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustOrderView.Designer.cs">
+      <DependentUpon>CustOrderView.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +111,12 @@
     <Compile Include="UI\UcCustOrder.Designer.cs">
       <DependentUpon>UcCustOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\UcOrderStore.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UcOrderStore.Designer.cs">
+      <DependentUpon>UcOrderStore.cs</DependentUpon>
+    </Compile>
     <Compile Include="Util\AppMenu.cs" />
     <Compile Include="Util\MedicineData.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -117,6 +132,9 @@
     <EmbeddedResource Include="UI\CustMain.resx">
       <DependentUpon>CustMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\CustOrderView.resx">
+      <DependentUpon>CustOrderView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\UcCustOrder.resx">
       <DependentUpon>UcCustOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UcOrderStore.resx">
+      <DependentUpon>UcOrderStore.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -153,6 +174,9 @@
     <Content Include="ReadMePng\Options.png" />
     <Content Include="ReadMePng\类库上右键.png" />
     <Content Include="Resource\나혼자 약사유.png" />
+    <None Include="Resource\한사랑약국.png" />
+    <None Include="Resource\우리 종합 약국.png" />
+    <None Include="Resource\누리약국.png" />
     <None Include="Resource\훼스탈플러스정.jpg" />
     <None Include="Resource\훼스탈골드정.jpg" />
     <None Include="Resource\후시딘히드로연고.jpg" />

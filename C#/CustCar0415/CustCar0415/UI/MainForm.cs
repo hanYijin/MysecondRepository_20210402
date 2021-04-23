@@ -20,13 +20,18 @@ namespace CustCar0415
     {
         MyMenu menu = new MyMenu();
         UnionControll uHandler = new UnionControll(new RandData()); //싱글톤
+        PrivateFontCollection pFont;
+        Font font;
+        MaterialSkin.Controls.MaterialRaisedButton[] btnArr;
+
         public MainWin()
         {
             InitializeComponent();//form 초기화
+            initFont();
             var msMgr = MaterialSkinManager.Instance;
             msMgr.Theme = MaterialSkinManager.Themes.LIGHT;
             msMgr.ColorScheme = new ColorScheme(Primary.LightBlue500, Primary.LightBlue500, Primary.LightBlue500, Accent.LightBlue200, TextShade.WHITE);
-
+      
         }//삭제 ctrl+z
         private void mainExit_Click(object sender, EventArgs e)//이벤드 핸들러
         {
@@ -75,10 +80,10 @@ namespace CustCar0415
         }
         public void initFont()
         {
-            MaterialSkin.Controls.MaterialRaisedButton[] btnArr = { randAddBtn, randDelBtn, dataAddBtn, dataALLBtn, dataDelBtn, dataUpdateBtn };
-            PrivateFontCollection pFont = new PrivateFontCollection();
+            btnArr = new MaterialSkin.Controls.MaterialRaisedButton[] { randAddBtn, randDelBtn, dataAddBtn, dataALLBtn, dataDelBtn, dataUpdateBtn };
+            pFont = new PrivateFontCollection();
             pFont.AddFontFile("THE_Nyuseusokbo.ttf");
-            Font font = new Font(pFont.Families[0], 16f);
+            font = new Font(pFont.Families[0], 13f);
 
             foreach(var n in btnArr)
             {

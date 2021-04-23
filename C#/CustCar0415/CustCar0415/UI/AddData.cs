@@ -1,4 +1,5 @@
 ﻿using CustCar0415.Controll;
+using CustCar0415.Model;
 using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,14 @@ namespace CustCar0415.UI
         [DllImportAttribute("user32.dll")]
         static extern bool ReleaseCapture();
 #pragma warning restore CS0108 // 멤버가 상속된 멤버를 숨깁니다. new 키워드가 없습니다.
+        const string UC_NAME_ADD_CAR = "UcAddCar";
+        const string UC_NAME_ADD_CUST = "UcAddCust";
+        const string UC_NAME_ADD_SELL = "UcAddSell";
 
+        UcAddCar ucAddCar;
+        UcAddCust ucAddCust;
+        UcAddSell ucAddSell;
+        UnionControll uHandler;
         public AddData()
         {
             InitializeComponent();
@@ -36,9 +44,10 @@ namespace CustCar0415.UI
         public AddData(UnionControll uHandler)
         {
             InitializeComponent();
+            this.uHandler = uHandler;
             ucAddCar = new UcAddCar(uHandler,this); //this 자신 클래스, base 상위 클래스
             ucAddCust = new UcAddCust(uHandler,this);
-            ucAddSell = new UcAddSell(uHandler);
+            ucAddSell = new UcAddSell(uHandler,this);
             centerLayout.Controls.Add(ucAddCar);
             centerLayout.Dock = DockStyle.Fill;
             ucAddCar.addcarConfirmEvent += addCarConfirmHandler;
@@ -48,14 +57,6 @@ namespace CustCar0415.UI
         {
             Close();
         }
-
-        const string UC_NAME_ADD_CAR = "UcAddCar";
-        const string UC_NAME_ADD_CUST = "UcAddCust";
-        const string UC_NAME_ADD_SELL = "UcAddSell";
-
-        UcAddCar ucAddCar;
-        UcAddCust ucAddCust;
-        UcAddSell ucAddSell;
 
         private void carAddDataBtn_Click(object sender, EventArgs e)
         {
@@ -94,6 +95,13 @@ namespace CustCar0415.UI
         private void addCarConfirmHandler(object sender, EventArgs e)
         {
             addDataStatus.Text = "차량정보를 등록하였습니다.";
+        }
+
+        private void addDataDeal_Click(object sender, EventArgs e)
+        {
+            uHandler.Listun.Add(new Deal<Car, Customer, Seller>(uHandler.CarHandle.ListCar[0],
+                uHandler.CustHandle.ListCust[0], uHandler.SellHandle.ListSell[0],
+                DateTime.Now.ToString("yyyy년mm월dd일"), uHandler.CarHandle.ListCar[0].Price+"3백만원"));
         }
     }
 }

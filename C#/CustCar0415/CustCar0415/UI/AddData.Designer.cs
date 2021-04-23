@@ -34,7 +34,7 @@ namespace CustCar0415.UI
             this.addDatatExit = new Sunny.UI.UISymbolButton();
             this.leftLayout = new System.Windows.Forms.Panel();
             this.sellAddDataBtn = new Sunny.UI.UIHeaderButton();
-            this.addDataCancle = new Sunny.UI.UIHeaderButton();
+            this.addDataDeal = new Sunny.UI.UIHeaderButton();
             this.custAddDataBtn = new Sunny.UI.UIHeaderButton();
             this.carAddDataBtn = new Sunny.UI.UIHeaderButton();
             this.centerLayout = new System.Windows.Forms.Panel();
@@ -90,7 +90,7 @@ namespace CustCar0415.UI
             // 
             this.leftLayout.BackColor = System.Drawing.Color.Transparent;
             this.leftLayout.Controls.Add(this.sellAddDataBtn);
-            this.leftLayout.Controls.Add(this.addDataCancle);
+            this.leftLayout.Controls.Add(this.addDataDeal);
             this.leftLayout.Controls.Add(this.custAddDataBtn);
             this.leftLayout.Controls.Add(this.carAddDataBtn);
             this.leftLayout.Dock = System.Windows.Forms.DockStyle.Left;
@@ -122,28 +122,28 @@ namespace CustCar0415.UI
             this.sellAddDataBtn.Text = "판매자 정보 등록";
             this.sellAddDataBtn.Click += new System.EventHandler(this.sellAddDataBtn_Click);
             // 
-            // addDataCancle
+            // addDataDeal
             // 
-            this.addDataCancle.CircleColor = System.Drawing.Color.Transparent;
-            this.addDataCancle.CircleSize = 100;
-            this.addDataCancle.FillColor = System.Drawing.Color.LightSeaGreen;
-            this.addDataCancle.FillHoverColor = System.Drawing.Color.IndianRed;
-            this.addDataCancle.FillPressColor = System.Drawing.Color.LightCoral;
-            this.addDataCancle.FillSelectedColor = System.Drawing.Color.LightCoral;
-            this.addDataCancle.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addDataCancle.Location = new System.Drawing.Point(0, 414);
-            this.addDataCancle.MinimumSize = new System.Drawing.Size(1, 1);
-            this.addDataCancle.Name = "addDataCancle";
-            this.addDataCancle.Padding = new System.Windows.Forms.Padding(0, 8, 0, 3);
-            this.addDataCancle.Radius = 0;
-            this.addDataCancle.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-            this.addDataCancle.RectSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.None;
-            this.addDataCancle.Size = new System.Drawing.Size(201, 120);
-            this.addDataCancle.Style = Sunny.UI.UIStyle.Custom;
-            this.addDataCancle.Symbol = 61453;
-            this.addDataCancle.TabIndex = 2;
-            this.addDataCancle.Text = "종료";
-            this.addDataCancle.Click += new System.EventHandler(this.addDatatExit_Click);
+            this.addDataDeal.CircleColor = System.Drawing.Color.Transparent;
+            this.addDataDeal.CircleSize = 100;
+            this.addDataDeal.FillColor = System.Drawing.Color.LightSeaGreen;
+            this.addDataDeal.FillHoverColor = System.Drawing.Color.IndianRed;
+            this.addDataDeal.FillPressColor = System.Drawing.Color.LightCoral;
+            this.addDataDeal.FillSelectedColor = System.Drawing.Color.LightCoral;
+            this.addDataDeal.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addDataDeal.Location = new System.Drawing.Point(0, 414);
+            this.addDataDeal.MinimumSize = new System.Drawing.Size(1, 1);
+            this.addDataDeal.Name = "addDataDeal";
+            this.addDataDeal.Padding = new System.Windows.Forms.Padding(0, 8, 0, 3);
+            this.addDataDeal.Radius = 0;
+            this.addDataDeal.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
+            this.addDataDeal.RectSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.None;
+            this.addDataDeal.Size = new System.Drawing.Size(201, 120);
+            this.addDataDeal.Style = Sunny.UI.UIStyle.Custom;
+            this.addDataDeal.Symbol = 57490;
+            this.addDataDeal.TabIndex = 2;
+            this.addDataDeal.Text = "거래 등록";
+            this.addDataDeal.Click += new System.EventHandler(this.addDataDeal_Click);
             // 
             // custAddDataBtn
             // 
@@ -224,7 +224,7 @@ namespace CustCar0415.UI
         private System.Windows.Forms.Panel leftLayout;
         private System.Windows.Forms.Panel centerLayout;
         private Sunny.UI.UISymbolButton addDatatExit;
-        private Sunny.UI.UIHeaderButton addDataCancle;
+        private Sunny.UI.UIHeaderButton addDataDeal;
         private Sunny.UI.UIHeaderButton custAddDataBtn;
         private Sunny.UI.UIHeaderButton carAddDataBtn;
         private Sunny.UI.UIHeaderButton sellAddDataBtn;

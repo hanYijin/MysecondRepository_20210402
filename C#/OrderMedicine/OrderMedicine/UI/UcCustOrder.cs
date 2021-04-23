@@ -1,4 +1,5 @@
 ﻿using OrderMedicine.Controll;
+using OrderMedicine.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,30 @@ namespace OrderMedicine.UI
         {
             InitializeComponent();
             this.orderControll = orderControll;
+        }
+        private void comboSyptom_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            effect = showOrderCombo(sender);
+            selectEffect.Text = effect;
+            selectEffect.ForeColor = Color.BlueViolet;
+            switch (effect)
+            {
+                case "두통":
+                    MessageBox.Show("카테고리 '두통'에서 약을 선택하세요.");
+                    break;
+                case "감기":
+                    MessageBox.Show("카테고리 '감기'에서 약을 선택하세요.");
+                    break;
+                case "소화불량":
+                    MessageBox.Show("카테고리 '소화불량'에서 약을 선택하세요.");
+                    break;
+                case "근육통":
+                    MessageBox.Show("카테고리 '근육통'에서 약을 선택하세요.");
+                    break;
+                case "피부질환":
+                    MessageBox.Show("카테고리 '피부질환'에서 약을 선택하세요.");
+                    break;
+            }
         }
         private void comboHeadache_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -168,43 +193,86 @@ namespace OrderMedicine.UI
 
         private void comboMuscle_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            mediName = showOrderCombo(sender);
+            selectName.Text = mediName;
+            selectName.ForeColor = Color.Blue;
+            switch(mediName)
+            {
+                case "제일쿨파프":
+                    picBox.Image = Properties.Resources.제일쿨파프;
+                    pid = "A04201891";
+                    effect = "근육통";
+                    taking = "1일 1~2회 환부(질환 부위)에 부착한다.";
+                    price = "3000";
+                    selectPid.Text = pid;
+                    selectTaking.Text = taking;
+                    selectPrice.Text = price;
+                    break;
+                case "신신파스아렉스":
+                    picBox.Image = Properties.Resources.신신파스아렉스;
+                    pid = "200501321";
+                    effect = "근육통";
+                    taking = "1일 1~2회 환부(질환 부위)에 부착한다.";
+                    price = "3500";
+                    selectPid.Text = pid;
+                    selectTaking.Text = taking;
+                    selectPrice.Text = price;
+                    break;
+            }
         }
 
         private void comboSkin_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            mediName = showOrderCombo(sender);
+            selectName.Text = mediName;
+            selectName.ForeColor = Color.Blue;
+            switch (mediName)
+            {
+                case "후시딘히드로연고":
+                    picBox.Image = Properties.Resources.후시딘히드로연고;
+                    pid = "200300546";
+                    effect = "피부질환";
+                    taking = "1일 3회 적당량을 환부에 부드럽게 바른다.";
+                    price = "4500";
+                    selectPid.Text = pid;
+                    selectTaking.Text = taking;
+                    selectPrice.Text = price;
+                    break;
+                case "복합마데카솔연고":
+                    picBox.Image = Properties.Resources.복합마데카솔연고; ;
+                    pid = "199300117";
+                    effect = "피부질환";
+                    taking = "1일 1～2회 적당량을 환부에 바른다.";
+                    price = "4500";
+                    selectPid.Text = pid;
+                    selectTaking.Text = taking;
+                    selectPrice.Text = price;
+                    break;
+            }
         }
 
         private void ucCustOrderOk_Click(object sender, EventArgs e)
         {
-            
+            if (effect == null)
+            {
+                MessageBox.Show("증상을 선택해주세요.");
+                comboSyptom.Select();
+                return;
+            }
+            if (mediName == null)
+            {
+                MessageBox.Show("약품을 선택해주세요.");
+                comboSyptom.Select();
+                return;
+            }
+
+            orderControll.Medicon.addItem(new Medicine(pid, mediName, effect, taking, price));
+            MessageBox.Show("주문할 약품 정보가 저장");
+            ucCustOrderOk.Enabled = false;
+
         }
 
-        private void comboSyptom_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            effect = showOrderCombo(sender);
-            selectEffect.Text = effect;
-            selectEffect.ForeColor = Color.BlueViolet;
-            switch(effect)
-            {
-                case "두통":
-                    MessageBox.Show("카테고리 '두통'에서 약을 선택하세요.");
-                    break;
-                case "감기":
-                    MessageBox.Show("카테고리 '감기'에서 약을 선택하세요.");
-                    break;
-                case "소화불량":
-                    MessageBox.Show("카테고리 '소화불량'에서 약을 선택하세요.");
-                    break;
-                case "근육통":
-                    MessageBox.Show("카테고리 '근육통'에서 약을 선택하세요.");
-                    break;
-                case "피부질환":
-                    MessageBox.Show("카테고리 '피부질환'에서 약을 선택하세요.");
-                    break;
-            }
-        }
+        
         private string showOrderCombo(object obj)
         {
              System.Windows.Forms.ComboBox cb= obj as System.Windows.Forms.ComboBox;
@@ -214,6 +282,21 @@ namespace OrderMedicine.UI
             {
                 Console.WriteLine("선택: " + item);
             }return item;
+        }
+
+        private void ucCustOrderInit_Click(object sender, EventArgs e)
+        {
+            pid = null;
+            mediName = null;
+            effect = null;
+            taking = null;
+            price = null;
+            selectPid.Text = null;
+            selectName.Text = null;
+            selectEffect.Text = null;
+            selectTaking.Text = null;
+            selectPrice.Text = null;
+            
         }
     }
 }

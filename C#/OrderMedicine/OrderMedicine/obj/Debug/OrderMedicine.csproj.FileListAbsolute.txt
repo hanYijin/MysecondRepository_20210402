@@ -5,7 +5,6 @@ D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\bin\Debug\CxFlatUI
 D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\bin\Debug\MaterialSkin.dll
 D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\bin\Debug\SunnyUI.Common.dll
 D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\bin\Debug\SunnyUI.dll
-D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMedicine.csprojAssemblyReference.cache
 D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMedicine.Properties.Resources.resources
 D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMedicine.MainForm.resources
 D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMedicine.csproj.GenerateResource.cache
@@ -17,3 +16,6 @@ D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMed
 D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMedicine.UI.CustMain.resources
 D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMedicine.UI.UcAddCust.resources
 D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMedicine.UI.UcCustOrder.resources
+D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMedicine.UI.UcOrderStore.resources
+D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMedicine.UI.CustOrderView.resources
+D:\MysecondRepository_20210402\C#\OrderMedicine\OrderMedicine\obj\Debug\OrderMedicine.csprojAssemblyReference.cache

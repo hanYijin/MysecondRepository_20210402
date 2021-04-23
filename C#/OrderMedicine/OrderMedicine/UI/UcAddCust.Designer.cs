@@ -251,6 +251,7 @@ namespace OrderMedicine.UI
             this.custAddDataOk.Style = Sunny.UI.UIStyle.Custom;
             this.custAddDataOk.TabIndex = 9;
             this.custAddDataOk.Text = "추가";
+            this.custAddDataOk.Click += new System.EventHandler(this.custAddDataOk_Click);
             // 
             // custAddDataInit
             // 
@@ -269,6 +270,7 @@ namespace OrderMedicine.UI
             this.custAddDataInit.Symbol = 61473;
             this.custAddDataInit.TabIndex = 10;
             this.custAddDataInit.Text = "초기화";
+            this.custAddDataInit.Click += new System.EventHandler(this.custAddDataInit_Click);
             // 
             // custAddGenderW
             // 
@@ -284,6 +286,7 @@ namespace OrderMedicine.UI
             this.custAddGenderW.Style = Sunny.UI.UIStyle.Custom;
             this.custAddGenderW.TabIndex = 11;
             this.custAddGenderW.Text = "여";
+            this.custAddGenderW.ValueChanged += new Sunny.UI.UIRadioButton.OnValueChanged(this.custAddGenderW_ValueChanged);
             // 
             // custAddGenderM
             // 

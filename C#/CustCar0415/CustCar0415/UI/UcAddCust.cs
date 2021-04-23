@@ -39,9 +39,9 @@ namespace CustCar0415.UI
             string phone = ucAddCustPhone.Text;
             string address = ucAddCustAddress.Text;
             uHandler.CustHandle.addItem(new Customer(name, Convert.ToInt32(age), phone, address, gender));
-            MessageBox.Show("고객 정보가 등록!");
+            MessageBox.Show("☆★고객 정보가 등록~☆★");
             ucAddCustOK.Enabled = false;
-            addData.setStatusInfo("고객 정보가 등록!");
+            addData.setStatusInfo("고객 정보가 등록되었습니다.");
         }
 
 

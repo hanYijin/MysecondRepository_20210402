@@ -1,5 +1,7 @@
 ﻿using MaterialSkin.Controls;
+using OrderMedicine.Controll;
 using OrderMedicine.UI;
+using OrderMedicine.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +16,8 @@ namespace OrderMedicine
 {
     public partial class MainForm : MaterialForm
     {
+        AppMenu mene = new AppMenu();
+        OrderControll orderControll = new OrderControll();
         public MainForm()
         {
             InitializeComponent();
@@ -31,7 +35,7 @@ namespace OrderMedicine
 
         private void custBtn_Click(object sender, EventArgs e)
         {
-            new CustMain().ShowDialog();
+            new CustMain(orderControll).ShowDialog();
         }
 
         private void stoBtn_Click(object sender, EventArgs e)

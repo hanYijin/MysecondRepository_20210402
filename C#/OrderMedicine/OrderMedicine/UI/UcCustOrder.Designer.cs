@@ -250,6 +250,7 @@ namespace OrderMedicine.UI
             this.ucCustOrderInit.SymbolSize = 30;
             this.ucCustOrderInit.TabIndex = 16;
             this.ucCustOrderInit.Text = "초기화";
+            this.ucCustOrderInit.Click += new System.EventHandler(this.ucCustOrderInit_Click);
             // 
             // selectPid
             // 

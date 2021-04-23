@@ -73,6 +73,16 @@ namespace OrderMedicine.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap 누리약국 {
+            get {
+                object obj = ResourceManager.GetObject("누리약국", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 닥터베아제정 {
             get {
                 object obj = ResourceManager.GetObject("닥터베아제정", resourceCulture);
@@ -133,6 +143,16 @@ namespace OrderMedicine.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap 우리_종합_약국 {
+            get {
+                object obj = ResourceManager.GetObject("우리_종합_약국", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 제일쿨파프 {
             get {
                 object obj = ResourceManager.GetObject("제일쿨파프", resourceCulture);
@@ -176,6 +196,16 @@ namespace OrderMedicine.Properties {
         internal static System.Drawing.Bitmap 판피린티정 {
             get {
                 object obj = ResourceManager.GetObject("판피린티정", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 한사랑약국 {
+            get {
+                object obj = ResourceManager.GetObject("한사랑약국", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
