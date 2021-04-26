@@ -16,7 +16,7 @@ public class SPRO_DBManager {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			conn= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "AI", "1234");
-			pstmt= conn.prepareStatement("SELECT * FROM SPRO_MEMBER " + 
+			pstmt= conn.prepareStatement("SELECT * FROM MEMBER " + 
 					"WHERE ID=? AND PW=?");
 			pstmt.setString(1,id);
 			pstmt.setString(2, pw);

@@ -11,6 +11,50 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="/sproj/css/mycss.css"/>
+<script type="text/javascript">
+//jQuery 문법
+	$('document').ready(function(){
+		//css 
+		/* 1) #id-> id 선택자
+			2) .class -> class 선택자
+			3) tage 명 -> tage 선택자
+			$('#id명')
+			$('.class명')
+			$('h1')
+			<p><h1>제목</h1><strong>진하게</strong><h2>h2h2</h2></p>
+			p > h1 {}	부모 태그 > 자식 태그 	
+			p > h2 {}
+			$('p > h2').attr('class','class명')
+			*/
+		$('button').on('click',function(obj){
+			$('button').attr('class','btn btn-primary w80'); 
+			//해당 버튼만 빨간색으로 표시
+			$(this).attr('class','btn btn-danger w80');
+			//this: click한 button
+			//class와 tag는 중복이 가능, id는 오직 하나
+		
+			//alert('$(this).html()= '+$(this).html())
+			//alert('$(this).text()= '+$(this).text())
+//text() 태그사이에 글자만 가져오기
+//html() 태그사이에 html 태그 포함해서 글자 가져오기
+//val() input 태그에 있는 value 값 가져오기
+		});
+		$('#confirm').on('click',function(){
+			var seat='';
+			
+			$('button').each(function(index,obj){
+
+				console.log("$(this).attr('class')= "+$(this).attr('class'));
+				if($(this).attr('class')== 'btn btn-danger w80'){
+//					console.log("$(this).attr('class')= "+$(this).attr('class'));
+//					console.log("$(this).text()= "+$(this).text());
+					seat= $(this).text();
+				}
+			})
+			location.href="seatsave.jsp?seat="+seat;
+		})
+	})
+</script>
 </head>
 <body>
 	<div class="jumbotron">
@@ -64,10 +108,14 @@
 		<div class="row text-center mt-2">
 			<div class="col-sm-2"></div>
 			<div class="col-sm-2"></div>
-			<div class="col-sm-2"><a id="cencel" class="btn btn-warning w80"> cencel </a></div>
-			<div class="col-sm-2"><a id="confirm" class="btn btn-danger w80"> confirm </a></div>
+			<div class="col-sm-2">
+				<input type="button" id="cencel" class="btn btn-warning w80" value="cencel"/>
+			</div>
+			<div class="col-sm-2">
+				<input type="button" id="confirm" class="btn btn-warning w80" value="confirm"/> 
+			</div>
 			<div class="col-sm-2"></div>
-			<div class="col-sm-2">></div>
+			<div class="col-sm-2"></div>
 		</div>
 		
 	</div>
