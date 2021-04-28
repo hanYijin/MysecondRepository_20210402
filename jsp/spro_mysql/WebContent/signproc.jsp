@@ -15,7 +15,7 @@
 	request.setCharacterEncoding("utf-8");
 	int ret=sdbm.signInsert(p_id, p_pw, p_name, p_phone);
 	out.println("ret= "+ret);
-	sucValue="<a class='btn btn-primary' href='Index.jsp'>로그인 페이지 이동</a>";
+	sucValue="<a href='Index.jsp' class='btn btn-primary'>로그인 창 </a>";
 	
 %>
 

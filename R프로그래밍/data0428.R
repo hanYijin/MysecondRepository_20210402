@@ -59,3 +59,27 @@ arr <- array(vec, c(3,2,2))
 arr
 arr[,,1]
 arr[,,2]
+#[연습문제]
+#1. 'R' 문자가 5회 반복 처리되는 벡터
+vec <- rep('R',5)
+vec
+#2. 1~10까지 3간격으로 연속되는 벡터
+vec2 <- seq(1,10,3)
+vec2
+#3. 1~10까지 3간격으로 연속된 정수가 3회 반복
+vec3 <- rep(vec2,3)
+vec3
+#4. 2번, 3번 모두 포함되는 벡터
+vec4 <- c(vec2,vec3)
+vec4
+#5. 4번에서 홀수 번째 값들만 저장하는 벡터 
+func <- function(a){
+  for(i in a){
+    if(i %% 2 !=0){
+      v<-c(i)
+    }return(v)
+  }
+}
+vec5 <- c(func(vec4))
+vec5
+vec5<- seq(vec4,,2)

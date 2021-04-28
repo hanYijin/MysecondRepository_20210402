@@ -10,6 +10,8 @@
 	
 	String sucValue="";
 	request.setCharacterEncoding("utf-8");
+	dbm.signInsert(id, pw, name, phone);
+	sucValue="<a href='index.jsp' class='btn btn-primary'>로그인 창 </a>";
 %>
 <!DOCTYPE html>
 <html>
