@@ -27,3 +27,35 @@ m<-matrix(c(1:5))
 m
 m <- matrix(c(1:10),nrow=2, byrow=T)
 m
+#행 묶음으로 행렬 객체 생성
+# rbind()함수
+x1 <- c(5, 40, 50:52)
+x2 <- c(30, 5, 6:8)
+mr <- rbind(x1,x2)
+mr
+#열 묶음으로 행렬 객체 생성
+# cbind() 함수
+mc <- cbind(x1,x2)
+mc
+#matrix()함수 이용 행렬 객체 생성
+m3 <-matrix(10:19,2)
+m4 <- matrix(10:20,2)
+m3
+m4
+
+m3[1,]
+m3[,5]
+m3[2,3]
+m3[1,c(2:5)]
+length(m3)
+ncol(m3)
+nrow(m3)
+
+#Array 자료구조: 같은 자료형을 갖는 다차원 배열구조
+#배열 생성 함수: array()
+
+vec <- c(1:12)
+arr <- array(vec, c(3,2,2))
+arr
+arr[,,1]
+arr[,,2]
