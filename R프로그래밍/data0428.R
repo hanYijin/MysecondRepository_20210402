@@ -83,3 +83,11 @@ func <- function(a){
 vec5 <- c(func(vec4))
 vec5
 vec5<- seq(vec4,,2)
+
+num<-30
+typeof(num)
+if(is.integer(num)){
+  print('xsms int')
+}else{
+  print('')
+}

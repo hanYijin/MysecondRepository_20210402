@@ -291,12 +291,19 @@ namespace OrderMedicine.UI
             effect = null;
             taking = null;
             price = null;
-            selectPid.Text = null;
-            selectName.Text = null;
-            selectEffect.Text = null;
-            selectTaking.Text = null;
-            selectPrice.Text = null;
-            
+
+            comboSyptom.SelectedIndex = 0;
+            comboHeadache.SelectedIndex = 0;
+            comboCold.SelectedIndex = 0;
+            comboMuscle.SelectedIndex = 0;
+            comboSkin.SelectedIndex = 0;
+            comboStomache.SelectedIndex = 0;
+            selectEffect.Clear();
+            selectName.Clear();
+            selectPid.Clear();
+            selectPrice.Clear();
+            selectTaking.Clear();
+            MessageBox.Show("입력 정보 초기화 하였습니다.");
         }
     }
 }

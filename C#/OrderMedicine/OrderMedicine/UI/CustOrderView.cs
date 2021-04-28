@@ -51,7 +51,7 @@ namespace OrderMedicine.UI
                 orderview.Items.Add(new ListViewItem(
                     new string[]
                     {
-                        list[i].Customer.CustName,list[i].Customer.CustSymptom,list[i].Medicine.MediName,list[i].Medicine.Price,list[i].Store.StoName
+                        list[i].Customer.CustName,list[i].Medicine.Effect,list[i].Medicine.MediName,list[i].Medicine.Price,list[i].Store.StoName
                     }));
             }
             setRowColor(Color.White, Color.BlueViolet);

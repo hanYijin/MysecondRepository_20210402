@@ -18,7 +18,6 @@ namespace OrderMedicine.UI
         string id;
         string name;
         string age;
-        string symptom;
         char gender;
         string address;
         string phone;
@@ -41,10 +40,9 @@ namespace OrderMedicine.UI
             id = custAddId.Text;
             name = custAddName.Text;
             age = custAddAge.Text;
-            symptom = custAddSymptom.Text;
             address = custAddAddress.Text;
             phone = custAddPhone.Text;
-            orderControll.Custcon.addItem(new Customer(id, name, age, gender, symptom, address, phone));
+            orderControll.Custcon.addItem(new Customer(id, name, age, gender, address, phone));
             MessageBox.Show("고객 정보가 등록되었습니다.");
             custAddDataOk.Enabled = false;
             
@@ -54,17 +52,17 @@ namespace OrderMedicine.UI
 
         private void custAddDataInit_Click(object sender, EventArgs e)
         {
-            custAddId.Text = null;
-            custAddName.Text = null;
-            custAddAge.Text = null;
-            custAddSymptom.Text = null;
-            custAddAddress.Text = null;
-            custAddPhone.Text = null;
+            //custAddId.Text = null;
+            //custAddName.Text = null;
+            //custAddAge.Text = null;
+            //custAddSymptom.Text = null;
+            //custAddAddress.Text = null;
+            //custAddPhone.Text = null;
+            
             
             id = null;
             name = null;
             age = null;
-            symptom = null;
             address = null;
             phone = null;
             gender = '\0';
@@ -83,5 +81,8 @@ namespace OrderMedicine.UI
                 gender = '남';
             }
         }
+     
+
+       
     }
 }

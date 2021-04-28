@@ -33,13 +33,11 @@ namespace OrderMedicine.UI
             this.custNameLabel = new Sunny.UI.UISymbolLabel();
             this.custAgeLabel = new Sunny.UI.UISymbolLabel();
             this.custGenderLabel = new Sunny.UI.UISymbolLabel();
-            this.custAddSymptomLabel = new Sunny.UI.UISymbolLabel();
             this.custAddAddressLabel = new Sunny.UI.UISymbolLabel();
             this.custAddPhoneLabel = new Sunny.UI.UISymbolLabel();
             this.custAddId = new Sunny.UI.UITextBox();
             this.custAddName = new Sunny.UI.UITextBox();
             this.custAddAge = new Sunny.UI.UITextBox();
-            this.custAddSymptom = new Sunny.UI.UITextBox();
             this.custAddAddress = new Sunny.UI.UITextBox();
             this.custAddPhone = new Sunny.UI.UITextBox();
             this.custAddDataOk = new Sunny.UI.UISymbolButton();
@@ -100,24 +98,11 @@ namespace OrderMedicine.UI
             this.custGenderLabel.TabIndex = 3;
             this.custGenderLabel.Text = "성별";
             // 
-            // custAddSymptomLabel
-            // 
-            this.custAddSymptomLabel.BackColor = System.Drawing.Color.Transparent;
-            this.custAddSymptomLabel.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.custAddSymptomLabel.Location = new System.Drawing.Point(142, 285);
-            this.custAddSymptomLabel.MinimumSize = new System.Drawing.Size(1, 1);
-            this.custAddSymptomLabel.Name = "custAddSymptomLabel";
-            this.custAddSymptomLabel.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.custAddSymptomLabel.Size = new System.Drawing.Size(186, 40);
-            this.custAddSymptomLabel.Symbol = 62006;
-            this.custAddSymptomLabel.TabIndex = 4;
-            this.custAddSymptomLabel.Text = "증상";
-            // 
             // custAddAddressLabel
             // 
             this.custAddAddressLabel.BackColor = System.Drawing.Color.Transparent;
             this.custAddAddressLabel.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.custAddAddressLabel.Location = new System.Drawing.Point(142, 344);
+            this.custAddAddressLabel.Location = new System.Drawing.Point(142, 271);
             this.custAddAddressLabel.MinimumSize = new System.Drawing.Size(1, 1);
             this.custAddAddressLabel.Name = "custAddAddressLabel";
             this.custAddAddressLabel.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
@@ -130,7 +115,7 @@ namespace OrderMedicine.UI
             // 
             this.custAddPhoneLabel.BackColor = System.Drawing.Color.Transparent;
             this.custAddPhoneLabel.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.custAddPhoneLabel.Location = new System.Drawing.Point(142, 400);
+            this.custAddPhoneLabel.Location = new System.Drawing.Point(142, 327);
             this.custAddPhoneLabel.MinimumSize = new System.Drawing.Size(1, 1);
             this.custAddPhoneLabel.Name = "custAddPhoneLabel";
             this.custAddPhoneLabel.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
@@ -187,29 +172,13 @@ namespace OrderMedicine.UI
             this.custAddAge.Size = new System.Drawing.Size(204, 29);
             this.custAddAge.TabIndex = 8;
             // 
-            // custAddSymptom
-            // 
-            this.custAddSymptom.BackColor = System.Drawing.Color.Transparent;
-            this.custAddSymptom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.custAddSymptom.FillColor = System.Drawing.Color.White;
-            this.custAddSymptom.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.custAddSymptom.Location = new System.Drawing.Point(335, 285);
-            this.custAddSymptom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.custAddSymptom.Maximum = 2147483647D;
-            this.custAddSymptom.Minimum = -2147483648D;
-            this.custAddSymptom.MinimumSize = new System.Drawing.Size(1, 1);
-            this.custAddSymptom.Name = "custAddSymptom";
-            this.custAddSymptom.Padding = new System.Windows.Forms.Padding(5);
-            this.custAddSymptom.Size = new System.Drawing.Size(204, 29);
-            this.custAddSymptom.TabIndex = 8;
-            // 
             // custAddAddress
             // 
             this.custAddAddress.BackColor = System.Drawing.Color.Transparent;
             this.custAddAddress.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.custAddAddress.FillColor = System.Drawing.Color.White;
             this.custAddAddress.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.custAddAddress.Location = new System.Drawing.Point(335, 344);
+            this.custAddAddress.Location = new System.Drawing.Point(335, 271);
             this.custAddAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.custAddAddress.Maximum = 2147483647D;
             this.custAddAddress.Minimum = -2147483648D;
@@ -225,7 +194,7 @@ namespace OrderMedicine.UI
             this.custAddPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.custAddPhone.FillColor = System.Drawing.Color.White;
             this.custAddPhone.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.custAddPhone.Location = new System.Drawing.Point(335, 400);
+            this.custAddPhone.Location = new System.Drawing.Point(335, 327);
             this.custAddPhone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.custAddPhone.Maximum = 2147483647D;
             this.custAddPhone.Minimum = -2147483648D;
@@ -243,7 +212,7 @@ namespace OrderMedicine.UI
             this.custAddDataOk.FillHoverColor = System.Drawing.Color.DarkGreen;
             this.custAddDataOk.FillPressColor = System.Drawing.Color.DarkGreen;
             this.custAddDataOk.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.custAddDataOk.Location = new System.Drawing.Point(200, 461);
+            this.custAddDataOk.Location = new System.Drawing.Point(187, 422);
             this.custAddDataOk.MinimumSize = new System.Drawing.Size(1, 1);
             this.custAddDataOk.Name = "custAddDataOk";
             this.custAddDataOk.RectColor = System.Drawing.Color.Transparent;
@@ -261,7 +230,7 @@ namespace OrderMedicine.UI
             this.custAddDataInit.FillHoverColor = System.Drawing.Color.DarkRed;
             this.custAddDataInit.FillSelectedColor = System.Drawing.Color.DarkRed;
             this.custAddDataInit.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.custAddDataInit.Location = new System.Drawing.Point(379, 461);
+            this.custAddDataInit.Location = new System.Drawing.Point(366, 422);
             this.custAddDataInit.MinimumSize = new System.Drawing.Size(1, 1);
             this.custAddDataInit.Name = "custAddDataInit";
             this.custAddDataInit.RectColor = System.Drawing.Color.Transparent;
@@ -313,13 +282,11 @@ namespace OrderMedicine.UI
             this.Controls.Add(this.custAddDataOk);
             this.Controls.Add(this.custAddPhone);
             this.Controls.Add(this.custAddAddress);
-            this.Controls.Add(this.custAddSymptom);
             this.Controls.Add(this.custAddAge);
             this.Controls.Add(this.custAddName);
             this.Controls.Add(this.custAddId);
             this.Controls.Add(this.custAddPhoneLabel);
             this.Controls.Add(this.custAddAddressLabel);
-            this.Controls.Add(this.custAddSymptomLabel);
             this.Controls.Add(this.custGenderLabel);
             this.Controls.Add(this.custAgeLabel);
             this.Controls.Add(this.custNameLabel);
@@ -336,13 +303,11 @@ namespace OrderMedicine.UI
         private Sunny.UI.UISymbolLabel custNameLabel;
         private Sunny.UI.UISymbolLabel custAgeLabel;
         private Sunny.UI.UISymbolLabel custGenderLabel;
-        private Sunny.UI.UISymbolLabel custAddSymptomLabel;
         private Sunny.UI.UISymbolLabel custAddAddressLabel;
         private Sunny.UI.UISymbolLabel custAddPhoneLabel;
         private Sunny.UI.UITextBox custAddId;
         private Sunny.UI.UITextBox custAddName;
         private Sunny.UI.UITextBox custAddAge;
-        private Sunny.UI.UITextBox custAddSymptom;
         private Sunny.UI.UITextBox custAddAddress;
         private Sunny.UI.UITextBox custAddPhone;
         private Sunny.UI.UISymbolButton custAddDataOk;

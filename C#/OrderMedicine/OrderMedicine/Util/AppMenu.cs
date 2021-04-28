@@ -73,13 +73,11 @@ namespace OrderMedicine.Util
                 string age = Console.ReadLine();
                 Console.Write("성별(w/m): ");
                 char gender = Convert.ToChar(Console.ReadLine());
-                Console.Write("증상: ");
-                string symptom = Console.ReadLine();
                 Console.Write("주소: ");
                 string addr = Console.ReadLine();
                 Console.Write("전화번호: ");
                 string phone = Console.ReadLine();
-                new Customer(id, name, age, gender, symptom, addr, phone);
+                new Customer(id, name, age, gender, addr, phone);
             }
             catch(FormatException e)
             {
@@ -183,7 +181,7 @@ namespace OrderMedicine.Util
             Console.WriteLine("--------------------------------------------");
             Console.Write("검색할 고객 ID 입력: ");
             id[0] = Console.ReadLine();
-            Console.Write("변경할 고객  증상 입력: ");
+            Console.Write("변경할 고객  ID 입력: ");
             id[1] = Console.ReadLine();
             
             return id;

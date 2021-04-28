@@ -57,7 +57,7 @@ namespace OrderMedicine.Controll
             {
                 if (listcust[i].CustId.Equals(item[0]))
                 {
-                    listcust[i].CustSymptom = item[1];
+                    listcust[i].CustId = item[1];
                 }
             }
         }

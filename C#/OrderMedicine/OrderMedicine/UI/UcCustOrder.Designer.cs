@@ -57,6 +57,7 @@ namespace OrderMedicine.UI
             this.comboHeadache.BackColor = System.Drawing.Color.White;
             this.comboHeadache.FormattingEnabled = true;
             this.comboHeadache.Items.AddRange(new object[] {
+            "",
             "타이레놀정 500mg",
             "타이레놀정160mg",
             "어린이용타이레놀정 80mg",
@@ -72,6 +73,7 @@ namespace OrderMedicine.UI
             // 
             this.comboCold.FormattingEnabled = true;
             this.comboCold.Items.AddRange(new object[] {
+            "",
             "판콜에이내복액",
             "판피린티정"});
             this.comboCold.Location = new System.Drawing.Point(203, 161);
@@ -145,6 +147,7 @@ namespace OrderMedicine.UI
             this.comboStomache.BackColor = System.Drawing.Color.White;
             this.comboStomache.FormattingEnabled = true;
             this.comboStomache.Items.AddRange(new object[] {
+            "",
             "베아제정",
             "닥터베아제정",
             "훼스탈골드정"});
@@ -176,6 +179,7 @@ namespace OrderMedicine.UI
             this.comboMuscle.BackColor = System.Drawing.Color.White;
             this.comboMuscle.FormattingEnabled = true;
             this.comboMuscle.Items.AddRange(new object[] {
+            "",
             "제일쿨파프",
             "신신파스아렉스"});
             this.comboMuscle.Location = new System.Drawing.Point(458, 137);
@@ -206,6 +210,7 @@ namespace OrderMedicine.UI
             this.comboSkin.BackColor = System.Drawing.Color.White;
             this.comboSkin.FormattingEnabled = true;
             this.comboSkin.Items.AddRange(new object[] {
+            "",
             "후시딘히드로연고",
             "복합마데카솔연고"});
             this.comboSkin.Location = new System.Drawing.Point(458, 173);
@@ -283,6 +288,7 @@ namespace OrderMedicine.UI
             this.comboSyptom.BackColor = System.Drawing.Color.White;
             this.comboSyptom.FormattingEnabled = true;
             this.comboSyptom.Items.AddRange(new object[] {
+            "",
             "두통",
             "감기",
             "소화불량",
