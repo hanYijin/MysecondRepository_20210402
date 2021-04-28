@@ -16,8 +16,6 @@
 	<div class="jumbotron">
 		<h1>My Study</h1>
 		<p>공부하자!</p>
-		
-		
 	</div>
 </body>
 </html>
@@ -36,6 +34,7 @@
 		session.setAttribute("pw",pw);
 		session.setAttribute("name",ret.getName());
 		session.setAttribute("id",ret.getPhone());
+	
 		//out.println("세션에 저장 성공");
 		out.println("<a href='Index.jsp' class='btn btn-primary'>메인페이지</a>");
 	}else{

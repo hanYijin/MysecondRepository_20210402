@@ -106,7 +106,7 @@
 				
 				
 				<Context docBase="spro_mysql" path="" reloadable="true" source="org.eclipse.jst.jee.server:spro_mysql"/>
-			</Host>
+			<Context docBase="StudyCafe" path="/StudyCafe" reloadable="true" source="org.eclipse.jst.jee.server:StudyCafe"/></Host>
 		</Engine>
 	</Service>
 </Server>
