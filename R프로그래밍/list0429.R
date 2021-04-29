@@ -169,3 +169,32 @@ class(mtcars)
 mode(mtcars)
 
 sapply(mtcars,class)
+
+#문자열 추출
+str <-"홍길동35이순신45유관순25"
+str_extract(str,'[1-9]{3}')
+str_extract_all(str,"[1-9]{3}")
+
+#정규표현식
+string <- "hongkd105leess1002you25강감찬2055"
+str_extract_all(string,'[a-z]{3,5}')
+
+# 해당 문자열 추출
+str_extract_all(string,"[0-9]{4}")
+
+
+# 특정 문자열을 제외하는 정규표현식
+str_extract_all(string,'[^0-9]{3}')
+
+#
+jumin <- "123456-9234567"
+str_extract(jumin,"[0-9]{6}-[9][0-9]{6}")
+str_extract_all(jumin,"\\d{6}-[923]\\d{6}")
+email <- "gksdlwls123@naver.com"
+str_extract(email,"\\w{11}[@]\\w{5}")
+
+name <- "홍길동1234,이순신5678,강감찬1012"
+str_extract_all(name,"\\w{7,}")
+
+string_sub<- str_sub(string,5,str_length(string))
+string_sub

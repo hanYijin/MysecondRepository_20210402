@@ -180,4 +180,27 @@ y1
 xyand
 xyor
 
-#
+#stdent dataframe 만들기
+#벡터 객체 생성
+sid =c("A","B","C","D")
+score=c(90,80,70,60)
+subject=c("컴퓨터","국어국문","소프트웨어","유아교육")
+
+student <- data.frame(sid,score,subject)
+student
+
+#자료형과 자료구조 보기
+mode(student);class(student)
+str(sid);str(score);str(subject)
+str(student)
+
+# 두 개 이상의 데이터프레임 병합
+
+height <- data.frame(id=c(1,2),h=c(180,185))
+weight <- data.frame(id=c(1,2),W=c(80,75))
+
+user <- merge(height,weight,by.x="id",by.y="id")
+user
+user1 <- merge(height, weight,by="id")
+user1
+
