@@ -79,15 +79,7 @@ public class Customer {
 	}
 	public void custPrintINfo()
 	{
-		System.out.println(">>>>>>>>>>>>> 고객 정보 <<<<<<<<<<");
-		System.out.println("고객 Id: " + custId);
-		System.out.println("고객 이름: " + custName);
-		System.out.println("생년(YYYY): " + custAge);
-		System.out.println("성별: " + custGender);
-		System.out.println("주소: " + custAddress);
-		System.out.println("전화번호: " + custPhone);
-		System.out.println("---------------------------------");
-		
+		Sy
 	}
 	
 }
