@@ -61,7 +61,14 @@ namespace OrderMedicine.UI
         }
         private void orderDataView_Click(object sender, EventArgs e)
         {
-            new CustOrderView(orderControll).ShowDialog();
+            if (orderControll.Orderlist.Count > 0)
+            {
+                new CustOrderView(orderControll).ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("주문 내역이 존재하지 않습니다");
+            }
         }
         private void controllView(UserControl uc, string view)
         {
