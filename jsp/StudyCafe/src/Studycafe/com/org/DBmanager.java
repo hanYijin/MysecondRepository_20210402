@@ -6,12 +6,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class DBmanager {
-	String ora_class="oracle.jdbc.driver.OracleDriver";
+	String ora_class = "oracle.jdbc.driver.OracleDriver";
 	String mysql_class="com.mysql.cj.jdbc.Driver";
-	String ora_url="jdbc:oracle:thin:@localhost:1521:xe";
-	String mysql_url="jdbc:mysql://127.0.0.1:3306/spro?useUnicode=true&characterEncoding=UTF-8"; // 한글 깨짐 방지
-	String mysql_id="root";
-	String mysql_pw="1234";
+	String ora_url = "jdbc:oracle:thin:@192.168.0.111:1521:xe";
+	String mysql_url = "jdbc:mysql://localhost:3306/spro?useUnicode=true&characterEncoding=utf8"; 
+	String mysql_id = "root";
+	String mysql_pw = "1234";
 	
 	public Member checkLogin(String id, String pw) {
 		Member member= null;
@@ -62,7 +62,7 @@ public class DBmanager {
 			pstmt.setString(4, phone);
 			int ret = pstmt.executeUpdate();
 			if(ret>0) {
-				System.out.println("정상저으로 insert 되었습니다");
+				System.out.println("정상적으로 insert 되었습니다");
 				return ret;
 			}
 		}catch(Exception e){

@@ -23,7 +23,7 @@ public class Main extends JFrame {
 		cust_but.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent e1){
-				Customer c_fram= new Customer();
+//				Customer c_fram= new Customer();
 			}
 		});
 		phar_but.addActionListener(new ActionListener(){

@@ -39,5 +39,6 @@
 		out.println("<a href='Index.jsp' class='btn btn-primary'>메인페이지</a>");
 	}else{
 		out.println("로그인 실패");
+		out.println("<a href= 'index.jsp' class='btn btn-primary'>로그인 창</a>");
 	}
 %>

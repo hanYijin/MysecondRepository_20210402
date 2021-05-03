@@ -6,13 +6,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class SPRO_DBManager {
-	String ora_class="oracle.jdbc.driver.OracleDriver";
+	String ora_class = "oracle.jdbc.driver.OracleDriver";
 	String mysql_class="com.mysql.cj.jdbc.Driver";
-	String ora_url="jdbc:oracle:thin:@localhost:1521:xe";
-	String mysql_url="jdbc:mysql://127.0.0.1:3306/spro?useUnicode=true&characterEncoding=UTF-8";
-	//?useUnicode=true&characterEncoding=UTF-8
-	String mysql_id="root";
-	String mysql_pw="1234";
+	String ora_url = "jdbc:oracle:thin:@192.168.0.111:1521:xe";
+	String mysql_url = "jdbc:mysql://localhost:3306/spro?useUnicode=true&characterEncoding=utf8"; 
+	String mysql_id = "root";
+	String mysql_pw = "1234";
 	
 	public SPRO_MEMBER CKLogin(String id, String pw) {
 		
@@ -22,8 +21,8 @@ public class SPRO_DBManager {
 		PreparedStatement pstmt= null;
 		ResultSet rs =null;
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn= DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/spro", "root", "1234");
+			Class.forName(mysql_class);
+			conn= DriverManager.getConnection(mysql_url, mysql_id, mysql_pw);
 			pstmt= conn.prepareStatement("SELECT * FROM MEMBER " + 
 					"WHERE ID=? AND PW=? ");
 			pstmt.setString(1,id);
@@ -36,7 +35,9 @@ public class SPRO_DBManager {
 				 member.setPw(pw);
 				 member.setName(rs.getString("name"));
 				 member.setPhone(rs.getString("phone"));
+				 System.out.println("로그인 성공");
 			}
+		
 			
 		}catch(Exception e) {
 			e.printStackTrace();
