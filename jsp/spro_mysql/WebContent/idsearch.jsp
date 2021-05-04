@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 <script type="text/javascript">
 	window.onload= function(){
-		document.getElmentById('idsearch').onclick=function(){
+		document.getElmentById('getid').onclick=function(){
 			var name= document.getElementById('name');
 			var phone= document.getelemntById('phone');
-			location.href='myid.jsp?name='+name.value+'&phone= '+phone.value;
+			location.href ='myid.jsp?name='+name.value+'&phone= '+phone.value;
 		}
 	}
 </script>
@@ -30,7 +30,7 @@
 			<label for="phone">Phone:</label> 
 			<input type="text" class="form-control" id="phone">
 		</div>
-			<input type="button" value="ID찾기" id="idsearch" class="btn btn-primary ml-2 mr-2">
+			<input type="button" value="ID찾기" id="getid" class="btn btn-primary ml-2 mr-2">
 	</div>
 
 </body>
