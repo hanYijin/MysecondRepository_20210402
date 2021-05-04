@@ -1,0 +1,14 @@
+
+public class Baying<Cu,Me,St> {
+	private Cu cust;
+	private Me medi;
+	private St store;
+	private String date;
+	
+	public Buying(Cu cust, Me medi, St store){
+		this.Cust=cust;
+		this.medi=medi;
+		this.store=store;
+	}
+
+}

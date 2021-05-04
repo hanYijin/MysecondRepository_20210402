@@ -147,6 +147,35 @@ public class SPRO_DBManager {
 		}
 		return 0;
 	}
+	public String idSearch(String name, String phone) {
+		Connection conn =null;
+		PreparedStatement pstmt =null;
+		ResultSet rs =null;
+		String id=null;
+		try {
+			Class.forName(mysql_class);
+			conn= DriverManager.getConnection(mysql_url,mysql_id,mysql_pw);
+			pstmt=conn.prepareStatement("SELECT * FROM MEMBER WHERE NAME=? AND PHONE=?");
+			pstmt.setString(1, name);
+			pstmt.setString(2, phone);
+			rs= pstmt.executeQuery();
+		while(rs.next()) {
+			id=rs.getString("id");
+		}
+			
+		}catch(Exception e) {
+			
+		}finally {
+			try{
+				if(rs!=null)rs.close();
+				if(pstmt != null) pstmt.close();
+				if(conn != null) conn.close();
+			}catch(Exception ex){
+				
+			}
+		}
+		return id;
+	}
 }
 
 
