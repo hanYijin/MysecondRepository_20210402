@@ -119,7 +119,7 @@ write_xlsx(x=titanicDf, path = 'res/titanic.xlsx', col_names = T)
 #1. 동전 앞면과 뒷면에 대한 확률 함수 구현
 #랜덤 생성 함수: runif()
 #ex) runif(5, min,max)
-
+runif(5,min=0,max=2)
 #랜덤 생성 함수
 rand_coin <- function(num){
   
@@ -147,4 +147,37 @@ print(monteTest(1000000))
 coin<-as.integer(runif(20,0,2))
 
 coin
+
+#동전 앞뒤 랜덤 생성 함수
+coinTest <- function(n){
+  r<-runif(n, min=0, max=1)
+  res<- c()
+  for(i in 1:n){
+    if(r[i]<=0.5){
+      res[i]<- 0
+    }
+    else{
+      res[i]<- 1
+    }
+  }
+  return(res)
+}
+res <- coinTest(5)
+res
+hist(res) #histogram으로 결과를 보여줌
+
+#랜덤 확률 분포 함수 
+#몬테카를로 시뮬레이션
+
+monte <- function(n){
+  cnt <- 0
+  for(i in 1:n){
+    cnt <- cnt + coinTest(1)
+  }
+  result<- cnt / n
+  return(result)
+}
+monte(2)
+monte(1000)
+monte(100000)
 
