@@ -186,8 +186,8 @@ melt_test2 <- melt(airquality,
                    #변환열
                    measure.vars = 'ozone')
 head(melt_test2)
-head(airquality)
-
+View(airquality)
+class(airquality)
 melt_Test3<- melt(airquality,id.vars = 'Month','Day',variable.name = 'climate_variable',value.name = 'climate_value')
 head(melt_Test3)
 
@@ -198,47 +198,169 @@ melt_Test3<- melt(airquality,id.vars = c('month','day'),variable.name = 'climate
 head(melt_Test3)
 melt_air <- melt(airquality,id=c('month','day'),na.rm=T)
 head(melt_air)
-acast(melt_air,day~month~variable)
+acast(aq_melt,day~month~variable)
 
-# 결측치(NA) 포함 자료의 평균 계산 함수 정의
+# acast(): vector, matrix, array 변환
+# dcast(): data frame 변환
 
-#결측값을 통계 분석 시 제외(미포함): na.rm = TRUE
+aq_melt <- melt(airquality, id=c('month','day'), na.rm=T)
+head(aq_melt)
 
-# 결측값이 포함되어 있는지 확인하는 방법: is.na()
-data <- c(10, 20, 5, 4, 40, 7, NA, 6, 3, NA, 2, NA)
+aq_dcast <- dcast(aq_melt, month + day ~ variable)
+head(aq_dcast)
+class(aq_dcast)
 
-# 결측치 데이터를 처리하는 함수 정의
-na <- function(x){
-  #1차: NA제거
-  print(x)
-  print(mean(x,na.rm=T))
+aq_acast <- acast(aq_melt, day ~ month ~ variable)
+head(aq_acast)
+mode(aq_acast)
+
+acast(aq_melt, month ~ variable, mean)
+dcast(aq_melt, month~ variable, mean)
+
+##################################################################
+library('dplyr')
+# 1. ozone 합, 평균값, 표준편차, 분산 구하기 (NA 값 제거)
+ozone_data <- melt(airquality,id=c('month','day'),na.rm = T)
+head(ozone_data)
+summarise(ozone_data, SUM=sum(value),Mean=mean(value),SD=sd(value),VAR=var(value))
+################################################################################
+# 1) 모든 정보 칼럼명을 소문자로 변경
+names(airquality)<-tolower(names(airquality))
+str(airquality)
+class(airquality)
+# 모든 기본함수에는 매개변수로 NA 제거 옵션 제공
+sum(airquality$ozone,na.rm=T) # 합
+mean(airquality$ozone, na.rm = T) # 평균
+var(airquality$ozone, na.rm=T) # 분산
+sd(airquality$ozone, na.rm = T) # 표준편차
+
+# 2. 모든 NA 제거 후, 각 월별로 측정 값들의 평균
+air_mean <- acast(ozone_data,month~variable, mean)
+air_mean
+class(air_mean)
+
+# 3. 5월 달 평균 온도, 풍속
+temp <- melt(airquality,id='month',measure.vars = 'temp',na.rm=T)
+wind <- melt(airquality, id='month',measure.vars = 'wind', na.rm=T)
+data1 <- filter(temp,month==5)
+data2 <- filter(wind,month==5)
+mean_temp<-summarise(data1,temp_mean=mean(value))
+mean_wind<-summarise(data2,wind_mean=mean(value))
+mean_temp;mean_wind
+mean_temp_wind <- cbind(mean_temp,mean_wind)
+mean_temp_wind
+################################################################################
+# 1) 5월 달 온도, 풍속 
+tw5Data<- subset(airquality,month==5,select = c('wind','temp'))
+tw5Data
+mean(tw5Data$wind,na.rm = T);mean(tw5Data$temp, na.rm = T)
+
+########################################################################
+fil_data <- filter(airquality,month==5) %>% select(wind,temp)
+witeData <- summarise(fil_data,wind_mean=mean(wind,na.rm = T),temp_mean=mean(temp,na.rm = T))
+witeData
+
+# 4. ozoen 5월달 합, 평균, 분산, 표준편차 (NA 제거)
+# --> R기본 함수와 사용자 정의 함수 각각 사용
+oz_data<-filter(ozone_data,month==5 & variable=='ozone')
+oz_data
+summarise(oz_data,sum=sum(value),mean=mean(value),var=var(value),sd=sd(value))
+#사용자 정의 함수
+as.list(oz_data)
+oz_val <- oz_data$value
+oz_val
+f <- function(x){
+  sum <- 0
+  for(i in x){
+    sum <- sum+i
+  }
+  cat("합계: ",sum,'\n')
   
-  #2차: NA를 0으로 대체
-  data=ifelse(!is.na(x),x,0) # 삼항연산자 NA가 아니면 x, false면 0
-  print(data)
-  print(mean(data))
+  mean <- sum/length(x)
+  cat("평균: ",mean,'\n')
   
-  #3차: NA를 평균으로 대체
-  data2=ifelse(!is.na(x),x,round(mean(x,na.rm=T),2)) #round(변수, 2)소수점 2자리에서 반올림
-  print(data2)
-  print(mean(data2))
+  var<-sum((x-mean(x))^2)/(length(x)-1)
+  cat("분산: ", var,'\n')
+  
+  sd <- sqrt(var)
+  cat("표준 편차: ",sd)
 }
-na(data)
-d<-c(1,2,3,5,3,7,8)
-order(d)
-table(d)
-sample(d,10)
-# 주요 내장함수
-# min(vec): 벡터를 대상으로 최솟값
-# max(vec): 벡터를 대상으로 최댓값
-# range(vec): 벡터를 대상으로 범위값( 최솟~최댓값)
-# mean(vec): 평균값을 구하는 함수
-# median(vec): 중위수(중앙값)을 구하는 함수
-# sum(vec): 합계
-# sort(x): 벡터 데이터 정렬 함수
-# order(x) 벡터의 정렬된 값의 인덱스을 보여주는 함수
-# rank(x): 각 원소의 순위를 제공하는 함수
-# sd(x): 표준편차를 구하는 함수
-# summary(x): x에대한 기초 통계량을 함수
-# table(x): x에 대한 빈도수를 구하는 함수
-# sample(x,y): x범위에서 y만큼 sample대이터를 생성하는 함수
+f(oz_data$value)
+f(oz_val)
+###########################################################################
+ozone5 <- subset(airquality, month==5, select = ozone)
+ozone5$ozone
+mean(ozone5$ozone,na.rm=T)
+sum(ozone5$ozone, na.rm=T);var(ozone5$ozone,na.rm=T);sd(ozone5$ozone, na.rm=T)
+
+delNa= ifelse(!is.na(ozone5$ozone),ozone5$ozone,round(mean(ozone5$ozone,na.rm = T),5))
+delNa
+mean(delNa)
+sum(delNa);var(delNa);sd(delNa)
+
+func <- function(x){
+  sum <- 0
+  for(i in x){
+    sum <- sum + i
+    len<-length(x)
+  }
+  cat("합: ",sum,'\n')
+  
+  mean <- sum / len
+  cat("평균: ",mean,'\n')
+  
+  var <- sum((x-mean)^2) / (len-1)
+  cat("분산: ",var,'\n')
+  
+  sd<- sqrt(var)
+  cat("표준 편차: ",sd,'\n')
+}
+func(delNa)
+#############################################################################
+airquality %>% filter(month==5) %>%  select(ozone) %>% summarise(ozone5_sum=sum(ozone,na.rm = T),ozone5_avg=mean(ozone,na.rm = T)
+                                                                 ,ozone5_var=var(ozone,na.rm = T),ozone5_sd=sd(ozone,na.rm = T))
+# 5. 5월 7일 데이터 출력
+str(airquality)
+airquality[airquality$month==5 & airquality$day==7,]
+###################################################################
+subset(airquality,month==5 & day==7)
+
+airquality %>% filter(month==5) %>% filter(day==7) %>% select(ozone)
+
+class(filter(airquality,month==5& day==7))
+
+# 6. 5/1 ~ 5/6까지 오존농도
+#-->기준열(month,day)
+oz <-melt(airquality, id=c('month','day'),measure.vars = 'ozone',na.rm=T)
+oz
+printInfo <-function(){
+  data<-data.frame()
+  for(i in c(1:6)){
+    print(filter(oz,month==5&day== i))
+  }
+  return(data)
+}
+printInfo()
+# 7. 기온이 가장 높은 날짜를 기준으로 출력
+airquality[which.max(airquality$temp), c('month','day')]
+# 8. 기온이 가장 높은 날의 모든 데이터 출력
+airquality[which.max(airquality$temp),c(1:6)]
+# 9. 6월달에 발생한 가장 강한 바람의 세기 출력
+#--> subset() 사용
+wind6 <- subset(airquality,month=6, select = wind)
+class(wind6)
+class(wind6$wind)
+wind6[which.max(wind6$wind),]
+
+#####################################################
+blackpink <- data.frame(name=c('제니','리사','로제','지수'),age=c(26,25,25,27),from=c('뉴질랜드','태국','호주','한국'))
+blackpink[blackpink$name=='제니'&blackpink$age==26,]
+jenInfo <- subset(blackpink,name=='제니',select=from)
+jenInfo <- subset(blackpink,name=='제니',)
+class(jenInfo)
+
+jenInfo
+filter(blackpink,name=='제니') %>%select(from)
+filter(blackpink,name=='제니')
+blackpink[which.max(blackpink$age),]
+blackpink[which.max(blackpink$age),c('name','from')]
