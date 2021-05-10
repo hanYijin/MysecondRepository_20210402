@@ -14,7 +14,7 @@
 <body>
 	<div class="jumbotron">
 		<h1>My Study</h1>
-		<p>공부하자!</p>
+		<p>code4</p>
 	</div>
 </body>
 </html>

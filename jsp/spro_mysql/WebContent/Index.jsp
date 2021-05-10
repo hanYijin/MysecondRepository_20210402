@@ -38,14 +38,22 @@
 		$('#loginout').on('click',function(){
 			location.href='logout.jsp';
 		})
+		$('#chart').on('click',function(){
+			location.href='dg/dgmain.jsp';
+		})
 	})
 </script>
 <body>
 	<div class="jumbotron">
+		<div class="row">
+			<input class="btn btn-primary ml-3 mb-2" type="button" id="chart" value="차트"/>
+		</div>
 		<h1>My Study</h1>
 		<p>공부하자!</p>
-		<%  Object name=session.getAttribute("name");
-			if(name!=null){ %>
+		<%  
+			Object name=session.getAttribute("name");
+			if(name!=null){ 
+		%>
 			안녕하세요.<% out.println((String)name); %>님 :)
 		<% }else{ %>
 		<div class="form-group">
