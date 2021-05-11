@@ -33,11 +33,17 @@
 		$('#logout').on('click',function(){
 			location.href='logout.jsp';
 		})
+		$('#chart').on('click', funtction(){
+			location.href='view/deaguMain.jsp';
+		})
 	})
 </script>
 </head>
 <body>
-	<div class="umbotron">
+	<div class="jumbotron">
+		<div class="row">
+			<input class="btn btn-primary ml-3 mb-2" type="button" id="chart" value="차트"/>
+		</div>
 		<h1>STUDY CAFE</h1>
 		<p>열공하자!</p>
 		<% 

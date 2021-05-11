@@ -6,18 +6,9 @@
  <%
  	SPRO_DaeGUManager sdbm = new SPRO_DaeGUManager();
  	List<SPRO_DaeGU> list= sdbm.select(0); //List 컬렉션 자료구조 
- 	
- 	for(SPRO_DaeGU sd : list){
- 		
- 		System.out.println(sd.getIdx());
- 		System.out.println(sd.getName());
- 		System.out.println(sd.getCode1());
- 		System.out.println(sd.getCode1_name());
- 		System.out.println(sd.getCode2());
- 		System.out.println(sd.getCode2_name());
- 		System.out.println(sd.getDoro_addr());
-		
- 	}
+ 	int pagecnt= sdbm.pageCount();
+ 	out.print(pagecnt);
+
  %>
 <!DOCTYPE html>
 <html>
@@ -68,6 +59,11 @@
 				<% } %>
 			</tbody>
 		</table>
+		<%
+			for(int i=1; i<pagecnt; i++){
+				out.print(" <a href=\"?pagecnt="+i+"\">["+i+"]</a> ");
+			}
+		%>
 	</div>
 </body>
 </html>

@@ -32,6 +32,7 @@ public class DBmanager {
 				member.setPw(pw);
 				member.setName(rs.getString("name"));
 				member.setPhone(rs.getString("phone"));
+				
 			}
 		}catch(Exception e) {
 			e.printStackTrace();

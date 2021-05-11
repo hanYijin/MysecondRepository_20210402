@@ -27,12 +27,12 @@
 	String id = (String)request.getParameter("id");
 	String pw = (String)request.getParameter("pw");
 	DBmanager bdm = new DBmanager();
-	Member memeber = bdm.checkLogin(id, pw);
-	if(memeber!=null){
+	Member ret = bdm.checkLogin(id, pw);
+	if(ret!=null){
 		session.setAttribute("id",id);
 		session.setAttribute("pw",pw);
-		session.setAttribute("name",memeber.getName());
-		session.setAttribute("phone", memeber.getPhone());
+		session.setAttribute("name",ret.getName());
+		session.setAttribute("phone", ret.getPhone());
 		out.println("로그인 성공");
 		out.println("<a href= 'index.jsp' class='btn btn-primary'>메인페이지</a>");
 	}else{
