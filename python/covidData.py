@@ -1,24 +1,28 @@
 import csv
 import pymysql
 
+
 def covidDateSave():
-    file= open("info/covid.csv","r", encoding="utf8")
+    file= open('csvcovid.csv','r',encoding='cp949')
+    conn = pymysql.connect(host='localhost', user='root', password='1234', db='spro', charset='utf8')
+    curs = conn.cursor()
+    sql = "INSERT INTO covid ( num, date, location, contact) VALUES ( %s, %s, %s, %s)";
     rd= csv.reader(file)
-    conn=pymysql.connect(host='localhost', user='root',password='1234', db='spro', charset='utf8')
-    for index, line in enumerate(rd):
-        print(index)
-        print(line)
-        row= tuple(line)
-        if index !=0:
-            print(int(row[0]), 'row[1] = ', row[1],'row[2] = ',row[2], 'row[3] = ',row[3])
+
+    for line in rd:
+        row=str(line).split(',')
 
         try:
-            sql = 'INSERT INTO covid VALUES (%s, %s, %s, %s)'
-            cursor=conn.cursor()
-            if index!=0:
-                row=tuple(line)
-                cursor.execute(sql, ( int(row[0]),row[1],row[2],row[3]))
+
+
+            curs.execute(sql, ( row[0].replace("['",""), row[1], row[2],row[3].replace("']", "")))
+            print(row)
             conn.commit()
         except Exception as e:
             print(e)
             continue
+
+    file.close()
+
+
+

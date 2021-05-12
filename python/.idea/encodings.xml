@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/csvcovid.csv" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/info/covid.csv" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/info/서울시 코로나19 확진자 현황.csv" charset="UTF-8" />
+    <file url="PROJECT" charset="x-windows-949" />
   </component>
 </project>
