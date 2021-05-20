@@ -206,7 +206,6 @@ public class SPRO_DaeGUManager {
 		}
 		catch(Exception e){
 			e.printStackTrace();
-			return 0;
 		}
 		finally{
 			try{
