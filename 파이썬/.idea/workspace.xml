@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="394e239f-bc51-47d2-a81c-e58da7d742a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../C#/OrderMedicine/.vs/OrderMedicine/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../C#/OrderMedicine/.vs/OrderMedicine/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jsp/Servers/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../jsp/Servers/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jsp/Servers/.settings/org.eclipse.wst.server.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../jsp/Servers/.settings/org.eclipse.wst.server.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jsp/Servers/Tomcat v8.5 Server at localhost-config/catalina.policy" beforeDir="false" afterPath="$PROJECT_DIR$/../jsp/Servers/Tomcat v8.5 Server at localhost-config/catalina.policy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jsp/Servers/Tomcat v8.5 Server at localhost-config/catalina.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../jsp/Servers/Tomcat v8.5 Server at localhost-config/catalina.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jsp/Servers/Tomcat v8.5 Server at localhost-config/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jsp/Servers/Tomcat v8.5 Server at localhost-config/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jsp/Servers/Tomcat v8.5 Server at localhost-config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jsp/Servers/Tomcat v8.5 Server at localhost-config/server.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jsp/Servers/Tomcat v8.5 Server at localhost-config/tomcat-users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jsp/Servers/Tomcat v8.5 Server at localhost-config/tomcat-users.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jsp/Servers/Tomcat v8.5 Server at localhost-config/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jsp/Servers/Tomcat v8.5 Server at localhost-config/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jsp/spro_mysql/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../jsp/spro_mysql/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jsp/spro_mysql/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jsp/spro_mysql/.settings/org.eclipse.wst.common.project.facet.core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jsp/spro_mysql/src/sproj/com/org/SPRO_DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jsp/spro_mysql/src/sproj/com/org/SPRO_DBManager.java" afterDir="false" />
+    <list default="true" id="d6c67814-13fb-48d5-a659-871d85ef7c75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../python/ex01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/main2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/파이썬.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/MysecondRepository_20210402.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/MysecondRepository_20210402.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-work/20210517/target/m2e-wtp/web-resources/META-INF/maven/com.org/yj/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-work/20210517/target/m2e-wtp/web-resources/META-INF/maven/com.org/yj/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-work/Servers/Tomcat v8.5 Server at localhost-config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-work/Servers/Tomcat v8.5 Server at localhost-config/server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-work/cha/target/m2e-wtp/web-resources/META-INF/maven/com.kb/cha/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-work/cha/target/m2e-wtp/web-resources/META-INF/maven/com.kb/cha/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-work/yj/src/main/java/yj/MyMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-work/yj/src/main/java/yj/MyMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-work/yj/target/classes/META-INF/maven/com.org/yj/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-work/yj/target/classes/META-INF/maven/com.org/yj/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-work/yj/target/classes/yj/MyMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-work/yj/target/classes/yj/MyMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1s0PpskHHel2FAgt6wW05SQCthO" />
+  <component name="ProjectId" id="1syDHTLL9yXOmhM1azAtHmfJkjl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,7 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../python" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -67,21 +80,32 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="394e239f-bc51-47d2-a81c-e58da7d742a9" name="Default Changelist" comment="" />
-      <created>1620006720895</created>
+      <changelist id="d6c67814-13fb-48d5-a659-871d85ef7c75" name="Default Changelist" comment="" />
+      <created>1621835847458</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1620006720895</updated>
+      <updated>1621835847458</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>3</line>
-          <option name="timeStamp" value="2" />
+          <line>7</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

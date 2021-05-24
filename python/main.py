@@ -1,3 +1,4 @@
+import numpy 
 from csvRW import doRead,doWrite
 # from myaqlrw import selectMember, insertMember
 from daegudb import read_csv_write_mysql

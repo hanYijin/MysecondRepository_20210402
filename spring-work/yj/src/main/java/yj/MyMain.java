@@ -1,18 +1,12 @@
 package yj;
 
-import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class MyMain {
 	public static void main(String[] args) {
-		GenericXmlApplicationContext gxac = new GenericXmlApplicationContext("myconf.xml");
-		
-		AA aa1= gxac.getBean(AA.class);
-		System.out.println(aa1);
-		
-		AA aa2= gxac.getBean(AA.class);
-		System.out.println(aa2);
-		aa2.doA();
-		
+		AnnotationConfigApplicationContext acac= new AnnotationConfigApplicationContext(Conf.class);
+		PrintAA aa = acac.getBean(PrintAA.class);
+		aa.printinfoAA();
 	}
 
 }
