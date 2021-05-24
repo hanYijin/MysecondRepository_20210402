@@ -44,7 +44,8 @@
 	})
 </script>
 <body>
-	<div class="jumbotron">
+	<div class="jumbotron text-center">
+  <h1>My First Bootstrap Page</h1>
 		<div class="row">
 			<input class="btn btn-primary ml-3 mb-2" type="button" id="chart" value="차트"/>
 		</div>
