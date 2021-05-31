@@ -1,0 +1,12 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+	<insert id="insert">
+		insert into user (userID, userPW, userName, userGender, userEmail) 
+		values ("abcd","dfdf","dfsdf","여자","dfk@dkfl");
+	</insert>
+</mapper>
+
+
+
