@@ -35,19 +35,18 @@ public class HomeController {
 	public String home(Locale locale, Model model) {
 		
 		SqlSessionFactoryBean ssf;
-		sqlSession.insert("user.insert");
-		//sqlSession.select(user.select);
+		//sqlSession.insert("member.insert");
 		Connection conn= null;
 		try {
-			//ÀÚ·áÇü¿¡¼­ °¡Á®¿À±â
+			//ï¿½Ú·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			conn = ds.getConnection();
-			System.out.println("¿¬°á¼º°ø");
+			System.out.println("ï¿½ï¿½ï¿½á¼ºï¿½ï¿½");
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
 		finally {
 			try {
-				//ÀÚ·áÇü¿¡¼­ ³Ö¾îÁÖ±â
+				//ï¿½Ú·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½Ö±ï¿½
 				conn.close();
 			}catch(Exception e) {
 				e.printStackTrace();
@@ -62,7 +61,7 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "home";
+		return "index";
 	}
 	
 }
