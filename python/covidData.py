@@ -3,10 +3,12 @@ import pymysql
 
 
 def covidDateSave():
-    file= open('csvcovid.csv','r',encoding='cp949')
-    conn = pymysql.connect(host='localhost', user='root', password='1234', db='spro', charset='utf8')
+    file= open('info/vaccine.csv','r', encoding='utf8')
+    conn = pymysql.connect(host='localhost', user='admin', password='12345678', db='JSP',  charset='utf8')
     curs = conn.cursor()
-    sql = "INSERT INTO covid ( num, date, location, contact) VALUES ( %s, %s, %s, %s)";
+    sql = "INSERT INTO vaccine" \
+          "(num,class,name,management, f_name, postnum, address, tel)" \
+          "VALUES (%d,%s, %s, %s, %s, %s, %s, %s)";
     rd= csv.reader(file)
 
     for line in rd:
@@ -15,7 +17,7 @@ def covidDateSave():
         try:
 
 
-            curs.execute(sql, ( row[0].replace("['",""), row[1], row[2],row[3].replace("']", "")))
+            curs.execute(sql, (row[0].replace("[", ""),row[1],row[2],row[3],row[4],row[5],row[6].replace("[","")))
             print(row)
             conn.commit()
         except Exception as e:
