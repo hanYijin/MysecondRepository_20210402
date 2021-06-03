@@ -1,40 +1,28 @@
-
 import csv
-
 import pymysql
 
-conn = pymysql.connect(host='127.0.0.1', user='admin',password='12345678', db='JSP',  charset='utf8')
+def dateSave():
+    file= open('info/vaccine.csv','r', encoding='cp949')
+    conn = pymysql.connect(host='jsp.cfy5mbppsewi.us-east-2.rds.amazonaws.com', user='admin', password='12345678', db='JSP',  charset='utf8')
 
-curs = conn.cursor()
+    rd= csv.reader(file)
 
-conn.commit()
+    for index, line in enumerate(rd):
+        print(index)
+        print(line)
+        row= tuple(line)
+        if index != 0:
+            print(row[0], row[1],row[2],row[3],row[4],row[5],row[6])
 
-f = open('insert.csv', 'r')
+        try:
+            sql = "INSERT INTO vaccine (centertype,centerName, operation, facility, postNum, addr, tel) VALUES (%s,%s,%s,%s, %s, %s,%s)"
+            cursor=conn.cursor()
+            if index != 0:
+                row=tuple(line)
+                cursor.execute(sql, (row[0], row[1],row[2],row[3],row[4],row[5],row[6]))
+            conn.commit()
+        except Exception as e:
+            print(e)
+            continue
 
-csvReader = csv.reader(f)
-
-for row in csvReader:
-    num = (row[0])
-    vclass= (row[1])
-    name = (row[2])
-    management = (row[3])
-    f_name = (row[4])
-    postnum=(row[5])
-    address=(row[6])
-    tel=(row[7])
-    print(num)
-    print(name)
-
-try:
-    sql = """INSERT INTO vaccine" \
-          "(num,class,name,management, f_name, postnum, address, tel)" \
-          "VALUES (%d,%s, %s, %s, %s, %s, %s, %s)"""
-
-    curs.execute(sql, (num, vclass, name, management, f_name, postnum, address, tel )
-E
-# db의 변화 저장
-conn.commit()
-
-f.close()
-
-conn.close()
+    #file.close()
