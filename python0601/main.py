@@ -8,7 +8,7 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route("/imgprint",methods=["POST","GET"])
+@app.route("/imgprint",methods=["POST"])
 def imgprint():
     file = request.files['img_file']
     filename = f"static/{file.filename}"
