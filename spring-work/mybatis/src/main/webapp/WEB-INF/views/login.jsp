@@ -11,14 +11,14 @@
 
     <title>SB Admin 2 - Login</title>
 
-    <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom fonts for this template-->
+    <link href="/resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="/resources/css/sb-admin-2.min.css" rel="stylesheet">t">
 
 </head>
 
@@ -44,12 +44,14 @@
                                     <form class="user">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
+                                                id="email" aria-describedby="emailHelp"
+                                                placeholder="Enter Email Address..."
+                                                name="email">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                                id="password" placeholder="Password"
+                                                name= "password">
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
@@ -58,9 +60,7 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                            Login
-                                        </a>
+                                        <input id="login" type="button" class="btn btn-primary btn-user btn-block" value="login">
                                         <hr>
                                         <a href="index.html" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Login with Google
@@ -89,15 +89,46 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/resources/vendor/jquery/jquery.min.js"></script>
+    <script src="/resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/resources/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="/resources/js/sb-admin-2.min.js"></script>
 
 </body>
 
 </html>
+<script>
+	//  http://localhost:9000?bbb=bvalue
+    $('document').ready(function () {
+        $('#login').on('click', function () {
+            $.ajax({
+                //url: "aa",
+                url: "bb",
+                type: "POST",
+//                 dataType: "json",
+//                 data: $('#frm').serialize(),
+				data:{
+						"bbb":"bvalue", 
+					    "ccc":"cvalue",
+					    "ddd":"dvalue"
+					 },
+                success: function (res) {
+                	var o = JSON.parse("{'bbb':'bvalue','ccc':'cvalue','ddd':'dvalue'}");
+                	console.log(o.bbb);
+                	console.log(o.ccc);
+                	console.log(o.ddd);
+                	console.log(res);
+                },
+                error: function (request, status, error) {
+                    var msg = "ERROR<br><br>"
+                    msg += request.status + "<br>" + request.responseText + "<br>" + error;
+                    console.log(msg);
+                }
+            });
+        })
+    })
+</script>
