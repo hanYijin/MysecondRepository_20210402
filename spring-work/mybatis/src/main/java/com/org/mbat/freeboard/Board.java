@@ -9,6 +9,15 @@ public class Board {
 	private String name;
 	private String email;
 	private String see;
+	private int start;
+	
+	public int getStart() {
+		return start;
+	}
+
+	public void setStart(int start) {
+		this.start = start;
+	}
 
 	public Board() {
 	}

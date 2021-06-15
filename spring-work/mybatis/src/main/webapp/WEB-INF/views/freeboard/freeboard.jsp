@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MH Admin Freeboard</title>
+    <title>yJ Admin Freeboard</title>
 
     <!-- Custom fonts for this template -->
     <link href="/resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -28,6 +28,9 @@
 </head>
 
 <body id="page-top">
+<%--  	${data}<br>
+ 	${strlist}<br>
+ 	${mylist}<br> --%>
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -40,7 +43,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">YJ Admin <sup>2</sup></div>
             </a>
 
             <!-- Divider -->
@@ -390,25 +393,23 @@
                                             <th>조회</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>제목</th>
-                                            <th>작성자</th>
-                                            <th>이메일</th>
-                                            <th>날짜</th>
-                                            <th>조회</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
-                                        </tr>
+                                    	<%-- list= <br>
+                                    	${list}<br> --%>
+                                    	<c:forEach items="${list}" var="index">
+                                    		<%-- index= <br>
+                                    		${index}<br> --%>
+                                    		<tr>
+                                            	<td>${index.idx}</td>
+                                            	<td>${index.title}</td>
+                                            	<td>${index.name}</td>
+                                            	<td>${index.email}</td>
+                                            	<td>${index.wdate}</td>
+                                            	<td>${index.see}</td>
+                                            </tr>
+                                    	</c:forEach>
+                                            
+               
                                     </tbody>
                                 </table>
                             </div>
