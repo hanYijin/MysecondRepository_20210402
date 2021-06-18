@@ -34,7 +34,7 @@ public class BoardController {
 	public String freeboard(Model model) {
 		
 		System.out.println("게시판 홈");
-		List list=sst.selectList("freeboard.select", 10);
+		List list=sst.selectList("freeboard.select");
 		model.addAttribute("list",list);
 		//	bs.select();
 //		model.addAttribute("data", "myData");
@@ -53,13 +53,13 @@ public class BoardController {
 //		
 //		return "freeboard/freeboard";
 //	}
-	@RequestMapping(value = "/freeboard/insert", method = RequestMethod.GET)
+	@RequestMapping(value = "/freeboard/insert")
 	public String freeboardinsert(Model model, String name, Board board) {
 		
 		System.out.println("name= "+ name);
-		bs.insert(board);
 		System.out.println(board);
-		return "freeboard/freeboard";
+		bs.insert(board);
+		return "redirect:/freeboard";
 }
 	@RequestMapping(value = "/freeboard/insertform", method = RequestMethod.GET)
 	public String freeboardinsertform(Model model) {
