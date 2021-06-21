@@ -61,6 +61,21 @@ public class BoardController {
 		bs.insert(board);
 		return "redirect:/freeboard";
 }
+
+
+	@RequestMapping(value = "/freeboard/view") 
+	public String freeboardview(Model model, Board board,int idx) { 
+		System.out.println("idx= "+idx);
+		model.addAttribute("view",bs.selectone(board.getIdx())); 
+		return "freeboard/view"; 
+		}
+
+	/*
+	 * @RequestMapping(value = "/freeboard/view") public String freeboardview(Model
+	 * model, Board board,int idx) { System.out.println("idx= "+idx); Board boardone
+	 * = sst.selectOne("freeboard.view", idx); model.addAttribute("view",boardone);
+	 * return "freeboard/view"; }
+	 */
 	@RequestMapping(value = "/freeboard/insertform", method = RequestMethod.GET)
 	public String freeboardinsertform(Model model) {
 		
@@ -70,5 +85,19 @@ public class BoardController {
 		return "freeboard/freeboardinsert";
 	}
 	
-
+	@RequestMapping(value = "/freeboard/updateform", method = RequestMethod.GET)
+	public String freeboardupdateform(Model model,Board board,int idx) {
+		
+		System.out.println("idx= "+idx);
+		//Board board = sst.selectOne("freeboard.view", idx);
+		model.addAttribute("board", bs.selectone(board.getIdx()));
+		return "freeboard/freeboardupdate";
+	}
+	
+	@RequestMapping(value = "/freeboard/update", method = RequestMethod.POST)
+	public String freeboardupdate(Model model,Board board) {
+		bs.update(board);
+		//sst.update("freeboard.updateone",board);
+		return "redirect:/freeboard";
+	}
 }

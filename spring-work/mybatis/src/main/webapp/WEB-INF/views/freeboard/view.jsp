@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>yJ Admin Freeboard</title>
+    <title>MH Admin Freeboard</title>
 
     <!-- Custom fonts for this template -->
     <link href="/resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,19 +24,11 @@
 
     <!-- Custom styles for this page -->
     <link href="/resources/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-<script type="text/javascript">
-	function doView(idx){
-		
-		location.href="/freeboard/view?idx="+idx;
-	}
-</script>
 
+	
 </head>
 
 <body id="page-top">
-<%--  	${data}<br>
- 	${strlist}<br>
- 	${mylist}<br> --%>
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -49,7 +41,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">YJ Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">MH Admin <sup>2</sup></div>
             </a>
 
             <!-- Divider -->
@@ -305,7 +297,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="/resources/img/undraw_profile_3.svg" alt="...">
+                                        <img class="rounded-circle" src="/resources/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -372,52 +364,44 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Freeboard</h1>
-                    <p class="mb-4"> 자유 게시판...하고 싶은말 하세요... 
-<!--                         <a target="_blank" href="https://datatables.net">official DataTables documentation</a>. -->
+                    <p class="mb-4"> 자유 게시판...하고 싶은말 하세요...
+                        <!--                         <a target="_blank" href="https://datatables.net">official DataTables documentation</a>. -->
                     </p>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                        	<div style="float:left">
-                            	<h6 class="m-0 font-weight-bold text-primary">Freeboard</h6>
-                            </div>
-                            <div style="float:right">
-                            	<a class="m-0 font-weight-bold text-primary" href="/freeboard/insertform">글쓰기</a>
-                            </div>
+                            <h6 class="m-0 font-weight-bold text-primary">Freeboard</h6>
                         </div>
                         <div class="card-body" style="clear: both">
                             <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>제목</th>
-                                            <th>작성자</th>
-                                            <th>이메일</th>
-                                            <th>날짜</th>
-                                            <th>조회</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    	<%-- list= <br>
-                                    	${list}<br> --%>
-                                    	<c:forEach items="${list}" var="index">
-                                    		<%-- index= <br>
-                                    		${index}<br> --%>
-                                    		<tr style="cursor:pointer;"onclick="doView(${index.idx})">
-                                            	<td>${index.idx}</td>
-                                            	<td>${index.title}</td>
-                                            	<td>${index.name}</td>
-                                            	<td>${index.email}</td>
-                                            	<td>${index.wdate}</td>
-                                            	<td>${index.see}</td>
-                                            </tr>
-                                    	</c:forEach>
-                                            
-               
-                                    </tbody>
-                                </table>
+                                <form name="form" id="form" role="form" method="post" action="/freeboard/insert">
+                                
+                                    <div class="mb-3">
+                                        <label for="title">제목</label>
+                                        ${view.title}
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="name">작성자</label>
+                                        ${view.name}
+                          
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email">이메일</label>
+                                        ${view.email}
+                                        
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="content">내용</label>
+                                        ${view.content}
+                                        
+                                    </div>
+                                    <div class="mb-3">
+                                        <input class="btn btn-primary" type="button" id="update" value="수정"/>
+                                        <input class="btn btn-primary" type="button" id="back" value="목록"/>
+                                    </div>
+                                    
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -485,6 +469,17 @@
 
     <!-- Page level custom scripts -->
     <script src="/resources/js/demo/datatables-demo.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$('#update').on('click',function(){
+				var idx= ${view.idx};
+				location.href='updateform?idx='+idx;
+			})
+			$('#back').on('click',function(){
+				history.go(-1);
+			})
+		})
+	</script>
 
 </body>
 

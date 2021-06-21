@@ -11,5 +11,11 @@ public class BoardService {
 	public void insert(Board board) {
 		dao.insert(board);
 	}
+	public Board selectone(int idx) {
+		 return dao.selectone(idx);
+	}
+	public void update(Board board) {
+		dao.update(board);
+	}
 
 }

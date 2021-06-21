@@ -12,4 +12,10 @@ public class BoardDao {
 	public void insert(Board board) {
 		sst.insert("freeboard.insert",board);
 	}
+	public Board selectone(int idx) {
+		return sst.selectOne("freeboard.view",idx);
+	}
+	public void update(Board board) {
+		sst.update("freeboard.updateone", board);
+	}
 }
