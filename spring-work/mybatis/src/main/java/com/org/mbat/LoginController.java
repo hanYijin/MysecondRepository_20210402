@@ -11,15 +11,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class LoginController {
 
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String login(Model model) {
-		return "login";
-	}
-	
-	@RequestMapping(value = "/register", method = RequestMethod.GET)
-	public String register(Model model) {
-		return "register";
-	}
+	/*
+	 * @RequestMapping(value = "/login", method = RequestMethod.GET) public String
+	 * login(Model model) { return "login"; }
+	 * 
+	 * @RequestMapping(value = "/register", method = RequestMethod.GET) public
+	 * String register(Model model) { return "register"; }
+	 */
 	
 	@RequestMapping("/aa")
 	@ResponseBody

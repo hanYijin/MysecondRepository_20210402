@@ -1,6 +1,7 @@
 package com.org.mbat.freeboard;
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.ui.Model;
 
 @Controller
@@ -83,7 +85,7 @@ public class BoardController {
 		//bs.insert();
 		
 		return "freeboard/freeboardinsert";
-	}
+	}	
 	
 	@RequestMapping(value = "/freeboard/updateform", method = RequestMethod.GET)
 	public String freeboardupdateform(Model model,Board board,int idx) {
@@ -97,6 +99,19 @@ public class BoardController {
 	@RequestMapping(value = "/freeboard/update", method = RequestMethod.POST)
 	public String freeboardupdate(Model model,Board board) {
 		bs.update(board);
+		//sst.update("freeboard.updateone",board);
+		return "redirect:/freeboard";
+	}
+	@RequestMapping(value = "/freeboard/delete", method = RequestMethod.POST)
+	//@ResponseBody
+	public String freeboardelete(Model model, String[] cks) {
+		ArrayList<String> cklist= new ArrayList<String>(Arrays.asList(cks));
+		if(cks!=null) {
+			sst.delete("freeboard.delete",cklist);
+			/*
+			 * for(String ele:cks) { System.out.println("ele= "+ele); }
+			 */
+		}
 		//sst.update("freeboard.updateone",board);
 		return "redirect:/freeboard";
 	}

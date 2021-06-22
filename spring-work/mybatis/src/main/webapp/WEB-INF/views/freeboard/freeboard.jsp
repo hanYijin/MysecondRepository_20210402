@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +28,7 @@
 <script type="text/javascript">
 	function doView(idx){
 		
-		location.href="/freeboard/view?idx="+idx;
+		//location.href="/freeboard/view?idx="+idx;
 	}
 </script>
 
@@ -123,8 +124,8 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
+                        <a class="collapse-item" href="/login">Login</a>
+                        <a class="collapse-item" href="/register">Register</a>
                         <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
@@ -383,14 +384,17 @@
                             	<h6 class="m-0 font-weight-bold text-primary">Freeboard</h6>
                             </div>
                             <div style="float:right">
-                            	<a class="m-0 font-weight-bold text-primary" href="/freeboard/insertform">글쓰기</a>
+                            	<button id="delete" class="m-0 font-weight-bold btn btn-primary">삭제</button>
+                            	<a class="m-0 font-weight-bold btn btn-primary" href="/freeboard/insertform">글쓰기</a>
                             </div>
                         </div>
                         <div class="card-body" style="clear: both">
                             <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            	<form id="frm" action="/freeboard/delete" method="post">
+                                <table class="table table-bordered" id="freeboardTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                        	<td></td>
                                             <th>No</th>
                                             <th>제목</th>
                                             <th>작성자</th>
@@ -399,29 +403,38 @@
                                             <th>조회</th>
                                         </tr>
                                     </thead>
+                                    <tfoot>
+                                        <tr>
+                                        	<td></td>
+                                            <th>No</th>
+                                            <th>제목</th>
+                                            <th>작성자</th>
+                                            <th>이메일</th>
+                                            <th>날짜</th>
+                                            <th>조회</th>
+                                        </tr>
+                                    </tfoot>
                                     <tbody>
-                                    	<%-- list= <br>
-                                    	${list}<br> --%>
-                                    	<c:forEach items="${list}" var="index">
-                                    		<%-- index= <br>
-                                    		${index}<br> --%>
-                                    		<tr style="cursor:pointer;"onclick="doView(${index.idx})">
-                                            	<td>${index.idx}</td>
-                                            	<td>${index.title}</td>
-                                            	<td>${index.name}</td>
-                                            	<td>${index.email}</td>
-                                            	<td>${index.wdate}</td>
-                                            	<td>${index.see}</td>
-                                            </tr>
-                                    	</c:forEach>
-                                            
-               
+										<c:forEach items="${list}" var="index">
+											<tr style="cursor:pointer;" class="ttr" value="${index.idx}">
+												<td class='ftd'>
+												<input style="min-width: 30px; width:100%;" type="checkbox" name="cks" class="ckcls" value="${index.idx}"/>
+												</td>
+												<td>${index.idx}</td>
+												<td>${index.title}</td>
+												<td>${index.name}</td>
+												<td>${index.email}</td>
+												<td>${index.wdate}</td>
+												<td>${index.see}</td>
+											</tr>
+										</c:forEach>
                                     </tbody>
                                 </table>
+                                </form>       
                             </div>
                         </div>
                     </div>
-
+               
                 </div>
                 <!-- /.container-fluid -->
 
@@ -485,7 +498,30 @@
 
     <!-- Page level custom scripts -->
     <script src="/resources/js/demo/datatables-demo.js"></script>
+	<script type="text/javascript">
+		$('#delete').on('click',function(e){
+			var ret = confirm('삭제 하시겠습니까?')
+			if(ret==true){
+				$('#frm').submit();
+			}
+			else
+				return;
+			
+		});
+		$('.ftd').on('click',function(e){
+			//e.preventDefault();	본인이벤트막기
+			e.stopPropagation();	// 부모이벤트 막기
+// 			e.stopImmediatePropagation();	// 부모이벤트 즉시막기
+		});
+		$('.ttr').on('click',function(e){
+			e.preventDefault();
+			e.stopPropagation();
+			var idx = $(this).attr('value')
 
+			location.href='/freeboard/view?idx='+idx;
+		});
+	</script>
 </body>
 
 </html>
+
